@@ -1,0 +1,53 @@
+{% load staticfiles humanize %}
+
+<div class="projects-items equal three-columns">
+{% for object in works %}
+<div class="single-item one-item cat{{ object.category.order }}">
+    <div class="item" style="min-height:280px">
+      {% if object.image %}
+        <img src="{{ object.image.url }}" alt="">
+      {% endif %}
+        <div class="content">
+            <h3>{{ object.title }}</h3>
+            <p>
+              <span class="fa fa-thumbs-o-up"></span>
+              <span data-count="like">{{ object.votes.likes.count }}</span>
+              &nbsp;&nbsp;
+              <span class="fa fa-thumbs-o-down"></span>
+              <span data-count="dislike">{{ object.votes.dislikes.count }}</span>
+              &nbsp;&nbsp;
+              <span class="fa fa-eye"></span>
+              <span>{{ object.views }}</span>
+            </p>
+        </div>
+        <a href="{% url 'work_detail' pk=object.pk %}" ajax data-target="#ajax" data-el="#ajax" class="link"></a>
+    </div>
+</div>
+{% endfor %}
+</div>
+
+<script defer src="{% static 'scripts/isotope.min.js' %}" type="text/javascript"></script>
+<script defer src="{% static 'scripts/imagesloaded.min.js' %}" type="text/javascript"></script>
+<script defer src="{% static 'scripts/jquery.magnific-popup.min.js' %}" type="text/javascript"></script>
+
+<script>
+  try {
+      var $mainContainerSimple=$('section[data-isotope="load-simple"] .projects-items');
+      $mainContainerSimple.imagesLoaded( function(){
+          var $container=$('.projects-items').isotope({itemSelector:'.one-item', layoutMode: 'fitRows'});
+          var $simpleFilters = $('#projects .filters');
+          $simpleFilters.on('click','li',function(){
+              var filterValue=$(this).attr('data-filter');$container.isotope({
+                  filter:filterValue});
+          });
+          $simpleFilters.each(function(i,buttonGroup){
+              var $buttonGroup=$(buttonGroup);
+              $buttonGroup.on('click','li',function(){
+                  $buttonGroup.find('.is-checked').removeClass('is-checked');
+                  $(this).addClass('is-checked');
+              });
+          });
+      });
+  } catch(err) {
+  }
+</script>

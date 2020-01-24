@@ -1,0 +1,223 @@
+{% load staticfiles humanize liked_user %}
+<style>
+
+  .text-success {
+      color: #41cd52 !important;
+      cursor:pointer;
+  }
+
+  .text-danger {
+      color: #FF0000 !important;
+      cursor:pointer;
+  }
+
+  .reply {
+      cursor: pointer;
+  }
+
+  .shot-form {
+      width: 75%;
+      float: right;
+      margin-left: 100px;
+      margin-bottom: 10px;
+  }
+
+  span {
+      position: relative;
+  }
+
+  span[data-tooltip]:before {
+      position: absolute;
+      left: 0;
+      top: -100px;
+      background-color: #372811;
+      color: #ffffff;
+      line-height: 30px;
+      border-radius: 5px;
+      padding: 0 15px;
+      content: attr(data-tooltip);
+      display: none;
+      white-space: nowrap;
+      height: 30px;
+      top: -40px;
+  }
+
+  span[data-tooltip]:after {
+      position: absolute;
+      left: 15px;
+      top: -10px;
+      border-top: 7px solid #372811;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      content: "";
+      display: none;
+  }
+
+  span[data-tooltip]:hover:after,
+  span[data-tooltip]:hover:before {
+      display: block;
+  }
+  .like,
+  .dislike {
+      font-size: 16px;
+      cursor: pointer;
+  }
+
+  .like2,
+  .dislike2 {
+      cursor: pointer;
+      font-size: 16px;
+  }
+
+  .views,
+  .posted {
+      font-size: 16px;
+  }
+
+</style>
+
+
+<span class="hidden-xs">
+    <span class="posted">
+        <span class="fa fa-clock-o"></span>
+        <span style="font-size:18px;">{{ object.posted|naturaltime }}</span>
+    </span>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <span id="like"
+          class="like {% if object.votes.likes.all|user_in:user %}text-success{% endif %}"
+          data-id="{{ object.id }}"
+          data-action="like"
+          data-type="work_article"
+          {% if request.user.is_authenticated %}
+          data-tooltip="Мне нравится"
+          {% else %}
+          data-tooltip="Войдите или зарегистрируйтесь и ставьте лайки"
+          {% endif %}>
+        <span class="fa fa-thumbs-o-up"></span>
+        <span data-count="like">{{ object.votes.likes.count }}</span>
+    </span>
+    &nbsp;&nbsp;
+    <span class="dislike {% if object.votes.dislikes.all|user_in:user %}text-danger{% endif %}"
+          data-id="{{ object.id }}"
+          data-action="dislike"
+          data-type="work_article"
+          {% if request.user.is_authenticated %}
+          data-tooltip="Мне не нравится"
+          {% else %}
+          data-tooltip="Войдите или зарегистрируйтесь и ставьте дизлайки"
+          {% endif %}>
+        <span class="fa fa-thumbs-o-down"></span>
+        <span data-count="dislike">{{ object.votes.dislikes.count }}</span>
+    </span>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="views">
+        <span class="fa fa-eye"></span>
+        <span>{{ object.views }}</span>
+    </span>
+    <p style="font-size:18px;float:right">Поделиться:&nbsp;&nbsp;
+
+  <a style="font-size:18px;color:#606060" href="http://vk.com/share.php?url=http://89042373637.site{{ object.get_absolute_url }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" rel="nofollow"><i class="fa fa-vk"></i></a>&nbsp;
+  <a style="font-size:18px;color:#606060" href="https://www.facebook.com/sharer/sharer.php?u=http://89042373637.site{{ object.get_absolute_url }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a>&nbsp;
+  <a style="font-size:18px;color:#606060" href="https://twitter.com/share?url=http://89042373637.site{{ object.get_absolute_url }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a>&nbsp;
+ </p>
+</span>
+<span class="visible-xs">
+    <span class="posted">
+        <span class="fa fa-clock-o"></span>
+        <span style="font-size:18px;">{{ object.posted|date:"d E / Y" }}</span>
+    </span>
+
+    <br><br>
+    {% load liked_user %}
+    <span id="like"
+          class="like {% if object.votes.likes.all|user_in:user %}text-success{% endif %}"
+          data-id="{{ object.id }}"
+          data-action="like"
+          data-type="work_article"
+          {% if request.user.is_authenticated %}
+          data-tooltip="Мне нравится"
+          {% else %}
+          data-tooltip="Войдите или зарегистрируйтесь"
+          {% endif %}>
+        <span class="fa fa-thumbs-o-up"></span>
+        <span data-count="like">{{ object.votes.likes.count }}</span>
+    </span>
+    &nbsp;&nbsp;
+    <span class="dislike {% if object.votes.dislikes.all|user_in:user %}text-danger{% endif %}"
+          data-id="{{ object.id }}"
+          data-action="dislike"
+          data-type="work_article"
+          {% if request.user.is_authenticated %}
+          data-tooltip="Мне не нравится"
+          {% else %}
+          data-tooltip="Войдите или зарегистрируйтесь"
+          {% endif %}>
+        <span class="fa fa-thumbs-o-down"></span>
+        <span data-count="dislike">{{ object.votes.dislikes.count }}</span>
+    </span>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="views">
+        <span class="fa fa-eye"></span>
+        <span>{{ object.views }}</span>
+    </span>
+    <br><br>
+    <p style="font-size:16px">Поделиться:&nbsp;&nbsp;
+
+      <a style="font-size:18px;color:#606060" href="http://vk.com/share.php?url=http://89042373637.site{{ object.get_absolute_url }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" rel="nofollow"><i class="fa fa-vk"></i></a>&nbsp;
+      <a style="font-size:18px;color:#606060" href="https://www.facebook.com/sharer/sharer.php?u=http:89042373637.site{{ object.get_absolute_url }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a>&nbsp;
+      <a style="font-size:18px;color:#606060" href="https://twitter.com/share?url=http://89042373637.site{{ object.get_absolute_url }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a>&nbsp;
+
+ </p>
+</span>
+
+<script>
+    function like() {
+        var like = $(this);
+        var type = like.data('type');
+        var pk = like.data('id');
+        var action = like.data('action');
+        var dislike = like.next();
+        $.ajax({
+            url: "{% url 'work_article_like' pk=object.pk %}",
+            type: 'POST',
+            data: {
+                'obj': pk
+            },
+            success: function(json) {
+                like.find("[data-count='like']").text(json.like_count);
+                dislike.find("[data-count='dislike']").text(json.dislike_count);
+                $(".like").addClass("text-success");
+                $(".dislike").removeClass("text-danger");
+            }
+        });
+        return false;
+    }
+    function dislike() {
+        var dislike = $(this);
+        var type = dislike.data('type');
+        var pk = dislike.data('id');
+        var action = dislike.data('action');
+        var like = dislike.prev();
+        $.ajax({
+            url: "{% url 'work_article_dislike' pk=object.pk %}",
+            type: 'POST',
+            data: {
+                'obj': pk
+            },
+            success: function(json) {
+                dislike.find("[data-count='dislike']").text(json.dislike_count);
+                like.find("[data-count='like']").text(json.like_count);
+                $(".dislike").addClass("text-danger");
+                $(".like").removeClass("text-success");
+            }
+        });
+        return false;
+    }
+    // Подключение обработчиков
+    $('[data-action="like"]').click(like);
+    $('[data-action="dislike"]').click(dislike);
+</script>
