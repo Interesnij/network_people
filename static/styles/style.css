@@ -225,36 +225,36 @@ progress {
 
 @font-face {
     font-family: "Maax";
-    src: url(/assets/fonts/maax.eot);
-    src: url(/assets/fonts/maax.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/maax.woff) format("woff"), url(/assets/fonts/maax.ttf) format("truetype");
+    src: url(/static/fonts/maax.eot);
+    src: url(/static/fonts/maax.eot?#iefix) format("embedded-opentype"), url(/static/fonts/maax.woff) format("woff"), url(/static/fonts/maax.ttf) format("truetype");
     font-weight: 400
 }
 
 @font-face {
     font-family: "Maax";
-    src: url(/assets/fonts/maax-medium.eot);
-    src: url(/assets/fonts/maax-medium.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/maax-medium.woff) format("woff"), url(/assets/fonts/maax-medium.ttf) format("truetype");
+    src: url(/static/fonts/maax-medium.eot);
+    src: url(/static/fonts/maax-medium.eot?#iefix) format("embedded-opentype"), url(/static/fonts/maax-medium.woff) format("woff"), url(/static/fonts/maax-medium.ttf) format("truetype");
     font-weight: 500
 }
 
 @font-face {
     font-family: "Maax";
-    src: url(/assets/fonts/maax-bold.eot);
-    src: url(/assets/fonts/maax-bold.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/maax-bold.woff) format("woff"), url(/assets/fonts/maax-bold.ttf) format("truetype");
+    src: url(/static/fonts/maax-bold.eot);
+    src: url(/static/fonts/maax-bold.eot?#iefix) format("embedded-opentype"), url(/static/fonts/maax-bold.woff) format("woff"), url(/static/fonts/maax-bold.ttf) format("truetype");
     font-weight: 600
 }
 
 @font-face {
     font-family: "Maax";
-    src: url(/assets/fonts/maax-black.eot);
-    src: url(/assets/fonts/maax-black.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/maax-black.woff) format("woff"), url(/assets/fonts/maax-black.ttf) format("truetype");
+    src: url(/static/fonts/maax-black.eot);
+    src: url(/static/fonts/maax-black.eot?#iefix) format("embedded-opentype"), url(/static/fonts/maax-black.woff) format("woff"), url(/static/fonts/maax-black.ttf) format("truetype");
     font-weight: 800
 }
 
 @font-face {
     font-family: "Ivar Text";
-    src: url(/assets/fonts/ivar-text.eot);
-    src: url(/assets/fonts/ivar-text.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/ivar-text.woff) format("woff"), url(/assets/fonts/ivar-text.ttf) format("truetype");
+    src: url(/static/fonts/ivar-text.eot);
+    src: url(/static/fonts/ivar-text.eot?#iefix) format("embedded-opentype"), url(/static/fonts/ivar-text.woff) format("woff"), url(/static/fonts/ivar-text.ttf) format("truetype");
     font-weight: 400
 }
 
@@ -1613,7 +1613,7 @@ main .page:after {
     content: '';
     width: 100%;
     height: 100%;
-    background: url(/assets/images/dark-noise-background.jpg) center top/100% no-repeat;
+    background: url(/static/images/dark-noise-background.jpg) center top/100% no-repeat;
     position: absolute;
     left: 0;
     top: 0;
@@ -3309,7 +3309,7 @@ sup {
     transition: opacity 0.6s ease-out;
     -webkit-animation: noiseAnimation 1s steps(4) infinite;
     animation: noiseAnimation 1s steps(4) infinite;
-    background-image: url(/assets/images/noise.png)
+    background-image: url(/static/images/noise.png)
 }
 
 figure>svg {
@@ -7533,7 +7533,7 @@ figure>svg {
     position: relative;
     overflow: hidden;
     padding: 19.7rem 2.5rem 6rem;
-    background: url(/assets/images/dark-noise-background.jpg) left top/100% 100% no-repeat
+    background: url(/static/images/dark-noise-background.jpg) left top/100% 100% no-repeat
 }
 
 @media only screen and (min-width: 685px) {
@@ -7617,7 +7617,7 @@ figure>svg {
     -ms-flex-direction: column;
     flex-direction: column;
     min-height: 100vh;
-    background: url(/assets/images/dark-noise-background.jpg) left top/100% 100% no-repeat;
+    background: url(/static/images/dark-noise-background.jpg) left top/100% 100% no-repeat;
     padding: 0 2.5rem 3rem;
     overflow: hidden
 }
