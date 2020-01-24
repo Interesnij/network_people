@@ -5447,25 +5447,7 @@
                 J = function(e) {
                     return "\\" + Y[e]
                 };
-            v.template = function(e, t, n) {
-                !t && n && (t = n), t = v.defaults({}, t, v.templateSettings);
-                var i, r = RegExp([(t.escape || X).source, (t.interpolate || X).source, (t.evaluate || X).source].join("|") + "|$", "g"),
-                    o = 0,
-                    a = "__p+='";
-                e.replace(r, (function(t, n, i, r, s) {
-                    return a += e.slice(o, s).replace(Q, J), o = s + t.length, n ? a += "'+\n((__t=(" + n + "))==null?'':_.escape(__t))+\n'" : i ? a += "'+\n((__t=(" + i + "))==null?'':__t)+\n'" : r && (a += "';\n" + r + "\n__p+='"), t
-                })), a += "';\n", t.variable || (a = "with(obj||{}){\n" + a + "}\n"), a = "var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};\n" + a + "return __p;\n";
-                try {
-                    i = new Function(t.variable || "obj", "_", a)
-                } catch (e) {
-                    throw e.source = a, e
-                }
-                var s = function(e) {
-                        return i.call(this, e, v)
-                    },
-                    l = t.variable || "obj";
-                return s.source = "function(" + l + "){\n" + a + "}", s
-            }, v.chain = function(e) {
+            v.chain = function(e) {
                 var t = v(e);
                 return t._chain = !0, t
             };
@@ -52933,7 +52915,7 @@
                 return t.appendChild(r), r
             },
             Ue = U.documentElement || {},
-            
+
             He = function(e, t, n, i, r, a) {
                 var s, l, c, u, h, d, p, f, m, g, v, y, b, _, w = e._gsTransform,
                     x = qe(e, !0);
