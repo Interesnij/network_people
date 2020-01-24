@@ -52933,11 +52933,7 @@
                 return t.appendChild(r), r
             },
             Ue = U.documentElement || {},
-            Be = (Oe = f || /Android/i.test(W) && !i._gsScope.chrome, U.createElementNS && Ue.appendChild && !Oe && (Me = je("svg", Ue), Ce = (Ae = je("rect", Me, {
-                width: 100,
-                height: 50,
-                x: 100
-            })),
+            
             He = function(e, t, n, i, r, a) {
                 var s, l, c, u, h, d, p, f, m, g, v, y, b, _, w = e._gsTransform,
                     x = qe(e, !0);
