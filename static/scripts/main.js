@@ -27433,7 +27433,7 @@
                     if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                 }(this, n);
                 var r = (i = s(this, l(n).call(this, t))).$el.find("#template-grid-people-filtered-results");
-                return r.remove(), i.template = e.template(r.html()), i.$filterButtons = i.$el.find("[data-filter-id]"), i.$masterWrapper = i.$el.find(".grid-people-master-wrapper"), i.$defaultContentWrapper = i.$el.find(".grid-people-wrapper--default"), i.$filteredContentWrapper = i.$el.find(".grid-people-wrapper--filtered"), i.debugMode = !1, i
+                return r.remove(), i.$filterButtons = i.$el.find("[data-filter-id]"), i.$masterWrapper = i.$el.find(".grid-people-master-wrapper"), i.$defaultContentWrapper = i.$el.find(".grid-people-wrapper--default"), i.$filteredContentWrapper = i.$el.find(".grid-people-wrapper--filtered"), i.debugMode = !1, i
             }
             var r, o, u;
             return function(e, t) {
