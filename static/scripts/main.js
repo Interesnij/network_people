@@ -52937,7 +52937,7 @@
                 width: 100,
                 height: 50,
                 x: 100
-            })).getBoundingClientRect().width, Ae.style[De] = "50% 50%", Ae.style[Le] = "scaleX(0.5)", Oe = Ce === Ae.getBoundingClientRect().width && !(d && ze), Ue.removeChild(Me)), Oe),
+            })),
             He = function(e, t, n, i, r, a) {
                 var s, l, c, u, h, d, p, f, m, g, v, y, b, _, w = e._gsTransform,
                     x = qe(e, !0);
