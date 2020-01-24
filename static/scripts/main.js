@@ -27862,7 +27862,7 @@
                     var e = this,
                         t = [];
                     t.push(this.scene.prepareImage({
-                        background: "".concat(window.NODE_ENV.assets, "images/dark-noise-background.jpg"),
+                        background: "".concat("/static/images/dark-noise-background.jpg"),
                         mark: this.$elements.mark.attr("src")
                     })), t.push(this.scene.prepareSVG({
                         headlineSVG: this.$elements.headlineSVG
