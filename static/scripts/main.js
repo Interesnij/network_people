@@ -26682,7 +26682,8 @@
                 key: "_addListeners",
                 value: function() {
                     var e = this;
-                    e("body").on("sub-content:open", this._onDetailOpen, this), window.App.vent.on("sub-content:close", this._onDetailClose, this), window.App.vent.on("page:subpages:change", this._onSubpageChange, this), window.App.syncController.addItem(r.a.PREPARE_SUBPAGE, r.a.SUBPAGE_LOADED, this._onPageReady, this), this.$el.on("wheel mousewheel", (function(t) {
+                    var mybody = document.querySelectorAll('.page-loaded');
+                    mybody.on("sub-content:open", this._onDetailOpen, this), window.App.vent.on("sub-content:close", this._onDetailClose, this), window.App.vent.on("page:subpages:change", this._onSubpageChange, this), window.App.syncController.addItem(r.a.PREPARE_SUBPAGE, r.a.SUBPAGE_LOADED, this._onPageReady, this), this.$el.on("wheel mousewheel", (function(t) {
                         e.isOpen && t.stopPropagation()
                     })), this.$buttonClose.on("click", i.proxy(this._onCloseClick, this)), this.$buttonNext.on("click", i.proxy(this._onNextClick, this)), this.$buttonNextDescriptive.on("click", i.proxy(this._onNextClick, this)), this.$buttonPrevious.on("click", i.proxy(this._onPreviousClick, this)), this.$cursorClose.on("click", i.proxy(this._onCloseClick, this))
                 }
