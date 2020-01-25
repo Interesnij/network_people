@@ -30144,7 +30144,7 @@
                         var u = function(t) {
                                 t < a.length && n.getTemplate(a[t].id).then((function(n) {
                                     var i = a[t].obj;
-                                    !0 === i.disableUnderscore ? a[t].compiled = n.template.data : a[t].compiled = e.template(n.template.data)(i), s++, h()
+                                    
                                 }))
                             },
                             h = function() {
