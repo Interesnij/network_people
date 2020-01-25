@@ -3958,10 +3958,10 @@
                     }, t = t("abort");
                     try {
                         s.send(e.hasContent && e.data || null);
-                        console.log(e.hasContent);
-                        console.log(e.data);
                     } catch (e) {
-                        if (t) throw e
+                        if (t) throw e;
+                        console.log(t);
+                        console.log(e);
                     }
                 },
                 abort: function() {
