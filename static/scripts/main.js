@@ -27450,7 +27450,7 @@
                 key: "_domReady",
                 value: function() {
                     this.updateFilterLinks();
-                    var e = window.App.pageController.page.pageId,
+                    var e = 1,
                         t = window.location.href.split("/");
                     t.splice(0, t.indexOf(e) + 1);
                     var n = t[0] || "all",
