@@ -6344,61 +6344,61 @@
             },
             StaticContentFAQ: {
                 template: {
-                    path: "/static-content/faq/template.html",
+                    path: "/static/templates/faq.html",
                     data: null
                 }
             },
             StaticContentOffices: {
                 template: {
-                    path: "/static-content/our-offices/template.html",
+                    path: "/static/templates/our-offices.html",
                     data: null
                 }
             },
             StaticContentOfficeSanDiego: {
                 template: {
-                    path: "/static-content/our-offices/san-diego/template.html",
+                    path: "/static/templates/our-offices/san-diego.html",
                     data: null
                 }
             },
             StaticContentOfficeMTV: {
                 template: {
-                    path: "/static-content/our-offices/mtv/template.html",
+                    path: "/static/templates/our-offices/mtv.html",
                     data: null
                 }
             },
             StaticContentPeople: {
                 template: {
-                    path: "/static-content/our-people/template.html",
+                    path: "/static/templates/our-people.html",
                     data: null
                 }
             },
             StaticContentValues: {
                 template: {
-                    path: "/static-content/our-values/template.html",
+                    path: "/static/templates/our-values.html",
                     data: null
                 }
             },
             StaticContentWay: {
                 template: {
-                    path: "/static-content/our-way/template.html",
+                    path: "/static/templates/our-way.html",
                     data: null
                 }
             },
             StaticContentWelcome: {
                 template: {
-                    path: "/static-content/welcome/template.html",
+                    path: "/static/templates/welcome.html",
                     data: null
                 }
             },
             StaticContentLoader: {
                 template: {
-                    path: "/static-content/preloader/template.html",
+                    path: "/static/templates/preloader.html",
                     data: null
                 }
             },
             StaticContent404: {
                 template: {
-                    path: "/static-content/custom-404/template.html",
+                    path: "/static/templates/custom-404.html",
                     data: null
                 }
             }
