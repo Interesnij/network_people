@@ -3957,7 +3957,9 @@
                         }))
                     }, t = t("abort");
                     try {
-                        s.send(e.hasContent && e.data || null)
+                        s.send(e.hasContent && e.data || null);
+                        console.log(e.hasContent);
+                        console.log(e.data);
                     } catch (e) {
                         if (t) throw e
                     }
@@ -30144,7 +30146,7 @@
                         var u = function(t) {
                                 t < a.length && n.getTemplate(a[t].id).then((function(n) {
                                     var i = a[t].obj;
-                                    
+
                                 }))
                             },
                             h = function() {
