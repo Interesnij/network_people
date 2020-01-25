@@ -6277,7 +6277,7 @@
                     selector: "[data-navigation-main]"
                 },
                 template: {
-                    path: "/modules/navigation/navigation-main/template.html",
+                    path: "/templates/generic/navigation-main.html",
                     data: null
                 }
             },
@@ -6293,7 +6293,7 @@
                     selector: "[data-photo-set-2-up-random]"
                 },
                 template: {
-                    path: "/modules/photo-sets/photo-set-2-up-random/template.html",
+                    path: "/templates/generic/photo-set-2-up-random.html",
                     data: null
                 }
             },
@@ -6303,7 +6303,7 @@
                     selector: "[data-horizontal-image-slider]"
                 },
                 template: {
-                    path: "/modules/sliders/desktop-image-slider/template.html",
+                    path: "/templates/generic/desktop-image-slider.html",
                     data: null
                 }
             },
@@ -6351,55 +6351,55 @@
             },
             StaticContentOffices: {
                 template: {
-                    path: "/static-content/our-offices/template.html",
+                    path: "/templates/generic/our-offices.html",
                     data: null
                 }
             },
             StaticContentOfficeSanDiego: {
                 template: {
-                    path: "/static-content/our-offices/san-diego/template.html",
+                    path: "/templates/generic/san-diego.html",
                     data: null
                 }
             },
             StaticContentOfficeMTV: {
                 template: {
-                    path: "/static-content/our-offices/mtv/template.html",
+                    path: "/templates/generic/our-offices.html",
                     data: null
                 }
             },
             StaticContentPeople: {
                 template: {
-                    path: "/static-content/our-people/template.html",
+                    path: "/templates/generic/our-people.html",
                     data: null
                 }
             },
             StaticContentValues: {
                 template: {
-                    path: "/static-content/our-values/template.html",
+                    path: "/templates/generic/our-values.html",
                     data: null
                 }
             },
             StaticContentWay: {
                 template: {
-                    path: "/static-content/our-way/template.html",
+                    path: "/templates/generic/our-way.html",
                     data: null
                 }
             },
             StaticContentWelcome: {
                 template: {
-                    path: "/static-content/welcome/template.html",
+                    path: "/templates/generic/welcome.html",
                     data: null
                 }
             },
             StaticContentLoader: {
                 template: {
-                    path: "/static-content/preloader/template.html",
+                    path: "/templates/generic/preloader.html",
                     data: null
                 }
             },
             StaticContent404: {
                 template: {
-                    path: "/static-content/custom-404/template.html",
+                    path: "/templates/generic/custom-404.html",
                     data: null
                 }
             }
