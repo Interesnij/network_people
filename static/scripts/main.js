@@ -26380,7 +26380,7 @@
                 return r.remove(), i.template = e.template(r.html()), i.$renderWrapper = i.$el.find(".render-wrapper"), i.$renderedContent, i.$media = i.$el.find(".media"), i.$buttonClose = i.$el.find(".button-close"), i.$buttonNext = i.$el.find(".header .button-next"), i.$buttonNextDescriptive = i.$el.find(".button-next--descriptive"), i.$buttonPrevious = i.$el.find(".header .button-previous"), i.$cursorClose = i.$el.find(".cursor-close"), i.$contentWrapper = i.$el.find(".content"), i.isOpen = !1, i.isRendered = !1, i.isRendering = !1, i.debugMode = !1, i.scene = [a.a.start("detail-layer-0"), a.a.start("detail-layer-1")], i.activeScene = 0, i.scene[0].appendSceneTo(i.$media), i.scene[1].appendSceneTo(i.$media), i.scene[0].setDisplacementScale("main", 5), i.scene[1].setDisplacementScale("main", 5), i.scene[0].setBumpScale("main", .1), i.scene[1].setBumpScale("main", .1), i
             }
             var o, s, p;
-            console.log(e.template(r);
+            console.log(e.template(r));
             return function(e, t) {
                 if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                 e.prototype = Object.create(t && t.prototype, {
