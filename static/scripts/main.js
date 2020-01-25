@@ -5447,25 +5447,7 @@
                 J = function(e) {
                     return "\\" + Y[e]
                 };
-            v.template = function(e, t, n) {
-                !t && n && (t = n), t = v.defaults({}, t, v.templateSettings);
-                var i, r = RegExp([(t.escape || X).source, (t.interpolate || X).source, (t.evaluate || X).source].join("|") + "|$", "g"),
-                    o = 0,
-                    a = "__p+='";
-                e.replace(r, (function(t, n, i, r, s) {
-                    return a += e.slice(o, s).replace(Q, J), o = s + t.length, n ? a += "'+\n((__t=(" + n + "))==null?'':_.escape(__t))+\n'" : i ? a += "'+\n((__t=(" + i + "))==null?'':__t)+\n'" : r && (a += "';\n" + r + "\n__p+='"), t
-                })), a += "';\n", t.variable || (a = "with(obj||{}){\n" + a + "}\n"), a = "var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};\n" + a + "return __p;\n";
-                try {
-                    i = new Function(t.variable || "obj", "_", a)
-                } catch (e) {
-                    throw e.source = a, e
-                }
-                var s = function(e) {
-                        return i.call(this, e, v)
-                    },
-                    l = t.variable || "obj";
-                return s.source = "function(" + l + "){\n" + a + "}", s
-            }, v.chain = function(e) {
+            v.chain = function(e) {
                 var t = v(e);
                 return t._chain = !0, t
             };
@@ -6362,61 +6344,61 @@
             },
             StaticContentFAQ: {
                 template: {
-                    path: "/static/templates/faq.html",
+                    path: "/static-content/faq/template.html",
                     data: null
                 }
             },
             StaticContentOffices: {
                 template: {
-                    path: "/static/templates/our-offices.html",
+                    path: "/static-content/our-offices/template.html",
                     data: null
                 }
             },
             StaticContentOfficeSanDiego: {
                 template: {
-                    path: "/static/templates/our-offices.html",
+                    path: "/static-content/our-offices/san-diego/template.html",
                     data: null
                 }
             },
             StaticContentOfficeMTV: {
                 template: {
-                    path: "/static/templates/our-offices2.html",
+                    path: "/static-content/our-offices/mtv/template.html",
                     data: null
                 }
             },
             StaticContentPeople: {
                 template: {
-                    path: "/static/tremplates/our-people.html",
+                    path: "/static-content/our-people/template.html",
                     data: null
                 }
             },
             StaticContentValues: {
                 template: {
-                    path: "/static/templates/our-values.html",
+                    path: "/static-content/our-values/template.html",
                     data: null
                 }
             },
             StaticContentWay: {
                 template: {
-                    path: "/static/templates/our-way.html",
+                    path: "/static-content/our-way/template.html",
                     data: null
                 }
             },
             StaticContentWelcome: {
                 template: {
-                    path: "/static/templates/welcome.html",
+                    path: "/static-content/welcome/template.html",
                     data: null
                 }
             },
             StaticContentLoader: {
                 template: {
-                    path: "/static/templates/preloader.html",
+                    path: "/static-content/preloader/template.html",
                     data: null
                 }
             },
             StaticContent404: {
                 template: {
-                    path: "/static/templates/custom-404.html",
+                    path: "/static-content/custom-404/template.html",
                     data: null
                 }
             }
@@ -6547,15 +6529,15 @@
         }]) && i(t.prototype, n), r && i(t, r), e
     }()
 }, function(e, t, n) {
-    e.exports = n.p + "static/fonts/maax.eot"
+    e.exports = n.p + "assets/fonts/maax.eot"
 }, function(e, t, n) {
-    e.exports = n.p + "static/fonts/maax-medium.eot"
+    e.exports = n.p + "assets/fonts/maax-medium.eot"
 }, function(e, t, n) {
-    e.exports = n.p + "static/fonts/maax-bold.eot"
+    e.exports = n.p + "assets/fonts/maax-bold.eot"
 }, function(e, t, n) {
-    e.exports = n.p + "static/fonts/maax-black.eot"
+    e.exports = n.p + "assets/fonts/maax-black.eot"
 }, function(e, t, n) {
-    e.exports = n.p + "static/fonts/ivar-text.eot"
+    e.exports = n.p + "assets/fonts/ivar-text.eot"
 }, function(e, t) {
     var n;
     n = function() {
@@ -7024,7 +7006,7 @@
 }, function(e, t, n) {
     e.exports = n.p + "static/fonts/maax-medium.woff"
 }, function(e, t, n) {
-    e.exports = n.p + "static/fonts/maax-medium.ttf"
+    e.exports = n.p + "assets/fonts/maax-medium.ttf"
 }, function(e, t, n) {
     e.exports = n.p + "static/fonts/maax-bold.woff"
 }, function(e, t, n) {
@@ -7042,7 +7024,7 @@
 }, function(e, t, n) {
     e.exports = n.p + "static/images/dark-noise-background.jpg"
 }, function(e, t, n) {
-    e.exports = n.p + "static/images/noise.png"
+    e.exports = n.p + "assets/images/noise.png"
 }, function(e, t, n) {
     var i, r, o = {},
         a = (i = function() {
@@ -26377,7 +26359,7 @@
                     if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                 }(this, n);
                 var r = (i = u(this, h(n).call(this, t))).$el.find("#template-detail-layer");
-                return r.remove(), i.template = e.template(r.html()), i.$renderWrapper = i.$el.find(".render-wrapper"), i.$renderedContent, i.$media = i.$el.find(".media"), i.$buttonClose = i.$el.find(".button-close"), i.$buttonNext = i.$el.find(".header .button-next"), i.$buttonNextDescriptive = i.$el.find(".button-next--descriptive"), i.$buttonPrevious = i.$el.find(".header .button-previous"), i.$cursorClose = i.$el.find(".cursor-close"), i.$contentWrapper = i.$el.find(".content"), i.isOpen = !1, i.isRendered = !1, i.isRendering = !1, i.debugMode = !1, i.scene = [a.a.start("detail-layer-0"), a.a.start("detail-layer-1")], i.activeScene = 0, i.scene[0].appendSceneTo(i.$media), i.scene[1].appendSceneTo(i.$media), i.scene[0].setDisplacementScale("main", 5), i.scene[1].setDisplacementScale("main", 5), i.scene[0].setBumpScale("main", .1), i.scene[1].setBumpScale("main", .1), i
+                return r.remove(), i.$renderWrapper = i.$el.find(".render-wrapper"), i.$renderedContent, i.$media = i.$el.find(".media"), i.$buttonClose = i.$el.find(".button-close"), i.$buttonNext = i.$el.find(".header .button-next"), i.$buttonNextDescriptive = i.$el.find(".button-next--descriptive"), i.$buttonPrevious = i.$el.find(".header .button-previous"), i.$cursorClose = i.$el.find(".cursor-close"), i.$contentWrapper = i.$el.find(".content"), i.isOpen = !1, i.isRendered = !1, i.isRendering = !1, i.debugMode = !1, i.scene = [a.a.start("detail-layer-0"), a.a.start("detail-layer-1")], i.activeScene = 0, i.scene[0].appendSceneTo(i.$media), i.scene[1].appendSceneTo(i.$media), i.scene[0].setDisplacementScale("main", 5), i.scene[1].setDisplacementScale("main", 5), i.scene[0].setBumpScale("main", .1), i.scene[1].setBumpScale("main", .1), i
             }
             var o, s, p;
             return function(e, t) {
@@ -26682,7 +26664,7 @@
                 key: "_addListeners",
                 value: function() {
                     var e = this;
-                    document.on("sub-content:open", this._onDetailOpen, this), window.App.vent.on("sub-content:close", this._onDetailClose, this), window.App.vent.on("page:subpages:change", this._onSubpageChange, this), window.App.syncController.addItem(r.a.PREPARE_SUBPAGE, r.a.SUBPAGE_LOADED, this._onPageReady, this), this.$el.on("wheel mousewheel", (function(t) {
+                    window.App.vent.on("sub-content:open", this._onDetailOpen, this), window.App.vent.on("sub-content:close", this._onDetailClose, this), window.App.vent.on("page:subpages:change", this._onSubpageChange, this), window.App.syncController.addItem(r.a.PREPARE_SUBPAGE, r.a.SUBPAGE_LOADED, this._onPageReady, this), this.$el.on("wheel mousewheel", (function(t) {
                         e.isOpen && t.stopPropagation()
                     })), this.$buttonClose.on("click", i.proxy(this._onCloseClick, this)), this.$buttonNext.on("click", i.proxy(this._onNextClick, this)), this.$buttonNextDescriptive.on("click", i.proxy(this._onNextClick, this)), this.$buttonPrevious.on("click", i.proxy(this._onPreviousClick, this)), this.$cursorClose.on("click", i.proxy(this._onCloseClick, this))
                 }
@@ -27451,7 +27433,7 @@
                     if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
                 }(this, n);
                 var r = (i = s(this, l(n).call(this, t))).$el.find("#template-grid-people-filtered-results");
-                return r.remove(), i.template = e.template(r.html()), i.$filterButtons = i.$el.find("[data-filter-id]"), i.$masterWrapper = i.$el.find(".grid-people-master-wrapper"), i.$defaultContentWrapper = i.$el.find(".grid-people-wrapper--default"), i.$filteredContentWrapper = i.$el.find(".grid-people-wrapper--filtered"), i.debugMode = !1, i
+                return r.remove(), i.$filterButtons = i.$el.find("[data-filter-id]"), i.$masterWrapper = i.$el.find(".grid-people-master-wrapper"), i.$defaultContentWrapper = i.$el.find(".grid-people-wrapper--default"), i.$filteredContentWrapper = i.$el.find(".grid-people-wrapper--filtered"), i.debugMode = !1, i
             }
             var r, o, u;
             return function(e, t) {
@@ -30162,7 +30144,7 @@
                         var u = function(t) {
                                 t < a.length && n.getTemplate(a[t].id).then((function(n) {
                                     var i = a[t].obj;
-                                    !0 === i.disableUnderscore ? a[t].compiled = n.template.data : a[t].compiled = e.template(n.template.data)(i), s++, h()
+
                                 }))
                             },
                             h = function() {
@@ -52933,11 +52915,7 @@
                 return t.appendChild(r), r
             },
             Ue = U.documentElement || {},
-            Be = (Oe = f || /Android/i.test(W) && !i._gsScope.chrome, U.createElementNS && Ue.appendChild && !Oe && (Me = je("svg", Ue), Ce = (Ae = je("rect", Me, {
-                width: 100,
-                height: 50,
-                x: 100
-            })).getBoundingClientRect().width, Ae.style[De] = "50% 50%", Ae.style[Le] = "scaleX(0.5)", Oe = Ce === Ae.getBoundingClientRect().width && !(d && ze), Ue.removeChild(Me)), Oe),
+
             He = function(e, t, n, i, r, a) {
                 var s, l, c, u, h, d, p, f, m, g, v, y, b, _, w = e._gsTransform,
                     x = qe(e, !0);
@@ -54250,4 +54228,3 @@
         N = i.globals.ExpoScaleEase;
     r._autoActivated = [d, p, o, a, T, s, h, M, A, C, O, R, L, I, D, z, N]
 }]);
-//# sourceMappingURL=main.bundle.js.map
