@@ -6362,25 +6362,25 @@
             },
             StaticContentFAQ: {
                 template: {
-                    path: "/static-content/faq/template.html",
+                    path: "/static/templates/faq.html",
                     data: null
                 }
             },
             StaticContentOffices: {
                 template: {
-                    path: "/static-content/our-offices/template.html",
+                    path: "/static/templates/our-offices.html",
                     data: null
                 }
             },
             StaticContentOfficeSanDiego: {
                 template: {
-                    path: "/static-content/our-offices/san-diego/template.html",
+                    path: "/static/templates/our-offices.html",
                     data: null
                 }
             },
             StaticContentOfficeMTV: {
                 template: {
-                    path: "/static-content/our-offices/mtv/template.html",
+                    path: "/static/templates/our-offices2.html",
                     data: null
                 }
             },
@@ -6392,13 +6392,13 @@
             },
             StaticContentValues: {
                 template: {
-                    path: "/static-content/our-values/template.html",
+                    path: "/static/templates/our-values.html",
                     data: null
                 }
             },
             StaticContentWay: {
                 template: {
-                    path: "/static-content/our-way/template.html",
+                    path: "/static/templates/our-way.html",
                     data: null
                 }
             },
@@ -6410,13 +6410,13 @@
             },
             StaticContentLoader: {
                 template: {
-                    path: "/static-content/preloader/template.html",
+                    path: "/static/templates/preloader.html",
                     data: null
                 }
             },
             StaticContent404: {
                 template: {
-                    path: "/static-content/custom-404/template.html",
+                    path: "/static/templates/custom-404.html",
                     data: null
                 }
             }
@@ -26380,7 +26380,6 @@
                 return r.remove(), i.template = e.template(r.html()), i.$renderWrapper = i.$el.find(".render-wrapper"), i.$renderedContent, i.$media = i.$el.find(".media"), i.$buttonClose = i.$el.find(".button-close"), i.$buttonNext = i.$el.find(".header .button-next"), i.$buttonNextDescriptive = i.$el.find(".button-next--descriptive"), i.$buttonPrevious = i.$el.find(".header .button-previous"), i.$cursorClose = i.$el.find(".cursor-close"), i.$contentWrapper = i.$el.find(".content"), i.isOpen = !1, i.isRendered = !1, i.isRendering = !1, i.debugMode = !1, i.scene = [a.a.start("detail-layer-0"), a.a.start("detail-layer-1")], i.activeScene = 0, i.scene[0].appendSceneTo(i.$media), i.scene[1].appendSceneTo(i.$media), i.scene[0].setDisplacementScale("main", 5), i.scene[1].setDisplacementScale("main", 5), i.scene[0].setBumpScale("main", .1), i.scene[1].setBumpScale("main", .1), i
             }
             var o, s, p;
-            console.log(e.template(r));
             return function(e, t) {
                 if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
                 e.prototype = Object.create(t && t.prototype, {
