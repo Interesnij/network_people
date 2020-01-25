@@ -7025,7 +7025,7 @@
 }, function(e, t, n) {
     e.exports = n.p + "static/images/dark-noise-background.jpg"
 }, function(e, t, n) {
-    e.exports = n.p + "assets/images/noise.png"
+    e.exports = n.p + "static/images/noise.png"
 }, function(e, t, n) {
     var i, r, o = {},
         a = (i = function() {
