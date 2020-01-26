@@ -1657,22 +1657,22 @@
     i.Loader.Resource;
     const r = [{
         name: "uvwind",
-        url: `${window.EPICINFO.BASEURL}/static/images/grad/grad1.png`
+        url: `/static/images/grad/grad1.png`
     }, {
         name: "boardingLogo",
-        url: `${window.EPICINFO.BASEURL}/static/images/grad/logo.png`
+        url: `/static/images/grad/logo.png`
     }, {
         name: "boardingText",
-        url: `${window.EPICINFO.BASEURL}/static/images/grad/text.png`
+        url: `/static/images/grad/text.png`
     }, {
         name: "wind",
-        url: `${window.EPICINFO.BASEURL}/static/images/grad/red_line.jpg`
+        url: `/static/images/grad/red_line.jpg`
     }, {
         name: "test",
-        url: `${window.EPICINFO.BASEURL}/static/images/grad/grad2.png`
+        url: `/static/images/grad/grad2.png`
     }, {
         name: "bgglitch",
-        url: `${window.EPICINFO.BASEURL}/assets/images/bg_header.jpg`
+        url: `/assets/images/bg_header.jpg`
     }];
     t.a = new class {
         constructor() {
