@@ -8,59 +8,114 @@
 <meta property="og:image" content="http://свои.рус{% static 'images/I.jpg' %}" />
 {% endblock %}
 {% block content %}
-<section class="gallery-section">
-  <div class="auto-container">
-    <div class="title-box">
-      <h1>Hello. I’m <span>Maflo</span><br> a freelance designer and photographer.</h1>
-      <div class="title">_ Focusing on interactive experience & mobile apps.</div>
+
+<div class="cover">
+    <div class="cover__image">
+        <img src="{% static 'images/home/home_wrapper.jpg' %}" srcset="
+          {% static 'images/home/home_wrapper_160.jpg' %} 160w,
+          {% static 'images/home/home_wrapper_240.jpg' %} 240w,
+          {% static 'images/home/home_wrapper_320.jpg' %} 320w,
+          {% static 'images/home/home_wrapper_480.jpg' %} 480w,
+          {% static 'images/home/home_wrapper_640.jpg' %} 640w,
+          {% static 'images/home/home_wrapper_960.jpg' %} 960w,
+          {% static 'images/home/home_wrapper_1280.jpg' %} 1280w,
+          {% static 'images/home/home_wrapper_1440.jpg' %} 1440w,
+          {% static 'images/home/home_wrapper_1600.jpg' %} 1600w,
+          {% static 'images/home/home_wrapper_1920.jpg' %} 1920w,
+          {% static 'images/home/home_wrapper_2240.jpg' %} 2240w,
+          {% static 'images/home/home_wrapper_2560.jpg' %} 2560w,
+          {% static 'images/home/home_wrapper_2880.jpg' %} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw" data-component="trackable" data-type="cover" data-parallax="-1.2" crossorigin="" />
     </div>
-    <div class="styled-border">
-    </div>
-    <div class="masonry-items-container row clearfix">
-      <div class="project-block masonry-item col-lg-3 col-md-6 col-sm-12">
-        <div class="inner-box">
-          <div class="image">
-            <img src="images/gallery/8.jpg" alt="" />
-            <div class="overlay-box">
-              <div class="overlay-inner">
-                <div class="overlay-content">
-                  <div class="content">
-                    <h6><a href="project-single-1.html">My winter walk</a></h6>
-                    <div class="category">photography</div>
-                    <a class="plus" href="images/gallery/8.jpg" data-fancybox="gallery" data-caption=""><span class="flaticon-plus-symbol"></span></a>
-                  </div>
+</div>
+
+<div class="site-content home">
+    <div class="home__intro m-xxl mb-onlyxl">
+        <div class="wrapper">
+            <h1 class="abstract text-appear">
+                <div class="line"><span>A unique experience of inspiration,</span></div>
+                <div class="line"><span>meeting and networking for the</span></div>
+                <div class="line"><span>cargo industry</span></div>
+            </h1>
+            <div class="home__event m-m">
+                <div class="home__event__line linet"></div>
+                <div class="home__event__line liner"></div>
+                <div class="home__event__line lineb"></div>
+                <div class="home__event__line linel"></div>
+                <div class="home__event__line linem"></div>
+                <div class="home__event__date text-appear">
+                    <div class="line"><span><strong>текст текст</strong>
+                            текст
+                        </span></div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-block masonry-item col-lg-3 col-md-6 col-sm-12">
-        <div class="inner-box">
-          <div class="image">
-            <img src="images/gallery/9.jpg" alt="" />
-            <div class="overlay-box">
-              <div class="overlay-inner">
-                <div class="overlay-content">
-                  <div class="content">
-                    <h6><a href="project-single-1.html">My winter walk</a></h6>
-                    <div class="category">photography</div>
-                    <a class="plus" href="images/gallery/9.jpg" data-fancybox="gallery" data-caption=""><span class="flaticon-plus-symbol"></span></a>
-                  </div>
+                <div class="home__event__place text-appear">
+                    <div class="line"><span><strong>текст текст</strong>
+                            текст
+                        </span></div>
                 </div>
-              </div>
             </div>
-          </div>
+
+            <a href="" class="button button--big" data-sound-hover data-component="trackable" data-type="button">
+                <span>
+                    Принять участие
+                    <svg viewBox="0 0 13 10" class="icon button--big icon-wecargo-arrow-right">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wecargo-arrow-right"></use>
+                    </svg>
+                </span>
+            </a>
         </div>
-      </div>
     </div>
 
-    <div class="lower-content">
-      <div class="text">“ Bad design is Smoke, While good design is a mirror. ”</div>
-      <h4>Steven Wilson</h4>
+    {% include 'main/about.html' %}
+
+    <div class="mb-onlyxl">
+        <div class="speakers m-xxs">
+            <div class="wrapper">
+
+                {% include "main/users.html" %}
+
+                {% include "main/popup.html" %}
+
+            </div>
+        </div>
     </div>
 
-  </div>
-</section>
-{% endblock %}
+        {% include "main/news.html" %}
+
+        <div class="cta mt-xxl">
+            <div class="wrapper">
+                <div class="cta__title" data-component="trackable" data-type="date" data-parallax=".07">
+                    <img class="cta__title__image" src="{% static 'images/home/title.png' %}" srcset="
+                      {% static 'images/home/title_160.png' %} 160w,
+                      {% static 'images/home/title_240.png' %} 240w,
+                      {% static 'images/home/title_320.png' %} 320w,
+                      {% static 'images/home/title_480.png' %} 480w,
+                      {% static 'images/home/title_640.png' %} 640w,
+                      {% static 'images/home/title_960.png' %} 960w,
+                      {% static 'images/home/title_1280.png' %} 1280w,
+                      {% static 'images/home/title_1440.png' %} 1440w,
+                      {% static 'images/home/title_1600.png' %} 1600w,
+                      {% static 'images/home/title_1920.png' %} 1920w,
+                      {% static 'images/home/title_2240.png' %} 2240w,
+                      {% static 'images/home/title_2560.png' %} 2560w,
+                      {% static 'images/home/title_2880.png' %} 2880w" sizes="(max-width: 1100px) 100vw, 1100px" alt="" crossorigin="" />
+                </div>
+
+                <div class="m-m">
+                    <p class="cta__text lead text-appear" data-component="showtext">
+                        <span class="line"><span>Здесь пригласительный текст для желающих,</span></span>
+                        <span class="line"><span>с описанием возможных способов взаимодействия</span></span>
+                    </p>
+                </div>
+
+                <a href="" class="button button--big" data-sound-hover data-component="trackable" data-type="button">
+                    <span>
+                        Принять участие
+                        <svg viewBox="0 0 13 10" class="icon button--big icon-wecargo-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wecargo-arrow-right"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

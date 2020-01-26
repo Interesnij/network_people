@@ -1,0 +1,96 @@
+{% load staticfiles %}
+
+<div class="home__quicklinks m-xs mb-onlyxl">
+    <div class="wrapper">
+        <div class="mb-xxs">
+            <h4 class="label">Разделы</h4>
+        </div>
+        <h3 class="baseline">Рассказываем кто нужен для сотрудничества</h3>
+        <ul class="home__quicklinks__list m-m" data-component="trackable" data-type="line">
+            <li class="mb-s">
+                <a href="" class="h4 link" data-sound-hover>
+                    <sup class="label">01</sup>
+                    <span data-component="trackable" data-type="placeholder">Духовные лидеры</span>
+                    <svg viewBox="0 0 7 12" class="icon icon-wecargo-caret-right">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wecargo-caret-right"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mb-s">
+                <a href="" class="h4 link" data-sound-hover>
+                    <sup class="label">02</sup>
+                    <span data-component="trackable" data-type="placeholder">Инвесторы</span>
+                    <svg viewBox="0 0 7 12" class="icon icon-wecargo-caret-right">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wecargo-caret-right"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mb-s">
+                <a href="" class="h4 link" data-sound-hover>
+                    <sup class="label">03</sup>
+                    <span data-component="trackable" data-type="placeholder">Продвигальщики</span>
+                    <svg viewBox="0 0 7 12" class="icon icon-wecargo-caret-right">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wecargo-caret-right"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mb-s">
+                <a href="" class="h4 link" data-sound-hover>
+                    <sup class="label">04</sup>
+                    <span data-component="trackable" data-type="placeholder">Менеджеры</span>
+                    <svg viewBox="0 0 7 12" class="icon icon-wecargo-caret-right">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wecargo-caret-right"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div style="position: relative; top: -400px;">
+    <div class="glitch-bg" data-component="trackable" data-type="glitch" data-parallax="-1">
+        <img src="{% static 'images/glitch.jpg' %}" alt="Glitch noise" width="1680" height="2546">
+    </div>
+</div>
+
+<div class="intro m-xxl">
+    <div class="wrapper intro__wrapper" data-component="showtext">
+        <h1 class="intro__title mb-xxs text-appear">
+            <div class="line"><span>свои.рус</span></div>
+        </h1>
+        <div class="mb-m">
+            <div class="intro__subtitle baseline text-appear">
+                <div class="line"><span>тут про объежинение</span></div>
+                <div class="line"><span>и еще навроде этого</span></div>
+            </div>
+        </div>
+        <div class="m-m">
+            <a href="" class="button" data-sound-hover data-component="trackable" data-type="button">
+                <span>
+                    Смотреть
+                    <svg viewBox="0 0 7 12" class="icon icon-wecargo-caret-right">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wecargo-caret-right"></use>
+                    </svg>
+                </span>
+            </a>
+        </div>
+
+        <div class="intro__date" data-component="trackable" data-type="date" data-parallax="-0.5">
+            <p>14<br>NOV</p>
+            <img src="{% static 'images/home/1.png' %}" srcset="
+              {% static 'images/home/number.png' %} 160w,
+              {% static 'images/home/number.png' %} 240w,
+              {% static 'images/home/number.png' %} 320w,
+              {% static 'images/home/number.png' %} 480w,
+              {% static 'images/home/number.png' %} 640w,
+              {% static 'images/home/number.png' %} 960w,
+              {% static 'images/home/number_big.png' %} 1280w,
+              {% static 'images/home/number_big.png' %} 1440w,
+              {% static 'images/home/number_big.png' %} 1600w,
+              {% static 'images/home/number_big.png' %} 1920w,
+              {% static 'images/home/number_big.png' %} 2240w,
+              {% static 'images/home/number_big.png' %} 2560w,
+              {% static 'images/home/number_big.png' %} 2880w" sizes="(max-width: 640px) 70vw, 640px" alt="" crossorigin="" />
+        </div>
+    </div>
+</div>
