@@ -1993,15 +1993,15 @@
             }
             init() {
                 this.sounds.contact = new v.Howl({
-                    src: [`${window.EPICINFO.BASEURL}/static/audio/send.mp3`]
+                    src: [`/static/audio/send.mp3`]
                 }), this.transition = [new v.Howl({
-                    src: [`${window.EPICINFO.BASEURL}/static/audio/1.mp3`],
+                    src: [`/static/audio/1.mp3`],
                     volume: .6
                 }), new v.Howl({
-                    src: [`${window.EPICINFO.BASEURL}/static/audio/2.mp3`],
+                    src: [`/static/audio/2.mp3`],
                     volume: .6
                 }), new v.Howl({
-                    src: [`${window.EPICINFO.BASEURL}/static/audio/3.mp3`],
+                    src: [`/static/audio/3.mp3`],
                     volume: .6
                 })], c(document, "[data-click-sound-contact]", "click", () => {
                     this.sounds.contact.play()
