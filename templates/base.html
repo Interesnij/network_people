@@ -1,7 +1,7 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html class="">
-<head id="my_head">
+<head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -52,12 +52,12 @@
       </main>
       <div class="mobile-panel-transition"></div>
     </div>
-
+    <span id="load_scripts"></span>
     {% include 'footer_2.html' %}
     <script>
     window.onload = function() {
-    head = document.getElementById('my_head')
-    head.append("<scr" + "ipt type='module' src='/static/scripts/plugins.js'></scr" + "ipt>").append("<scr" + "ipt type='module' src='/static/scripts/main.js'></scr" + "ipt>")
+    head = document.getElementById('load_scripts')
+    head.appendChild("<scr" + "ipt type='module' src='/static/scripts/plugins.js'></scr" + "ipt>").appendChild("<scr" + "ipt type='module' src='/static/scripts/main.js'></scr" + "ipt>")
     };
     </script>
 
