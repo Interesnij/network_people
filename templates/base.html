@@ -54,8 +54,11 @@
     </div>
 
     {% include 'footer_2.html' %}
-
-    <script type="module" src="{% static 'scripts/plugins.js' %}"></script>
-    <script type="module" src="{% static 'scripts/main.js' %}"></script>
+    <script>
+    window.onload = function() {
+    $('head').add("<scr" + "ipt type='module' src='/static/scripts/plugins.js'></scr" + "ipt>").add("<scr" + "ipt type='module' src='/static/scripts/main.js'></scr" + "ipt>")
+    };
+    </script>
+    
 </body>
 </html>
