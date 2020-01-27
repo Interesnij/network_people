@@ -3913,7 +3913,7 @@
     },
     "_links": {
         "help": [{
-            "href": "http:\/\/v2.wp-api.org\/"
+            "href": ""
         }]
     }
 }
