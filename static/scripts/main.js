@@ -1672,7 +1672,7 @@
         url: `/static/images/grad/grad2.png`
     }, {
         name: "bgglitch",
-        url: `/assets/images/bg_header.jpg`
+        url: `/static/images/bg_header.jpg`
     }];
     t.a = new class {
         constructor() {

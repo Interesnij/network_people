@@ -1639,8 +1639,8 @@ button:focus {
 
 @font-face {
     font-family: 'Gilroy';
-    src: url("./../fonts/gilroy-light-export/gilroy-light.eot");
-    src: url("./../fonts/gilroy-light-export/gilroy-light.eot?#iefix") format("embedded-opentype"), url("./../fonts/gilroy-light-export/gilroy-light.woff2") format("woff2"), url("./../fonts/gilroy-light-export/gilroy-light.woff") format("woff"), url("./../fonts/gilroy-light-export/gilroy-light.ttf") format("truetype"), url("./../fonts/gilroy-light-export/gilroy-light.svg") format("svg");
+    src: url("/static/fonts/gilroy-light.eot");
+    src: url("/static/fonts/gilroy-light.eot?#iefix") format("embedded-opentype"), url("/static/fonts/gilroy-light.woff2") format("woff2"), url("/static/fonts/gilroy-light.woff") format("woff"), url("/static/fonts/gilroy-light.ttf") format("truetype"), url("/static/fonts/gilroy-light.svg") format("svg");
     font-style: normal;
     font-weight: 300;
     font-display: fallback
@@ -1648,8 +1648,8 @@ button:focus {
 
 @font-face {
     font-family: 'Gilroy';
-    src: url("./../fonts/gilroy-regular-export/gilroy-regular.eot");
-    src: url("./../fonts/gilroy-regular-export/gilroy-regular.eot?#iefix") format("embedded-opentype"), url("./../fonts/gilroy-regular-export/gilroy-regular.woff2") format("woff2"), url("./../fonts/gilroy-regular-export/gilroy-regular.woff") format("woff"), url("./../fonts/gilroy-regular-export/gilroy-regular.ttf") format("truetype"), url("./../fonts/gilroy-regular-export/gilroy-regular.svg") format("svg");
+    src: url("/static/fonts/gilroy-regular.eot");
+    src: url("/static/fonts/gilroy-regular.eot?#iefix") format("embedded-opentype"), url("/static/fonts/gilroy-regular.woff2") format("woff2"), url("/static/fonts/gilroy-regular.woff") format("woff"), url("/static/fonts/gilroy-regular.ttf") format("truetype"), url("/static/fonts/gilroy-regular.svg") format("svg");
     font-style: normal;
     font-weight: 400;
     font-display: fallback
@@ -1657,8 +1657,8 @@ button:focus {
 
 @font-face {
     font-family: 'Gilroy';
-    src: url("./../fonts/gilroy-semibold-export/gilroy-semibold.eot");
-    src: url("./../fonts/gilroy-semibold-export/gilroy-semibold.eot?#iefix") format("embedded-opentype"), url("./../fonts/gilroy-semibold-export/gilroy-semibold.woff2") format("woff2"), url("./../fonts/gilroy-semibold-export/gilroy-semibold.woff") format("woff"), url("./../fonts/gilroy-semibold-export/gilroy-semibold.ttf") format("truetype"), url("./../fonts/gilroy-semibold-export/gilroy-semibold.svg") format("svg");
+    src: url("/static/fonts/gilroy-semibold.eot");
+    src: url("/static/fonts/gilroy-semibold.eot?#iefix") format("embedded-opentype"), url("/static/fonts/gilroy-semibold.woff2") format("woff2"), url("/static/fonts/gilroy-semibold.woff") format("woff"), url("/static/fonts/gilroy-semibold.ttf") format("truetype"), url("/static/fonts/gilroy-semibold.svg") format("svg");
     font-style: normal;
     font-weight: 600;
     font-display: fallback
@@ -1666,8 +1666,8 @@ button:focus {
 
 @font-face {
     font-family: 'Gilroy';
-    src: url("./../fonts/gilroy-bold-export/gilroy-bold.eot");
-    src: url("./../fonts/gilroy-bold-export/gilroy-bold.eot?#iefix") format("embedded-opentype"), url("./../fonts/gilroy-bold-export/gilroy-bold.woff2") format("woff2"), url("./../fonts/gilroy-bold-export/gilroy-bold.woff") format("woff"), url("./../fonts/gilroy-bold-export/gilroy-bold.ttf") format("truetype"), url("./../fonts/gilroy-bold-export/gilroy-bold.svg") format("svg");
+    src: url("/static/fonts/gilroy-bold.eot");
+    src: url("/static/fonts/gilroy-bold.eot?#iefix") format("embedded-opentype"), url("/static/fonts/gilroy-bold.woff2") format("woff2"), url("/static/fonts/gilroy-bold.woff") format("woff"), url("/static/fonts/gilroy-bold.ttf") format("truetype"), url("/static/fonts/gilroy-bold.svg") format("svg");
     font-style: normal;
     font-weight: 700;
     font-display: fallback
@@ -1675,8 +1675,8 @@ button:focus {
 
 @font-face {
     font-family: 'Gilroy';
-    src: url("./../fonts/gilroy-extrabold-export/gilroy-extrabold.eot");
-    src: url("./../fonts/gilroy-extrabold-export/gilroy-extrabold.eot?#iefix") format("embedded-opentype"), url("./../fonts/gilroy-extrabold-export/gilroy-extrabold.woff2") format("woff2"), url("./../fonts/gilroy-extrabold-export/gilroy-extrabold.woff") format("woff"), url("./../fonts/gilroy-extrabold-export/gilroy-extrabold.ttf") format("truetype"), url("./../fonts/gilroy-extrabold-export/gilroy-extrabold.svg") format("svg");
+    src: url("/static/fonts/gilroy-extrabold.eot");
+    src: url("/static/fonts/gilroy-extrabold.eot?#iefix") format("embedded-opentype"), url("/static/fonts/gilroy-extrabold.woff2") format("woff2"), url("/static/fonts/gilroy-extrabold.woff") format("woff"), url("/static/fonts/gilroy-extrabold.ttf") format("truetype"), url("/static/fonts/gilroy-extrabold.svg") format("svg");
     font-style: normal;
     font-weight: 800;
     font-display: fallback

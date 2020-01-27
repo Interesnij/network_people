@@ -5566,7 +5566,7 @@
                 url: "".concat(window.EPICINFO.BASEURL, "/static/images/grad/grad2.png")
             }, {
                 name: "bgglitch",
-                url: "".concat(window.EPICINFO.BASEURL, "/assets/images/bg_header.jpg")
+                url: "".concat(window.EPICINFO.BASEURL, "/static/images/bg_header.jpg")
             }],
             u = function() {
                 function e() {
