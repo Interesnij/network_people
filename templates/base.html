@@ -57,7 +57,9 @@
     <script>
     window.onload = function() {
     head = document.getElementById('load_scripts')
-    head.append("<scr" + "ipt type='module' src='/static/scripts/plugins.js'></scr" + "ipt>").append("<scr" + "ipt type='module' src='/static/scripts/main.js'></scr" + "ipt>")
+    script1 = "<scr" + "ipt type='module' src='/static/scripts/plugins.js'></scr" + "ipt>"
+    script2 = "<scr" + "ipt type='module' src='/static/scripts/main.js'></scr" + "ipt>"
+    head.appendChild(script1).appendChild(script2)
     };
     </script>
 
