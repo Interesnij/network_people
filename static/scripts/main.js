@@ -2303,7 +2303,10 @@
         }
         static loadFonts() {
             const e = a();
-            return e
+            try {
+                
+            } catch (t) {
+                window.setTimeout(e.resolve, 50)
         }
         static showPage() {
             document.documentElement.classList.add("ready")
