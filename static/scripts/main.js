@@ -414,7 +414,7 @@
                             value: .5
                         },
                         uOpacity: {
-                            value: 1
+                            value: 0
                         }
                     }
                 }), this.logo = new i.Mesh(this.geometry, this.material), this.logo.position.z = 3, this.add(this.logo), this.textMaterial = this.material.clone(), this.textMaterial.uniforms = {
@@ -469,7 +469,7 @@
                 }), this.glitchMesh = new i.Mesh(this.glitchGeometry, this.glitchMaterial), this.glitchMesh.position.z = 2.9, this.add(this.glitchMesh)
             }
             onLoadEnd() {
-                d.style.opacity = 0;
+                d.style.opacity = 1;
                 const e = new o.TimelineMax({
                     delay: 0,
                     onComplete: () => {
