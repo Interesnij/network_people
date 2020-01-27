@@ -1,0 +1,919 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Главная страница{% endblock %}
+{% block meta %}
+<meta property="og:url" content="dvizhenie.tv" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://свои.рус{% static 'images/I.jpg' %}" />
+{% endblock %}
+{% block content %}
+<div data-barba="container" data-barba-namespace="home" data-menu-current="">
+<div class="cover">
+    <div class="cover__image">
+        <img src="{% static 'images/home/home_wrapper.jpg' %}" srcset="
+          {% static 'images/home/home_wrapper_160.jpg' %} 160w,
+          {% static 'images/home/home_wrapper_240.jpg' %} 240w,
+          {% static 'images/home/home_wrapper_320.jpg' %} 320w,
+          {% static 'images/home/home_wrapper_480.jpg' %} 480w,
+          {% static 'images/home/home_wrapper_640.jpg' %} 640w,
+          {% static 'images/home/home_wrapper_960.jpg' %} 960w,
+          {% static 'images/home/home_wrapper_1280.jpg' %} 1280w,
+          {% static 'images/home/home_wrapper_1440.jpg' %} 1440w,
+          {% static 'images/home/home_wrapper_1600.jpg' %} 1600w,
+          {% static 'images/home/home_wrapper_1920.jpg' %} 1920w,
+          {% static 'images/home/home_wrapper_2240.jpg' %} 2240w,
+          {% static 'images/home/home_wrapper_2560.jpg' %} 2560w,
+          {% static 'images/home/home_wrapper_2880.jpg' %} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw" data-component="trackable" data-type="cover" data-parallax="-1.2" crossorigin="" />
+    </div>
+</div>
+
+<div class="site-content home">
+    <div class="m-xxl mb-onlyxl">
+        <div class="wrapper">
+            <h1 class="abstract text-appear">
+                <div class="line"><span>тут текст</span></div>
+                <div class="line"><span>тут текст тут текст тут текст</span></div>
+                <div class="line"><span>тут текст тут текст </span></div>
+            </h1>
+            <div class="home__event m-m">
+                <div class="home__event__line linet"></div>
+                <div class="home__event__line liner"></div>
+                <div class="home__event__line lineb"></div>
+                <div class="home__event__line linel"></div>
+                <div class="home__event__line linem"></div>
+                <div class="home__event__date text-appear">
+                    <div class="line"><span><strong>текст текст</strong>
+                            текст
+                        </span></div>
+                </div>
+                <div class="home__event__place text-appear">
+                    <div class="line"><span><strong>текст текст</strong>
+                            текст
+                        </span></div>
+                </div>
+            </div>
+
+            <a href="/" class="button button--big" data-sound-hover data-component="trackable" data-type="button">
+                <span>
+                    Принять участие
+                    <svg viewBox="0 0 13 10" class="icon button--big icon-arrow-right">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="home__quicklinks m-xs mb-onlyxl">
+        <div class="wrapper">
+            <div class="mb-xxs">
+                <h4 class="label">Разделы</h4>
+            </div>
+            <h3 class="baseline">Рассказываем кто нужен для сотрудничества</h3>
+            <ul class="home__quicklinks__list m-m" data-component="trackable" data-type="line">
+                <li class="mb-s">
+                    <a href="" class="h4 link" data-sound-hover>
+                        <sup class="label">01</sup>
+                        <span data-component="trackable" data-type="placeholder">Духовные лидеры</span>
+                        <svg viewBox="0 0 7 12" class="icon icon-caret-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mb-s">
+                    <a href="" class="h4 link" data-sound-hover>
+                        <sup class="label">02</sup>
+                        <span data-component="trackable" data-type="placeholder">Инвесторы</span>
+                        <svg viewBox="0 0 7 12" class="icon icon-caret-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mb-s">
+                    <a href="" class="h4 link" data-sound-hover>
+                        <sup class="label">03</sup>
+                        <span data-component="trackable" data-type="placeholder">Продвигальщики</span>
+                        <svg viewBox="0 0 7 12" class="icon icon-caret-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mb-s">
+                    <a href="" class="h4 link" data-sound-hover>
+                        <sup class="label">04</sup>
+                        <span data-component="trackable" data-type="placeholder">Менеджеры</span>
+                        <svg viewBox="0 0 7 12" class="icon icon-caret-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="position: relative; top: -400px;">
+        <div class="glitch-bg" data-component="trackable" data-type="glitch" data-parallax="-1">
+            <img src="{% static 'images/glitch.jpg' %}" alt="Glitch noise" width="1680" height="2546">
+        </div>
+    </div>
+
+    <div class="intro m-xxl">
+        <div class="wrapper intro__wrapper" data-component="showtext">
+            <h1 class="intro__title mb-xxs text-appear">
+                <div class="line"><span>свои.рус</span></div>
+            </h1>
+            <div class="mb-m">
+                <div class="intro__subtitle baseline text-appear">
+                    <div class="line"><span>тут про объежинение</span></div>
+                    <div class="line"><span>и еще навроде этого</span></div>
+                </div>
+            </div>
+            <div class="m-m">
+                <a href="" class="button" data-sound-hover data-component="trackable" data-type="button">
+                    <span>
+                        Смотреть
+                        <svg viewBox="0 0 7 12" class="icon icon-caret-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <div class="intro__date" data-component="trackable" data-type="date" data-parallax="-0.5">
+                <p>14<br>NOV</p>
+                <img src="{% static 'images/home/1.png' %}" srcset="
+                  {% static 'images/home/number.png' %} 160w,
+                  {% static 'images/home/number.png' %} 240w,
+                  {% static 'images/home/number.png' %} 320w,
+                  {% static 'images/home/number.png' %} 480w,
+                  {% static 'images/home/number.png' %} 640w,
+                  {% static 'images/home/number.png' %} 960w,
+                  {% static 'images/home/number_big.png' %} 1280w,
+                  {% static 'images/home/number_big.png' %} 1440w,
+                  {% static 'images/home/number_big.png' %} 1600w,
+                  {% static 'images/home/number_big.png' %} 1920w,
+                  {% static 'images/home/number_big.png' %} 2240w,
+                  {% static 'images/home/number_big.png' %} 2560w,
+                  {% static 'images/home/number_big.png' %} 2880w" sizes="(max-width: 640px) 70vw, 640px" alt="" crossorigin="" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mb-onlyxl">
+        <div class="speakers m-xxs">
+            <div class="wrapper">
+
+              <div class="speakers__list">
+
+                  <div class="person mb-xl">
+                      <div class="person__container">
+                          <div class="person__image" data-component="trackable" data-type="person" data-parallax="-0.3">
+                              <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                  {% static 'images/home/user1_160.jpg' %} 160w,
+                                  {% static 'images/home/user1_240.jpg' %} 240w,
+                                  {% static 'images/home/user1_320.jpg' %} 320w,
+                                  {% static 'images/home/user1_480.jpg' %} 480w,
+                                  {% static 'images/home/user1_640.jpg' %} 640w,
+                                  {% static 'images/home/user1_960.jpg' %} 960w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                          </div>
+
+                          <div class="person__inner" data-component="parallax" data-parallax="-0.3">
+                              <div class="person__text mt-xs">
+                                  <p class="person__name name">User 1</p>
+
+                                  <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                              </div>
+
+                              <a class="person__link" href="#" data-open-popup="1" data-sound-hover data-barba-prevent></a>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <div class="person mb-xl">
+                      <div class="person__container">
+                          <div class="person__image" data-component="trackable" data-type="person" data-parallax="0.3">
+                              <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                  {% static 'images/home/user1_160.jpg' %} 160w,
+                                  {% static 'images/home/user1_240.jpg' %} 240w,
+                                  {% static 'images/home/user1_320.jpg' %} 320w,
+                                  {% static 'images/home/user1_480.jpg' %} 480w,
+                                  {% static 'images/home/user1_640.jpg' %} 640w,
+                                  {% static 'images/home/user1_960.jpg' %} 960w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                          </div>
+
+                          <div class="person__inner" data-component="parallax" data-parallax="0.3">
+                              <div class="person__text mt-xs">
+                                  <p class="person__name name">User 2</p>
+
+                                  <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                              </div>
+
+                              <a class="person__link" href="#" data-open-popup="2" data-sound-hover data-barba-prevent></a>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <div class="person mb-xl">
+                      <div class="person__container">
+                          <div class="person__image" data-component="trackable" data-type="person" data-parallax="-0.2">
+                              <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                  {% static 'images/home/user1_160.jpg' %} 160w,
+                                  {% static 'images/home/user1_240.jpg' %} 240w,
+                                  {% static 'images/home/user1_320.jpg' %} 320w,
+                                  {% static 'images/home/user1_480.jpg' %} 480w,
+                                  {% static 'images/home/user1_640.jpg' %} 640w,
+                                  {% static 'images/home/user1_960.jpg' %} 960w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                          </div>
+
+                          <div class="person__inner" data-component="parallax" data-parallax="-0.2">
+                              <div class="person__text mt-xs">
+                                  <p class="person__name name">User 3</p>
+
+                                  <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                              </div>
+
+                              <a class="person__link" href="#" data-open-popup="3" data-sound-hover data-barba-prevent></a>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <div class="person mb-xl">
+                      <div class="person__container">
+                          <div class="person__image" data-component="trackable" data-type="person" data-parallax="0.3">
+                              <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                  {% static 'images/home/user1_160.jpg' %} 160w,
+                                  {% static 'images/home/user1_240.jpg' %} 240w,
+                                  {% static 'images/home/user1_320.jpg' %} 320w,
+                                  {% static 'images/home/user1_480.jpg' %} 480w,
+                                  {% static 'images/home/user1_640.jpg' %} 640w,
+                                  {% static 'images/home/user1_960.jpg' %} 960w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                          </div>
+
+                          <div class="person__inner" data-component="parallax" data-parallax="0.3">
+                              <div class="person__text mt-xs">
+                                  <p class="person__name name">User 4</p>
+
+                                  <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                              </div>
+
+                              <a class="person__link" href="#" data-open-popup="4" data-sound-hover data-barba-prevent></a>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <div class="person mb-xl">
+                      <div class="person__container">
+                          <div class="person__image" data-component="trackable" data-type="person" data-parallax="0.3">
+                              <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                  {% static 'images/home/user1_160.jpg' %} 160w,
+                                  {% static 'images/home/user1_240.jpg' %} 240w,
+                                  {% static 'images/home/user1_320.jpg' %} 320w,
+                                  {% static 'images/home/user1_480.jpg' %} 480w,
+                                  {% static 'images/home/user1_640.jpg' %} 640w,
+                                  {% static 'images/home/user1_960.jpg' %} 960w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                          </div>
+
+                          <div class="person__inner" data-component="parallax" data-parallax="0.3">
+                              <div class="person__text mt-xs">
+                                  <p class="person__name name">User 5</p>
+
+                                  <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                              </div>
+
+                              <a class="person__link" href="#" data-open-popup="5" data-sound-hover data-barba-prevent></a>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <div class="person mb-xl">
+                      <div class="person__container">
+                          <div class="person__image" data-component="trackable" data-type="person" data-parallax="-0.2">
+                              <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                  {% static 'images/home/user1_160.jpg' %} 160w,
+                                  {% static 'images/home/user1_240.jpg' %} 240w,
+                                  {% static 'images/home/user1_320.jpg' %} 320w,
+                                  {% static 'images/home/user1_480.jpg' %} 480w,
+                                  {% static 'images/home/user1_640.jpg' %} 640w,
+                                  {% static 'images/home/user1_960.jpg' %} 960w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                  {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                  {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                          </div>
+
+                          <div class="person__inner" data-component="parallax" data-parallax="-0.2">
+                              <div class="person__text mt-xs">
+                                  <p class="person__name name">User 6</p>
+
+                                  <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                              </div>
+
+                              <a class="person__link" href="#" data-open-popup="6" data-sound-hover data-barba-prevent></a>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+
+
+                <div class="popup" data-popup-id="1">
+                    <div class="popup__layer"></div>
+                    <button class="popup__close" data-sound-hover>
+                        <div class="first"><span></span></div>
+                        <div class="second"><span></span></div>
+                    </button>
+                    <div class="popup__panel p-xl">
+                        <div class="wrapper">
+                            <div class="popup__content">
+                                <div class="popup__left">
+                                    <div class="person mb-xl" data-popup-id="1">
+                                        <div class="person__container">
+                                            <div class="person__image">
+                                                <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                                    {% static 'images/home/user1_160.jpg' %} 160w,
+                                                    {% static 'images/home/user1_240.jpg' %} 240w,
+                                                    {% static 'images/home/user1_320.jpg' %} 320w,
+                                                    {% static 'images/home/user1_480.jpg' %} 480w,
+                                                    {% static 'images/home/user1_640.jpg' %} 640w,
+                                                    {% static 'images/home/user1_960.jpg' %} 960w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                                            </div>
+                                            <div class="person__inner">
+                                                <div class="person__text mt-xs">
+                                                    <p class="person__name name">User1</p>
+
+                                                    <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                                                </div>
+                                                <a class="person__link" href="#" data-open-popup="1" data-sound-hover data-barba-prevent></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <ul class="popup__social mt-s">
+                                        <li>
+                                            <a href="" target="_blank">
+                                                <svg viewBox="0 0 16 16" class="icon icon-social-linkedin" data-popup-id="1">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-linkedin"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="popup__right wysiwyg">
+                                    <div class="mb-l">
+                                        <h4></h4>
+                                    </div>
+                                    <p class="label">About user</p>
+                                    <p>Ну в группе есть фотки и одно видео на скорую руку. Экскурсии по наработкам предполагаю вести на сайте, который сейчас делаю)Пустить же туда напрямую не могу - недостроено.
+                                        Впрочем, особые хакеры там уже побывали, определив ссылки и даже зарегистрировались))</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup" data-popup-id="2">
+                    <div class="popup__layer"></div>
+                    <button class="popup__close" data-sound-hover>
+                        <div class="first"><span></span></div>
+                        <div class="second"><span></span></div>
+                    </button>
+                    <div class="popup__panel p-xl">
+                        <div class="wrapper">
+                            <div class="popup__content">
+                                <div class="popup__left">
+                                    <div class="person mb-xl" data-popup-id="2">
+                                        <div class="person__container">
+                                            <div class="person__image">
+                                                <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                                    {% static 'images/home/user1_160.jpg' %} 160w,
+                                                    {% static 'images/home/user1_240.jpg' %} 240w,
+                                                    {% static 'images/home/user1_320.jpg' %} 320w,
+                                                    {% static 'images/home/user1_480.jpg' %} 480w,
+                                                    {% static 'images/home/user1_640.jpg' %} 640w,
+                                                    {% static 'images/home/user1_960.jpg' %} 960w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                                            </div>
+                                            <div class="person__inner">
+                                                <div class="person__text mt-xs">
+                                                    <p class="person__name name">User 2</p>
+
+                                                    <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                                                </div>
+                                                <a class="person__link" href="#" data-open-popup="2" data-sound-hover data-barba-prevent></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <ul class="popup__social mt-s">
+                                        <li>
+                                            <a href="" target="_blank">
+                                                <svg viewBox="0 0 16 16" class="icon icon-social-linkedin" data-popup-id="2">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-linkedin"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="popup__right wysiwyg">
+                                    <div class="mb-l">
+                                        <h4></h4>
+                                    </div>
+                                    <p class="label">About user</p>
+                                    <p>Ну в группе есть фотки и одно видео на скорую руку. Экскурсии по наработкам предполагаю вести на сайте, который сейчас делаю)Пустить же туда напрямую не могу - недостроено.
+                                        Впрочем, особые хакеры там уже побывали, определив ссылки и даже зарегистрировались))</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup" data-popup-id="3">
+                    <div class="popup__layer"></div>
+                    <button class="popup__close" data-sound-hover>
+                        <div class="first"><span></span></div>
+                        <div class="second"><span></span></div>
+                    </button>
+                    <div class="popup__panel p-xl">
+                        <div class="wrapper">
+                            <div class="popup__content">
+                                <div class="popup__left">
+                                    <div class="person mb-xl" data-popup-id="3">
+                                        <div class="person__container">
+                                            <div class="person__image">
+                                                <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                                    {% static 'images/home/user1_160.jpg' %} 160w,
+                                                    {% static 'images/home/user1_240.jpg' %} 240w,
+                                                    {% static 'images/home/user1_320.jpg' %} 320w,
+                                                    {% static 'images/home/user1_480.jpg' %} 480w,
+                                                    {% static 'images/home/user1_640.jpg' %} 640w,
+                                                    {% static 'images/home/user1_960.jpg' %} 960w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                                            </div>
+                                            <div class="person__inner">
+                                                <div class="person__text mt-xs">
+                                                    <p class="person__name name">User 3</p>
+
+                                                    <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                                                </div>
+                                                <a class="person__link" href="#" data-open-popup="6" data-sound-hover data-barba-prevent></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <ul class="popup__social mt-s">
+                                        <li>
+                                            <a href="" target="_blank">
+                                                <svg viewBox="0 0 16 16" class="icon icon-social-linkedin" data-popup-id="3">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-linkedin"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="popup__right wysiwyg">
+                                    <div class="mb-l">
+                                        <h4></h4>
+                                    </div>
+                                    <p class="label">About user</p>
+                                    <p>Ну в группе есть фотки и одно видео на скорую руку. Экскурсии по наработкам предполагаю вести на сайте, который сейчас делаю)Пустить же туда напрямую не могу - недостроено.
+                                        Впрочем, особые хакеры там уже побывали, определив ссылки и даже зарегистрировались))</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup" data-popup-id="4">
+                    <div class="popup__layer"></div>
+                    <button class="popup__close" data-sound-hover>
+                        <div class="first"><span></span></div>
+                        <div class="second"><span></span></div>
+                    </button>
+                    <div class="popup__panel p-xl">
+                        <div class="wrapper">
+                            <div class="popup__content">
+                                <div class="popup__left">
+                                    <div class="person mb-xl" data-popup-id="4">
+                                        <div class="person__container">
+                                            <div class="person__image">
+                                                <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                                    {% static 'images/home/user1_160.jpg' %} 160w,
+                                                    {% static 'images/home/user1_240.jpg' %} 240w,
+                                                    {% static 'images/home/user1_320.jpg' %} 320w,
+                                                    {% static 'images/home/user1_480.jpg' %} 480w,
+                                                    {% static 'images/home/user1_640.jpg' %} 640w,
+                                                    {% static 'images/home/user1_960.jpg' %} 960w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                                            </div>
+                                            <div class="person__inner">
+                                                <div class="person__text mt-xs">
+                                                    <p class="person__name name">User 4</p>
+
+                                                    <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                                                </div>
+                                                <a class="person__link" href="#" data-open-popup="4" data-sound-hover data-barba-prevent></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <ul class="popup__social mt-s">
+                                        <li>
+                                            <a href="" target="_blank">
+                                                <svg viewBox="0 0 16 16" class="icon icon-social-linkedin" data-popup-id="4">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-linkedin"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="popup__right wysiwyg">
+                                    <div class="mb-l">
+                                        <h4></h4>
+                                    </div>
+                                    <p class="label">About user</p>
+                                    <p>Ну в группе есть фотки и одно видео на скорую руку. Экскурсии по наработкам предполагаю вести на сайте, который сейчас делаю)Пустить же туда напрямую не могу - недостроено.
+                                        Впрочем, особые хакеры там уже побывали, определив ссылки и даже зарегистрировались))</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup" data-popup-id="5">
+                    <div class="popup__layer"></div>
+                    <button class="popup__close" data-sound-hover>
+                        <div class="first"><span></span></div>
+                        <div class="second"><span></span></div>
+                    </button>
+                    <div class="popup__panel p-xl">
+                        <div class="wrapper">
+                            <div class="popup__content">
+                                <div class="popup__left">
+                                    <div class="person mb-xl" data-popup-id="5">
+                                        <div class="person__container">
+                                            <div class="person__image">
+                                                <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                                    {% static 'images/home/user1_160.jpg' %} 160w,
+                                                    {% static 'images/home/user1_240.jpg' %} 240w,
+                                                    {% static 'images/home/user1_320.jpg' %} 320w,
+                                                    {% static 'images/home/user1_480.jpg' %} 480w,
+                                                    {% static 'images/home/user1_640.jpg' %} 640w,
+                                                    {% static 'images/home/user1_960.jpg' %} 960w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                                            </div>
+                                            <div class="person__inner">
+                                                <div class="person__text mt-xs">
+                                                    <p class="person__name name">User 5</p>
+
+                                                    <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                                                </div>
+                                                <a class="person__link" href="#" data-open-popup="5" data-sound-hover data-barba-prevent></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <ul class="popup__social mt-s">
+                                        <li>
+                                            <a href="" target="_blank">
+                                                <svg viewBox="0 0 16 16" class="icon icon-social-linkedin" data-popup-id="5">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-linkedin"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="popup__right wysiwyg">
+                                    <div class="mb-l">
+                                        <h4></h4>
+                                    </div>
+                                    <p class="label">About user</p>
+                                    <p>Ну в группе есть фотки и одно видео на скорую руку. Экскурсии по наработкам предполагаю вести на сайте, который сейчас делаю)Пустить же туда напрямую не могу - недостроено.
+                                        Впрочем, особые хакеры там уже побывали, определив ссылки и даже зарегистрировались))</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup" data-popup-id="6">
+                    <div class="popup__layer"></div>
+                    <button class="popup__close" data-sound-hover>
+                        <div class="first"><span></span></div>
+                        <div class="second"><span></span></div>
+                    </button>
+                    <div class="popup__panel p-xl">
+                        <div class="wrapper">
+                            <div class="popup__content">
+                                <div class="popup__left">
+                                    <div class="person mb-xl" data-popup-id="1">
+                                        <div class="person__container">
+                                            <div class="person__image">
+                                                <img src="{% static 'images/home/user1.jpg' %}" srcset="
+                                                    {% static 'images/home/user1_160.jpg' %} 160w,
+                                                    {% static 'images/home/user1_240.jpg' %} 240w,
+                                                    {% static 'images/home/user1_320.jpg' %} 320w,
+                                                    {% static 'images/home/user1_480.jpg' %} 480w,
+                                                    {% static 'images/home/user1_640.jpg' %} 640w,
+                                                    {% static 'images/home/user1_960.jpg' %} 960w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1280w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1440w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1600w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 1920w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2240w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2560w,
+                                                    {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                                            </div>
+                                            <div class="person__inner">
+                                                <div class="person__text mt-xs">
+                                                    <p class="person__name name">User 6</p>
+
+                                                    <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                                                </div>
+                                                <a class="person__link" href="#" data-open-popup="6" data-sound-hover data-barba-prevent></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <ul class="popup__social mt-s">
+                                        <li>
+                                            <a href="" target="_blank">
+                                                <svg viewBox="0 0 16 16" class="icon icon-social-linkedin" data-popup-id="6">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-linkedin"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="popup__right wysiwyg">
+                                    <div class="mb-l">
+                                        <h4></h4>
+                                    </div>
+                                    <p class="label">About user</p>
+                                    <p>Ну в группе есть фотки и одно видео на скорую руку. Экскурсии по наработкам предполагаю вести на сайте, который сейчас делаю)Пустить же туда напрямую не могу - недостроено.
+                                        Впрочем, особые хакеры там уже побывали, определив ссылки и даже зарегистрировались))</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="home__more mb-onlyxl">
+        <div class="intro m-xxl">
+            <div class="wrapper intro__wrapper" data-component="showtext">
+                <h1 class="intro__title mb-xxs text-appear">
+                    <div class="line"><span>Новости</span></div>
+                    <div class="line" style="padding-bottom: 10px; margin-bottom: -10px;"><span>текст</span></div>
+                    <div class="line"><span>текст текст</span></div>
+                </h1>
+
+            </div>
+        </div>
+
+    <div class="wrapper">
+        <div class="home__more__list mt-xxl">
+            <div class="desc mb-xl">
+                <div class="mb-xxs">
+                    <p class="desc__date label">10.10.10</p>
+                </div>
+                <h3 class="desc__title">Название</h3>
+                <p class="desc__text mb-xxs">Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание</p>
+                <a href="" class="more" data-sound-hover>
+                    Перейти
+                    <div class="more__icon">
+                        <svg viewBox="0 0 13 10" class="icon first icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                        <svg viewBox="0 0 13 10" class="icon second icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="desc mb-xl">
+                <div class="mb-xxs">
+                    <p class="desc__date label">10.10.10</p>
+                </div>
+                <h3 class="desc__title">Название</h3>
+                <p class="desc__text mb-xxs">Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание</p>
+
+                <a href="" class="more" data-sound-hover>
+                    Перейти
+                    <div class="more__icon">
+                        <svg viewBox="0 0 13 10" class="icon first icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                        <svg viewBox="0 0 13 10" class="icon second icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="desc mb-xl">
+                <div class="mb-xxs">
+                    <p class="desc__date label">10.10.10</p>
+                </div>
+                <h3 class="desc__title">Название</h3>
+                <p class="desc__text mb-xxs">Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание</p>
+                <a href="" class="more" data-sound-hover>
+                  Перейти
+                    <div class="more__icon">
+                        <svg viewBox="0 0 13 10" class="icon first icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                        <svg viewBox="0 0 13 10" class="icon second icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="desc mb-xl">
+                <div class="mb-xxs">
+                    <p class="desc__date label">10.10.10</p>
+                </div>
+                <h3 class="desc__title">Название</h3>
+                <p class="desc__text mb-xxs">Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание</p>
+                <a href="" class="more" data-sound-hover>
+                    Перейти
+
+                    <div class="more__icon">
+                        <svg viewBox="0 0 13 10" class="icon first icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                        <svg viewBox="0 0 13 10" class="icon second icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="desc mb-xl">
+                <div class="mb-xxs">
+                    <p class="desc__date label">10.10.10</p>
+                </div>
+                <h3 class="desc__title">Название</h3>
+                <p class="desc__text mb-xxs">Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание</p>
+                <a href="" class="more" data-sound-hover>
+                    Перейти
+                    <div class="more__icon">
+                        <svg viewBox="0 0 13 10" class="icon first icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                        <svg viewBox="0 0 13 10" class="icon second icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="desc mb-xl">
+                <div class="mb-xxs">
+                    <p class="desc__date label">10.10.10</p>
+                </div>
+                <h3 class="desc__title">Название</h3>
+                <p class="desc__text mb-xxs">Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание</p>
+                <a href="" class="more" data-sound-hover>
+                  Перейти
+                    <div class="more__icon">
+                        <svg viewBox="0 0 13 10" class="icon first icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                        <svg viewBox="0 0 13 10" class="icon second icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+        <div class="cta mt-xxl">
+            <div class="wrapper">
+                <div class="cta__title" data-component="trackable" data-type="date" data-parallax=".07">
+                    <img class="cta__title__image" src="{% static 'images/home/title.png' %}" srcset="
+                      {% static 'images/home/title_160.png' %} 160w,
+                      {% static 'images/home/title_240.png' %} 240w,
+                      {% static 'images/home/title_320.png' %} 320w,
+                      {% static 'images/home/title_480.png' %} 480w,
+                      {% static 'images/home/title_640.png' %} 640w,
+                      {% static 'images/home/title_960.png' %} 960w,
+                      {% static 'images/home/title_1280.png' %} 1280w,
+                      {% static 'images/home/title_1440.png' %} 1440w,
+                      {% static 'images/home/title_1600.png' %} 1600w,
+                      {% static 'images/home/title_1920.png' %} 1920w,
+                      {% static 'images/home/title_2240.png' %} 2240w,
+                      {% static 'images/home/title_2560.png' %} 2560w,
+                      {% static 'images/home/title_2880.png' %} 2880w" sizes="(max-width: 1100px) 100vw, 1100px" alt="" crossorigin="" />
+                </div>
+
+                <div class="m-m">
+                    <p class="cta__text lead text-appear" data-component="showtext">
+                        <span class="line"><span>Здесь пригласительный текст для желающих,</span></span>
+                        <span class="line"><span>с описанием возможных способов взаимодействия</span></span>
+                    </p>
+                </div>
+
+                <a href="" class="button button--big" data-sound-hover data-component="trackable" data-type="button">
+                    <span>
+                        Принять участие
+                        <svg viewBox="0 0 13 10" class="icon button--big icon-arrow-right">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
+    {% endblock %}
