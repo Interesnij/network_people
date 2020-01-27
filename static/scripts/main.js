@@ -2304,9 +2304,11 @@
         static loadFonts() {
             const e = a();
             try {
-                
+
             } catch (t) {
-                window.setTimeout(e.resolve, 50)
+                window.setTimeout(e.resolve, 0)
+        }
+            return e
         }
         static showPage() {
             document.documentElement.classList.add("ready")
