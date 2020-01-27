@@ -132,7 +132,7 @@
             this.locked = !1
         }
         onLoadEnd() {
-            this.y = 0, this.oldY = 0, this.easeY = 0, this.parallaxEasedY = 0, window.scrollTo(0, 0), l.onResize(), s.a.boarding || (this.vslocked = !1)
+            this.y = 0, this.oldY = 0, this.easeY = 0, this.parallaxEasedY = 0, window.scrollTo(0, 0), l.onResize(), s.a.boarding || (this.vslocked = 1)
         }
         onVisibilitychange({
             hidden: e
