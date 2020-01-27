@@ -126,13 +126,13 @@
             this.readAndUpdatePage = this.readAndUpdatePage.bind(this), this.whenScroll = this.whenScroll.bind(this), this.whenScroll(), this.speed = 0, this.speed2 = 0, this.oldY = this.y, this.scheduledAnimationFrame = !0, this.vs = s.a.dom, this.vslocked = !0, this.height = 0, this.easeY = this.y, this.parallaxEasedY = this.y, this.wrapper = document.querySelector(".site"), this.vs && this.enablevs(), window.addEventListener("scroll", this.whenScroll)
         }
         lock() {
-            this.locked = !0
-        }
-        unlock() {
             this.locked = !1
         }
+        unlock() {
+            this.locked = !0
+        }
         onLoadEnd() {
-            this.y = 0, this.oldY = 0, this.easeY = 0, this.parallaxEasedY = 0, window.scrollTo(0, 0), l.onResize(), s.a.boarding || (this.vslocked = 1)
+            this.y = 0, this.oldY = 0, this.easeY = 0, this.parallaxEasedY = 0, window.scrollTo(0, 0), l.onResize(), s.a.boarding || (this.vslocked = !1)
         }
         onVisibilitychange({
             hidden: e
