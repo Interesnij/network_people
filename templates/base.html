@@ -52,16 +52,10 @@
       </main>
       <div class="mobile-panel-transition"></div>
     </div>
-    <span id="load_scripts"></span>
-    {% include 'footer_2.html' %}
-    <script>
-    window.onload = function() {
-    head = document.getElementById('load_scripts')
-    script1 = "<scr" + "ipt type='module' src='/static/scripts/plugins.js'></scr" + "ipt>"
-    script2 = "<scr" + "ipt type='module' src='/static/scripts/main.js'></scr" + "ipt>"
-    head.append(script1); head.append(script2);
-    };
-    </script>
 
+    {% include 'footer_2.html' %}
+
+<script type='module' src='/static/scripts/plugins.js'></script>
+<script type='module' src='/static/scripts/plugins.js'></script>
 </body>
 </html>
