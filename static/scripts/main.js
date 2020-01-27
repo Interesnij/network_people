@@ -469,7 +469,7 @@
                 }), this.glitchMesh = new i.Mesh(this.glitchGeometry, this.glitchMaterial), this.glitchMesh.position.z = 2.9, this.add(this.glitchMesh)
             }
             onLoadEnd() {
-                d.style.opacity = 1;
+                d.style.opacity = 0;
                 const e = new o.TimelineMax({
                     delay: 0,
                     onComplete: () => {
