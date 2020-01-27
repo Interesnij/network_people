@@ -1,4 +1,4 @@
-/* eslint-disable vars-on-top, no-var */
+
 (function epicHello() {
     var userAgent = navigator.userAgent.toLowerCase();
     var supported = /(chrome|firefox)/;
@@ -2304,7 +2304,20 @@
         static loadFonts() {
             const e = a();
             try {
-                
+                r.a.load({
+                    custom: {
+                        families: ["Gilroy:300,400,600,700,800"]
+                    },
+                    google: {
+                        families: ["Heebo:300,400,700"]
+                    },
+                    active: () => {
+                        window.setTimeout(e.resolve, 50)
+                    },
+                    inactive: () => {
+                        window.setTimeout(e.resolve, 50)
+                    }
+                })
             } catch (t) {
                 window.setTimeout(e.resolve, 50)
             }
