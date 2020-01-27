@@ -414,7 +414,7 @@
                             value: .5
                         },
                         uOpacity: {
-                            value: 0
+                            value: 1
                         }
                     }
                 }), this.logo = new i.Mesh(this.geometry, this.material), this.logo.position.z = 3, this.add(this.logo), this.textMaterial = this.material.clone(), this.textMaterial.uniforms = {
