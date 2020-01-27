@@ -12,7 +12,7 @@
   <link rel="stylesheet" id='main-css' href="{% static 'styles/style.css' %}" media="all" />
 </head>
 
-<body class="" data-template="base.twig">
+<body>
   <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
     <symbol id="epic-logo" viewBox="0 0 100 100">
       <title>logo</title>
@@ -44,12 +44,11 @@
       </div>
       {% include "navbar.html" %}
       <main class="site-main" data-barba="wrapper">
-        <div data-barba="container" data-barba-namespace="home" data-menu-current="">
         {% block content %}
         {% endblock %}
 
         {% include "footer.html" %}
-        </div>
+
       </main>
       <div class="mobile-panel-transition"></div>
     </div>
