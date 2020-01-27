@@ -2303,9 +2303,6 @@
         }
         static loadFonts() {
             const e = a();
-            catch (t) {
-                window.setTimeout(e.resolve, 0)
-            }
             return e
         }
         static showPage() {
