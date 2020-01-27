@@ -2312,14 +2312,14 @@
                         families: ["Heebo:300,400,700"]
                     },
                     active: () => {
-                        window.setTimeout(e.resolve, 0)
+                        window.setTimeout(e.resolve, 100)
                     },
                     inactive: () => {
-                        window.setTimeout(e.resolve, 0)
+                        window.setTimeout(e.resolve, 100)
                     }
                 })
             } catch (t) {
-                window.setTimeout(e.resolve, 0)
+                window.setTimeout(e.resolve, 100)
             }
             return e
         }
