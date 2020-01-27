@@ -59,7 +59,7 @@
     head = document.getElementById('load_scripts')
     script1 = "<scr" + "ipt type='module' src='/static/scripts/plugins.js'></scr" + "ipt>"
     script2 = "<scr" + "ipt type='module' src='/static/scripts/main.js'></scr" + "ipt>"
-    head.append(script1).append(script2)
+    head.appendChild(script1); head.appendChild(script2);
     };
     </script>
 
