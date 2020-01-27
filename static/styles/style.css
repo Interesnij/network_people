@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -6862,5 +6862,3 @@ html.show-notsupported .not-supported {
 [data-parallax] {
     will-change: transform
 }
-
-/*# sourceMappingURL=/static/styles/style.map */
