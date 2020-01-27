@@ -2132,7 +2132,7 @@
                 transitions: [T, S],
                 prevent: ({
                     el: e
-                }) => !!window.EPICINFO.WPBAR && u(e, "#wpadminbar")
+                }) => !!window.EPICINFO && u(e, "#wpadminbar")
             }), x.a.prevent.tests.set("sameUrl", () => !1)
         },
         M = n(48),
