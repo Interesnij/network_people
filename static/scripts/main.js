@@ -2304,10 +2304,10 @@
         static loadFonts() {
             const e = a();
             try {
-
+                
             } catch (t) {
-                window.setTimeout(e.resolve, 0)
-        }
+                window.setTimeout(e.resolve, 50)
+            }
             return e
         }
         static showPage() {
