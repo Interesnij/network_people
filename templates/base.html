@@ -53,11 +53,10 @@
       <main class="site-main" data-barba="wrapper">
         {% block content %}
         {% endblock %}
-
+      {% include "footer.html" %}
       </main>
       <div class="mobile-panel-transition"></div>
     </div>
-    {% include "footer.html" %}
     {% include 'footer_2.html' %}
 
 <script type='module' src='/static/scripts/plugins.js'></script>
