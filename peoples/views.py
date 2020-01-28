@@ -19,7 +19,7 @@ class PeopleListView(ListView):
 		context["category"]=self.cat
 		return context
 
-    def get_queryset(self):
+	def get_queryset(self):
 		people_list=People.objects.filter(category=self.cat).order_by("-posted")
 		return people_list
 
