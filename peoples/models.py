@@ -8,7 +8,7 @@ from ckeditor_uploader.fields import RichTextUploadingField
 class People(models.Model):
     name=models.CharField(max_length=100,verbose_name="ФИО")
     people_slug=models.CharField(max_length=100,verbose_name="Для ссылки")
-    category=models.ForeignKey(BlogCategory,on_delete=models.CASCADE,related_name='cat1',verbose_name="ПодКатегория 1")
+    category=models.ForeignKey(Category,on_delete=models.CASCADE, verbose_name="Категория")
     description=models.TextField(verbose_name="Краткое содержание")
     content=RichTextUploadingField(blank=True, default='')
     posted=models.DateField(default=timezone.now,verbose_name="Опубликовано")
@@ -25,4 +25,4 @@ class People(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('blog_detail',kwargs={"pk":self.pk})
+        return reverse('people_detail',kwargs={"pk":self.pk})
