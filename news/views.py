@@ -5,9 +5,10 @@ from django.views.generic.list import ListView
 from django.utils import timezone
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
+from generic.mixins import CategoryListMixin
 
 
-class NewsListView(ListView):
+class NewsListView(ListView, CategoryListMixin):
 	model=New
 	template_name="news_index.html"
 	paginate_by=9
@@ -24,7 +25,7 @@ class NewsListView(ListView):
 		return news_list
 
 
-class NewsDetailView(TemplateView):
+class NewsDetailView(TemplateView, CategoryListMixin):
 	model=New
 	template_name="new.html"
 	news=New.objects.all()[0:4]

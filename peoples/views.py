@@ -3,9 +3,10 @@ from django.views.generic.list import ListView
 from django.http import HttpResponse
 from categories.models import Category
 from django.views.generic.base import TemplateView
+from generic.mixins import CategoryListMixin
 
 
-class PeopleListView(ListView):
+class PeopleListView(ListView, CategoryListMixin):
 	model=People
 	template_name="people_index.html"
 	paginate_by=9
@@ -24,7 +25,7 @@ class PeopleListView(ListView):
 		return people_list
 
 
-class PeopleDetailView(TemplateView):
+class PeopleDetailView(TemplateView, CategoryListMixin):
 	template_name="people.html"
 
 	def get(self,request,*args,**kwargs):

@@ -26,8 +26,14 @@
                                 <div class="events__item m-m">
                                     <div class="mb-xs"><p class="label">Команда</p></div>
                                     <ul>
-                                        <li><a href="" class="event-link" data-sound-hover>{{ category.0.name }}<svg viewBox="0 0 13 10" class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></a></li>
-                                        <li><a href="" class="event-link" data-sound-hover>{{ category.1.name }}<svg viewBox="0 0 13 10" class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></a></li>
+                                      {% for object in categories %}
+                                        <li>
+                                          <a href="http://трезвый.рус/people/{{ object.people_slug }}" class="event-link" data-sound-hover>
+                                            {{ object.name }}
+                                            <svg viewBox="0 0 13 10" class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg>
+                                          </a>
+                                        </li>
+                                      {% endfor %}
                                     </ul>
                                 </div>
                             </div>
@@ -35,8 +41,8 @@
                     </div>
                 </li>
                 <li>
-                    <a class="nav__list__firsta" data-sound-hover href="">
-                        <span data-component="trackable" data-type="placeholder">Speakers</span>
+                    <a class="nav__list__firsta" data-sound-hover href="http://трезвый.рус/news/">
+                        <span data-component="trackable" data-type="placeholder">Новости</span>
                     </a>
                 </li>
             </ul>
