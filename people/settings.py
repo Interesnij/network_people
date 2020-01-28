@@ -87,6 +87,17 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CKEDITOR_UPLOAD_PATH = 'media/'
+
+CKEDITOR_CONFIGS = {
+       'default': {
+           'toolbar': None,
+           'height': 400,
+           'width': 900,
+           'removePlugins': 'stylesheetparser',
+           'extraPlugins': 'codesnippet',
+       },
+    }
 
 LANGUAGE_CODE = 'ru-RU'
 

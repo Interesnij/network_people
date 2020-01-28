@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^about/', include('about.urls')),
     url(r'^policy/', include('policy.urls')),
     url(r'^news/', include('news.urls')),
+    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]
