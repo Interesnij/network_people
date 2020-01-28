@@ -19,6 +19,13 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
     'django.contrib.humanize',
     'main',
+    'ckeditor',
+    'ckeditor_uploader',
+    'about',
+    'categories',
+    'peoples',
+    'news',
+    'policy',
 ]
 
 MIDDLEWARE = [
