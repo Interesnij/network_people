@@ -31,7 +31,7 @@ class PeopleDetailView(TemplateView):
 		self.people= Blog.objects.get(people_slug=self.kwargs["people_slug"])
 		self.people.views += 1
 		self.people.save()
-        self.peoples=People.objects.filter(category=self.people.category)[0:6]
+		self.peoples=People.objects.filter(category=self.people.category)[0:6]
 		return super(BlogDetailView,self).get(request,*args,**kwargs)
 
 	def get_context_data(self,**kwargs):
