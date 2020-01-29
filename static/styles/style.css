@@ -4155,6 +4155,7 @@ html.static .home__quicklinks__list a:hover {
 
 .nav__logo {
     display: block;
+    font-size:28px;
 }
 
 @media (min-width: 320px) {
