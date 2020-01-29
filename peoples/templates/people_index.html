@@ -38,16 +38,10 @@
     <div class="intro m-xxl">
         <div class="wrapper intro__wrapper" data-component="showtext">
             <h1 class="intro__title mb-xxs text-appear">{{ category.name }}</h1>
-            <div class="mb-m">
-                <div class="intro__subtitle baseline text-appear">Ремарка Ремарка Ремарка  </div>
-            </div>
             <div class="intro__text wysiwyg">
-                <p>Предварительное описание Предварительное описание Предварительное описание Предварительное описание </p>
-                <p>Предварительное описание Предварительное описание Предварительное описание Предварительное описание Предварительное описание Предварительное описание Предварительное описание Предварительное описание Предварительное описание </p>
-                <p>Предварительное описание Предварительное описание Предварительное описание Предварительное описание Предварительное описание Предварительное описание </p>
+                <p>{{ category.description|linebreaks }}</p>
             </div>
             <div class="intro__date" data-component="trackable" data-type="date" data-parallax="-0.5">
-                <p>надпись</p>
                 <img src="{% static 'images/home/1.png' %}" srcset="
                   {% static 'images/home/number.png' %} 160w,
                   {% static 'images/home/number.png' %} 240w,
@@ -70,43 +64,24 @@
 
     <div class="mt-xxl mb-l">
         <div class="wrapper">
-            <p class="label">Что требуется от категории</p>
+            <p class="label">Требования и возможности</p>
         </div>
     </div>
-    <div class="reasons">
-        <div class="wrapper">
-            <ul class="reasons__list">
-                <li class="reasons__item mb-m">
-                    <p class="h1 reasons__number">1</p>
-                    <div class="reasons__text">
-                        <p class="reasons__title h2">Принцип</p>
-                        <p class="reasons__body">Принцип Принцип Принцип Принцип Принцип</p>
-                    </div>
-                </li>
-                <li class="reasons__item mb-m">
-                    <p class="h1 reasons__number">2</p>
-                    <div class="reasons__text">
-                        <p class="reasons__title h2">Принцип</p>
-                        <p class="reasons__body">Принцип Принцип Принцип Принцип</p>
-                    </div>
-                </li>
-                <li class="reasons__item mb-m">
-                    <p class="h1 reasons__number">3</p>
-                    <div class="reasons__text">
-                        <p class="reasons__title h2">Принцип </p>
-                        <p class="reasons__body">Принцип Принцип Принцип Принцип Принцип </p>
-                    </div>
-                </li>
-                <li class="reasons__item mb-m">
-                    <p class="h1 reasons__number">4</p>
-                    <div class="reasons__text">
-                        <p class="reasons__title h2">Принцип </p>
-                        <p class="reasons__body">Принцип Принцип Принцип Принцип Принцип Принцип </p>
-                    </div>
-                </li>
-                <ul>
-        </div>
-    </div>
+    {% if category.slug == "warriors_of_good" %}
+      {% include 'principles/warriors.html' %}
+    {% endif %}
+    {% if category.slug == "investors" %}
+      {% include 'principles/investors.html' %}
+    {% endif %}
+    {% if category.slug == "partners" %}
+      {% include 'principles/partners.html' %}
+    {% endif %}
+    {% if category.slug == "promotions" %}
+      {% include 'principles/promotions.html' %}
+    {% endif %}
+    {% if category.slug == "moders" %}
+      {% include 'principles/moders.html' %}
+    {% endif %}
     <div class="mt-xxl mb-xxs">
         <div class="wrapper">
             <p class="label mentor-content">{{ category.name }}</p>
