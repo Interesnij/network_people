@@ -4,4 +4,4 @@ from generic.mixins import CategoryListMixin
 
 
 class PolicyView(TemplateView, CategoryListMixin):
-    template_name="policy.html"
+    template_name = "policy.html"
