@@ -11,7 +11,7 @@
 
 <div data-barba="container" data-barba-namespace="program" data-menu-current="menu-item-30">
     <div class="cover">
-      <div class="cover__image">
+      <div class="cover_image">
           <img src="{% static 'images/peoples/navbar.jpg' %}"
           srcset="
            {% static 'images/peoples/navbar_160.jpg' %} 160w,
@@ -36,12 +36,12 @@
     </div>
 
     <div class="intro m-xxl">
-        <div class="wrapper intro__wrapper" data-component="showtext">
-            <h1 class="intro__title mb-xxs text-appear">Новости</h1>
+        <div class="wrapper intro_wrapper" data-component="showtext">
+            <h1 class="intro_title mb-xxs text-appear">Новости</h1>
             <div class="mb-m">
-                <div class="intro__subtitle baseline text-appear">Шаги становления соц сети будут здесь</div>
+                <div class="intro_subtitle baseline text-appear">Шаги становления соц сети будут здесь</div>
             </div>
-            <div class="intro__date" data-component="trackable" data-type="magic_line_image" data-parallax="-0.5">
+            <div class="intro_date" data-component="trackable" data-type="magic_line_image" data-parallax="-0.5">
                 <img src="{% static 'images/home/1.png' %}" srcset="
                   {% static 'images/home/number.png' %} 160w,
                   {% static 'images/home/number.png' %} 240w,
@@ -62,15 +62,15 @@
 
     <div class="list mb-xxl">
         <div class="wrapper">
-            <ul class="list__ul" data-component="trackable" data-type="magic_hover">
-                <li class="list__li p-s ">
-                    <a class="list__link" href="#" data-sound-hover data-open-popup="a_{{ object.pk }}" data-barba-prevent></a>
-                    <div class="list__image" data-component="trackable" data-type="is_visible">
+            <ul class="list_ul" data-component="trackable" data-type="magic_hover">
+                <li class="list_li p-s ">
+                    <a class="list_link" href="#" data-sound-hover data-open-popup="a_{{ object.pk }}" data-barba-prevent></a>
+                    <div class="list_image" data-component="trackable" data-type="is_visible">
                         <img src="{% static 'images/home/user1.jpg' %}" alt="" sizes="200px" crossorigin="" />
                     </div>
-                    <dl class="list__conference">
-                        <dt class="list__conference__hour"><span>10.10.10</span></dt>
-                        <dd class="list__conference__text">
+                    <dl class="list_conference">
+                        <dt class="list_conference_hour"><span>10.10.10</span></dt>
+                        <dd class="list_conference_text">
                             <p class="name">Title</p>
                             <p>Description</p>
                         </dd>
@@ -81,18 +81,18 @@
     </div>
 
     <div class="popup" data-popup-id="a_{{ object.pk }}">
-        <div class="popup__layer"></div>
-        <button class="popup__close" data-sound-hover>
+        <div class="popup_layer"></div>
+        <button class="popup_close" data-sound-hover>
             <div class="first"><span></span></div>
             <div class="second"><span></span></div>
         </button>
-        <div class="popup__panel p-xl">
+        <div class="popup_panel p-xl">
             <div class="wrapper">
-                <div class="popup__content">
-                    <div class="popup__left">
+                <div class="popup_content">
+                    <div class="popup_left">
                         <div class="person mb-xl" data-popup-id="a_{{ object.pk }}">
-                            <div class="person__container">
-                                <div class="person__image">
+                            <div class="person_container">
+                                <div class="person_image">
                                     <img src="{% static 'images/home/user1.jpg' %}" srcset="
                                         {% static 'images/home/user1_160.jpg' %} 160w,
                                         {% static 'images/home/user1_240.jpg' %} 240w,
@@ -108,19 +108,19 @@
                                         {% static 'images/home/user1_1280.jpg' %} 2560w,
                                         {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
                                 </div>
-                                <div class="person__inner">
-                                    <div class="person__text mt-xs">
-                                        <p class="person__name name">User1</p>
+                                <div class="person_inner">
+                                    <div class="person_text mt-xs">
+                                        <p class="person_name name">User1</p>
 
-                                        <p class="person__role mt-xxs">Minister<br>Pyther Penn</p>
+                                        <p class="person_role mt-xxs">Minister<br>Pyther Penn</p>
                                     </div>
-                                    <a class="person__link" href="#" data-open-popup="a_{{ object.pk }}" data-sound-hover data-barba-prevent></a>
+                                    <a class="person_link" href="#" data-open-popup="a_{{ object.pk }}" data-sound-hover data-barba-prevent></a>
                                 </div>
 
                             </div>
                         </div>
 
-                        <ul class="popup__social mt-s">
+                        <ul class="popup_social mt-s">
                             <li>
                                 <a href="" target="_blank">
                                     <svg viewBox="0 0 16 16" class="icon icon-social-linkedin" data-popup-id="a_{{ object.pk }}">
@@ -130,7 +130,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="popup__right wysiwyg">
+                    <div class="popup_right wysiwyg">
                         <div class="mb-l">
                             <h4></h4>
                         </div>
@@ -150,10 +150,10 @@
     </div>
     <div class="expand mb-xxl" data-component="expand">
         <div class="wrapper">
-            <div class="expand__container pb-l" id="startup-garden">
-                <div class="expand__intro">
-                    <div class="expand__title" data-component="showtext">
-                        <p class="expand__hour text-appear">
+            <div class="expand_container pb-l" id="startup-garden">
+                <div class="expand_intro">
+                    <div class="expand_title" data-component="showtext">
+                        <p class="expand_hour text-appear">
                             <span class="line"><span>10h00 > 18h00</span></span>
                         </p>
                         <h2 class="text-appear">
@@ -161,13 +161,13 @@
                         </h2>
                     </div>
 
-                    <div class="expand__desc wysiwyg">
+                    <div class="expand_desc wysiwyg">
                         <p class="lead">What are the next big things?</p>
                         <p>Discover many startups and scale-ups, they’ll present the project they’re busy with. Every company will have a booth in the Liege Airport Terminal, having the opportunity to present their project, network and challenge their ideas. If you would like to make new innovative partnership, it’s the place to be!</p>
                     </div>
                 </div>
-                <div class="mt-l expand__toggle__container">
-                    <a href="#" class="lead expand__toggle" data-ref="expand.toggle">
+                <div class="mt-l expand_toggle_container">
+                    <a href="#" class="lead expand_toggle" data-ref="expand.toggle">
                         View startups list
                         <svg viewBox="0 0 11.7 6.9" class="icon icon-caret-down">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-down"></use>
@@ -175,13 +175,13 @@
                     </a>
                 </div>
 
-                <div class="expand__content" data-ref="expand.content">
+                <div class="expand_content" data-ref="expand.content">
                     <ul>
                       <li>
                           <span>Cainiao</span>
                           <a href="" class="more" data-sound-hover target="_blank">
                               www
-                              <div class="more__icon">
+                              <div class="more_icon">
                                   <svg viewBox="0 0 13 10" class="icon first icon-arrow-right" target="_blank">
                                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
                                   </svg>
@@ -195,7 +195,7 @@
                           <span>Cainiao</span>
                           <a href="" class="more" data-sound-hover target="_blank">
                               www
-                              <div class="more__icon">
+                              <div class="more_icon">
                                   <svg viewBox="0 0 13 10" class="icon first icon-arrow-right" target="_blank">
                                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
                                   </svg>
@@ -209,7 +209,7 @@
                           <span>Cainiao</span>
                           <a href="" class="more" data-sound-hover target="_blank">
                               www
-                              <div class="more__icon">
+                              <div class="more_icon">
                                   <svg viewBox="0 0 13 10" class="icon first icon-arrow-right" target="_blank">
                                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
                                   </svg>
@@ -223,7 +223,7 @@
                           <span>Cainiao</span>
                           <a href="" class="more" data-sound-hover target="_blank">
                               www
-                              <div class="more__icon">
+                              <div class="more_icon">
                                   <svg viewBox="0 0 13 10" class="icon first icon-arrow-right" target="_blank">
                                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
                                   </svg>
@@ -237,7 +237,7 @@
                           <span>Cainiao</span>
                           <a href="" class="more" data-sound-hover target="_blank">
                               www
-                              <div class="more__icon">
+                              <div class="more_icon">
                                   <svg viewBox="0 0 13 10" class="icon first icon-arrow-right" target="_blank">
                                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
                                   </svg>
@@ -255,36 +255,36 @@
 
     <div class="expand mb-xxl" data-component="expand">
         <div class="wrapper">
-            <div class="expand__container pb-l" id="market-lab">
-                <div class="expand__intro">
-                    <div class="expand__title" data-component="showtext">
-                        <p class="expand__hour text-appear">
+            <div class="expand_container pb-l" id="market-lab">
+                <div class="expand_intro">
+                    <div class="expand_title" data-component="showtext">
+                        <p class="expand_hour text-appear">
                             <span class="line"><span>10h00 > 18h00</span></span>
                         </p>
                         <h2 class="text-appear">
                             <div class="line" style="padding-bottom: 10px"><span>Market Lab</span></div>
                         </h2>
                     </div>
-                    <div class="expand__desc wysiwyg">
+                    <div class="expand_desc wysiwyg">
                         <p class="lead">Learn from our partners</p>
                         <p>At WeCargo, we are sure that innovation occurs only through partnership. Our amazing partners such as Qatar Airways, Alibaba, Cainiao and more will be present to show their projects and solutions. You’ll have the opportunity to meet and share with them.</p>
                     </div>
                 </div>
-                <div class="mt-l expand__toggle__container">
-                    <a href="#" class="lead expand__toggle" data-ref="expand.toggle">
+                <div class="mt-l expand_toggle_container">
+                    <a href="#" class="lead expand_toggle" data-ref="expand.toggle">
                         View market lab list
                         <svg viewBox="0 0 11.7 6.9" class="icon icon-caret-down">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-down"></use>
                         </svg>
                     </a>
                 </div>
-                <div class="expand__content" data-ref="expand.content">
+                <div class="expand_content" data-ref="expand.content">
                     <ul>
                         <li>
                             <span>Cainiao</span>
                             <a href="" class="more" data-sound-hover target="_blank">
                                 www
-                                <div class="more__icon">
+                                <div class="more_icon">
                                     <svg viewBox="0 0 13 10" class="icon first icon-arrow-right" target="_blank">
                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
                                     </svg>
@@ -298,7 +298,7 @@
                             <span>Montea</span>
                             <a href="" class="more" data-sound-hover target="_blank">
                                 www
-                                <div class="more__icon">
+                                <div class="more_icon">
                                     <svg viewBox="0 0 13 10" class="icon first icon-arrow-right" target="_blank">
                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
                                     </svg>
@@ -312,7 +312,7 @@
                             <span>Asendia</span>
                             <a href="" class="more" data-sound-hover target="_blank">
                                 www
-                                <div class="more__icon">
+                                <div class="more_icon">
                                     <svg viewBox="0 0 13 10" class="icon first icon-arrow-right" target="_blank">
                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
                                     </svg>
@@ -332,8 +332,8 @@
 
     <div class="cta mt-xxl">
         <div class="wrapper">
-            <div class="cta__title" data-component="trackable" data-type="magic_line_image" data-parallax=".07">
-                <img class="cta__title__image" src="{% static 'images/home/title.png' %}" srcset="
+            <div class="cta_title" data-component="trackable" data-type="magic_line_image" data-parallax=".07">
+                <img class="cta_title_image" src="{% static 'images/home/title.png' %}" srcset="
                   {% static 'images/home/title_160.png' %} 160w,
                   {% static 'images/home/title_240.png' %} 240w,
                   {% static 'images/home/title_320.png' %} 320w,
@@ -350,7 +350,7 @@
             </div>
 
             <div class="m-m">
-                <p class="cta__text lead text-appear" data-component="showtext">
+                <p class="cta_text lead text-appear" data-component="showtext">
                     <span class="line"><span>Здесь пригласительный текст для желающих,</span></span>
                     <span class="line"><span>с описанием возможных способов взаимодействия</span></span>
                 </p>
@@ -374,11 +374,11 @@
     </div>
     <footer class="footer pb-m pt-xxl" data-component="trackable" data-type="footer">
         <div class="wrapper">
-            <div class="footer__similar mb-xl" data-component="showtext">
+            <div class="footer_similar mb-xl" data-component="showtext">
                 <div class="mb-s">
                     <p class="label text-appear"><span class="line"><span>You may be interested in</span></span></p>
                 </div>
-                <a class="footer__similar__link h2 text-appear" href="">
+                <a class="footer_similar_link h2 text-appear" href="">
                     <span class="line">
                         <span>Conferences
                             <svg viewBox="0 0 13 10" class="icon icon-arrow-right">
@@ -386,7 +386,7 @@
                             </svg></span>
                     </span>
                 </a>
-                <a class="footer__similar__link h2 text-appear" href="">
+                <a class="footer_similar_link h2 text-appear" href="">
                     <span class="line">
                         <span>Ideation camp
                             <svg viewBox="0 0 13 10" class="icon icon-arrow-right">

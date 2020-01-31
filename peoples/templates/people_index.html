@@ -11,7 +11,7 @@
 
 <div data-barba="container" data-barba-namespace="acceleration" data-menu-current="">
     <div class="cover">
-        <div class="cover__image">
+        <div class="cover_image">
             <img src="{% static 'images/peoples/navbar.jpg' %}"
             srcset="
              {% static 'images/peoples/navbar_160.jpg' %} 160w,
@@ -36,12 +36,12 @@
     </div>
 
     <div class="intro m-xxl">
-        <div class="wrapper intro__wrapper" data-component="showtext">
-            <h1 class="intro__title mb-xxs text-appear">{{ category.name }}</h1>
-            <div class="intro__text wysiwyg">
+        <div class="wrapper intro_wrapper" data-component="showtext">
+            <h1 class="intro_title mb-xxs text-appear">{{ category.name }}</h1>
+            <div class="intro_text wysiwyg">
                 <p>{{ category.description|linebreaks }}</p>
             </div>
-            <div class="intro__date" data-component="trackable" data-type="magic_line_image" data-parallax="-0.5">
+            <div class="intro_date" data-component="trackable" data-type="magic_line_image" data-parallax="-0.5">
                 <img src="{% static 'images/home/1.png' %}" srcset="
                   {% static 'images/home/number.png' %} 160w,
                   {% static 'images/home/number.png' %} 240w,
@@ -85,17 +85,17 @@
 
     <div class="list mb-xxl">
         <div class="wrapper">
-            <ul class="list__ul mentor-content" data-component="trackable" data-type="magic_hover">
-                <li class="list__li p-s ">
-                    <a class="list__link" href="#" data-sound-hover data-open-popup="a_{{ object.pk }}" data-barba-prevent></a>
-                    <div class="list__image" data-component="trackable" data-type="is_visible">
+            <ul class="list_ul mentor-content" data-component="trackable" data-type="magic_hover">
+                <li class="list_li p-s ">
+                    <a class="list_link" href="#" data-sound-hover data-open-popup="a_{{ object.pk }}" data-barba-prevent></a>
+                    <div class="list_image" data-component="trackable" data-type="is_visible">
                         <img src="{% static 'images/home/user1.jpg' %}" alt="" sizes="200px" crossorigin="" />
                     </div>
-                    <dl class="list__conference">
-                        <dd class="list__conference__text">
+                    <dl class="list_conference">
+                        <dd class="list_conference_text">
                             <p class="name">Пользователь 1</p>
                             <p>Пользователь 1 Пользователь 1 Пользователь 1</p>
-                            <p class="list__conference__title lead"></p>
+                            <p class="list_conference_title lead"></p>
                         </dd>
                     </dl>
                 </li>
@@ -104,30 +104,30 @@
     </div>
 
     <div class="popup" data-popup-id="a_{{ object.pk }}">
-        <div class="popup__layer"></div>
-        <button class="popup__close" data-sound-hover>
+        <div class="popup_layer"></div>
+        <button class="popup_close" data-sound-hover>
             <div class="first"><span></span></div>
             <div class="second"><span></span></div>
         </button>
-        <div class="popup__panel p-xl">
+        <div class="popup_panel p-xl">
             <div class="wrapper">
-                <div class="popup__content">
-                    <div class="popup__left">
+                <div class="popup_content">
+                    <div class="popup_left">
                         <div class="person mb-xl" data-popup-id="a_{{ object.pk }}">
-                            <div class="person__container">
-                                <div class="person__image">
+                            <div class="person_container">
+                                <div class="person_image">
                                     <img src="{% static 'images/home/user1.jpg' %}" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
                                 </div>
-                                <div class="person__inner">
-                                    <div class="person__text mt-xs">
-                                        <p class="person__name name">{{ object.category.name }}</p>
-                                        <p class="person__role mt-xxs">{{ object.name }}</p>
+                                <div class="person_inner">
+                                    <div class="person_text mt-xs">
+                                        <p class="person_name name">{{ object.category.name }}</p>
+                                        <p class="person_role mt-xxs">{{ object.name }}</p>
                                     </div>
-                                    <a class="person__link" href="#" data-open-popup="152" data-sound-hover data-barba-prevent></a>
+                                    <a class="person_link" href="#" data-open-popup="152" data-sound-hover data-barba-prevent></a>
                                 </div>
                             </div>
                         </div>
-                        <ul class="popup__social mt-s">
+                        <ul class="popup_social mt-s">
                             <li>
                                 <a href="" target="_blank">
                                     <svg viewBox="0 0 16 13" class="icon icon-social-twitter" data-popup-id="a_{{ object.pk }}"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-twitter"></use></svg>
@@ -140,7 +140,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="popup__right wysiwyg">
+                    <div class="popup_right wysiwyg">
                         <div class="mb-l">
                             <h4></h4>
                         </div>
@@ -156,8 +156,8 @@
 
     <div class="cta mt-xxl">
         <div class="wrapper">
-            <div class="cta__title" data-component="trackable" data-type="magic_line_image" data-parallax=".07">
-                <img class="cta__title__image" src="{% static 'images/home/title.png' %}" srcset="
+            <div class="cta_title" data-component="trackable" data-type="magic_line_image" data-parallax=".07">
+                <img class="cta_title_image" src="{% static 'images/home/title.png' %}" srcset="
                   {% static 'images/home/title_160.png' %} 160w,
                   {% static 'images/home/title_240.png' %} 240w,
                   {% static 'images/home/title_320.png' %} 320w,
@@ -174,7 +174,7 @@
             </div>
 
             <div class="m-m">
-                <p class="cta__text lead text-appear" data-component="showtext">
+                <p class="cta_text lead text-appear" data-component="showtext">
                     <span class="line"><span>Здесь пригласительный текст для желающих,</span></span>
                     <span class="line"><span>с описанием возможных способов взаимодействия</span></span>
                 </p>
@@ -197,17 +197,17 @@
     </div>
     <footer class="footer pb-m pt-xxl" data-component="trackable" data-type="footer">
         <div class="wrapper">
-            <div class="footer__similar mb-xl" data-component="showtext">
+            <div class="footer_similar mb-xl" data-component="showtext">
                 <div class="mb-s">
                     <p class="label text-appear"><span class="line"><span>You may be interested in</span></span></p>
                 </div>
-                <a class="footer__similar__link h2 text-appear" href="">
+                <a class="footer_similar_link h2 text-appear" href="">
                     <span class="line">
                       <span>Conferences
                       <svg viewBox="0 0 13 10" class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
                     </span>
                 </a>
-                <a class="footer__similar__link h2 text-appear" href="">
+                <a class="footer_similar_link h2 text-appear" href="">
                     <span class="line">
                       <span>Ideation camp
                       <svg viewBox="0 0 13 10" class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
