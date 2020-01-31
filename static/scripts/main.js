@@ -1254,7 +1254,7 @@
                         value: 0
                     }
                 }, this.mesh = new i.Mesh(this.geometry, this.material), this.add(this.mesh), u.a.add(this);
-                const t = this.element.parentNode.querySelector(".read_more"); 
+                const t = this.element.parentNode.querySelector(".read_more");
                 t.addEventListener("mouseenter", () => {
                     s.TweenMax.to(this.material.uniforms.uProgress, .5, {
                         value: 1,
@@ -1397,7 +1397,7 @@
                 super.onRaf(), this.material.uniforms.uTime.value += .1 * e
             }
         },
-        placeholder: class extends l {
+        visibility: class extends l {
             init() {
                 super.init(), this.visible = !1
             }
@@ -1415,7 +1415,7 @@
             }
             bind() {
                 this.onEnter.bind(this), [...this.element.querySelectorAll("li")].forEach(e => {
-                    const t = e.querySelector('[data-type="placeholder"]');
+                    const t = e.querySelector('[data-type="visibility"]');
                     if (!t) return;
                     const n = U.getInstanceFromEl(t);
                     e.addEventListener("mouseenter", () => {
@@ -1497,7 +1497,7 @@
             }
             bind() {
                 this.onEnter.bind(this), [...this.element.querySelectorAll("li")].forEach(e => {
-                    const t = e.querySelector('[data-type="placeholder"]');
+                    const t = e.querySelector('[data-type="visibility"]');
                     if (!t) return;
                     const n = U.getInstanceFromEl(t),
                         i = t.dataset.glid,
