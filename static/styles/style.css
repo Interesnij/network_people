@@ -4498,7 +4498,6 @@ html.static .panel__item:hover .panel__image {
     position: relative
 }
 
-.person__link,
 .read_more {
     position: absolute;
     top: 0;
@@ -4766,7 +4765,6 @@ html.static .person:hover {
     overflow: hidden
 }
 
-.popup__left .person__link,
 .popup__left .read_more {
     display: none
 }
