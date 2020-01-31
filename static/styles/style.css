@@ -4498,7 +4498,8 @@ html.static .panel__item:hover .panel__image {
     position: relative
 }
 
-.person__link {
+.person__link,
+.person__lin {
     position: absolute;
     top: 0;
     right: 0;
@@ -4765,7 +4766,8 @@ html.static .person:hover {
     overflow: hidden
 }
 
-.popup__left .person__link {
+.popup__left .person__link,
+.popup__left .person__lin {
     display: none
 }
 
