@@ -1,0 +1,244 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}О проекте{% endblock %}
+{% block meta %}
+<meta property="og:url" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://свои.рус{% static 'images/I.jpg' %}" />
+{% endblock %}
+{% block content %}
+
+<div data-barba="container" data-barba-namespace="venue" data-menu-current="menu-item-63">
+    <div class="cover">
+      <div class="cover_image">
+          <img src="{% static 'images/peoples/navbar.jpg' %}"
+          srcset="
+           {% static 'images/peoples/navbar_160.jpg' %} 160w,
+           {% static 'images/peoples/navbar_240.jpg' %} 240w,
+           {% static 'images/peoples/navbar_320.jpg' %} 320w,
+           {% static 'images/peoples/navbar_480.jpg' %} 480w,
+           {% static 'images/peoples/navbar_640.jpg' %} 640w,
+           {% static 'images/peoples/navbar_960.jpg' %} 960w,
+           {% static 'images/peoples/navbar_1280.jpg' %} 1280w,
+           {% static 'images/peoples/navbar_1440.jpg' %} 1440w,
+           {% static 'images/peoples/navbar_1600.jpg' %} 1600w,
+           {% static 'images/peoples/navbar_1920.jpg' %} 1920w,
+           {% static 'images/peoples/navbar_2240.jpg' %} 2240w,
+           {% static 'images/peoples/navbar_2560.jpg' %} 2560w,
+           {% static 'images/peoples/navbar_2880.jpg' %} 2880w"
+          sizes="(max-width: 768px) 150vw, 100vw"
+          data-component="trackable"
+          data-type="cover"
+          data-parallax="-1.2"
+          crossorigin="" />
+      </div>
+    </div>
+
+    <div class="intro m-xxl">
+        <div class="wrapper intro_wrapper" data-component="showtext">
+            <h1 class="intro_title mb-xxs text-appear">Venue</h1>
+            <div class="mb-m">
+                <div class="intro_subtitle baseline text-appear">Jump on board to this exciting event. Book your room and plan your trip.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-xxl mb-onlyxl"></div>
+
+    <div class="wrapper content content--reverse content--small">
+        <div class="content_container">
+            <p class="h3">Location</p>
+            <div class="m-xs"></div>
+
+            <div class="content__image">
+                <img data-component="trackable" data-type="image" src="{% static 'images/peoples/navbar.jpg' %}"
+                  srcset="
+                  {% static 'images/peoples/navbar_160.jpg' %} 160w,
+                  {% static 'images/peoples/navbar_240.jpg' %} 240w,
+                  {% static 'images/peoples/navbar_320.jpg' %} 320w,
+                  {% static 'images/peoples/navbar_480.jpg' %} 480w,
+                  {% static 'images/peoples/navbar_640.jpg' %} 640w,
+                  {% static 'images/peoples/navbar_960.jpg' %} 960w,
+                  {% static 'images/peoples/navbar_1280.jpg' %} 1280w,
+                  {% static 'images/peoples/navbar_1440.jpg' %} 1440w,
+                  {% static 'images/peoples/navbar_1600.jpg' %} 1600w,
+                  {% static 'images/peoples/navbar_1920.jpg' %} 1920w,
+                  {% static 'images/peoples/navbar_2240.jpg' %} 2240w,
+                  {% static 'images/peoples/navbar_2560.jpg' %} 2560w,
+                  {% static 'images/peoples/navbar_2880.jpg' %} 2880w"
+                  sizes="(max-width: 768px) 150vw, 100vw" sizes="(max-width: 768px) 100vw, 500px" alt="" crossorigin="" />
+            </div>
+
+            <div class="content_text m-xs">
+                <p class="lead">Terminal passenger <br />
+                    Liège Airport<br />
+                    Rue de l'aéroport<br />
+                    4460 Grâce-Hollogne<br />
+                    Belgium<br />
+                    <br />
+                    <span>50° 38' 25.9296'' N<br />
+                        5° 26' 42.0792'' E</span></p>
+            </div>
+            <a href="" class="button content--reverse content--small" data-sound-hover data-component="trackable" data-type="button">
+                <span>
+                    Google maps
+                    <svg viewBox="0 0 7 12" class="icon icon-caret-right">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="m-xxl mb-onlyxl"></div>
+
+    <div class="wrapper content">
+        <div class="content_container">
+            <p class="h3">Hotel at the airport</p>
+            <div class="m-xs"></div>
+            <div class="content_image">
+                <img data-component="trackable" data-type="image" src="{% static 'images/peoples/navbar.jpg' %}"
+                  srcset="
+                  {% static 'images/peoples/navbar_160.jpg' %} 160w,
+                  {% static 'images/peoples/navbar_240.jpg' %} 240w,
+                  {% static 'images/peoples/navbar_320.jpg' %} 320w,
+                  {% static 'images/peoples/navbar_480.jpg' %} 480w,
+                  {% static 'images/peoples/navbar_640.jpg' %} 640w,
+                  {% static 'images/peoples/navbar_960.jpg' %} 960w,
+                  {% static 'images/peoples/navbar_1280.jpg' %} 1280w,
+                  {% static 'images/peoples/navbar_1440.jpg' %} 1440w,
+                  {% static 'images/peoples/navbar_1600.jpg' %} 1600w,
+                  {% static 'images/peoples/navbar_1920.jpg' %} 1920w,
+                  {% static 'images/peoples/navbar_2240.jpg' %} 2240w,
+                  {% static 'images/peoples/navbar_2560.jpg' %} 2560w,
+                  {% static 'images/peoples/navbar_2880.jpg' %} 2880w"
+                  sizes="(max-width: 768px) 150vw, 100vw" sizes="(max-width: 768px) 100vw, 500px" alt="" crossorigin="" />
+            </div>
+            <div class="content_text m-xs">
+                <p class="lead">Take advantage of our special Wecargo offer at the Hotel Park Inn, located next to the event venue. </p>
+            </div>
+            <a href="" class="button" data-sound-hover data-component="trackable" data-type="button">
+
+                <span>
+                    Book a room
+                    <svg viewBox="0 0 7 12" class="icon icon-caret-right">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="m-xxl mb-onlyxl"></div>
+
+    <div class="wrapper">
+        <div class="venue_transports m-xxl">
+            <div class="venue_transport mb-xl">
+                <p class="h3">Car</p>
+                <div class="wysiwyg m-xs">Reaching Liege Airport is very easy by car as there is very large parking lot in front of the venue. The Liege Airport's passenger terminal is located next to the highway with very fast access. Use exit 3 "Liege Airport" on the E42 highway.</div>
+                <ul>
+                    <li class="mb-xxs">
+                        <a href="" class="more" data-sound-hover>
+                            Calculate my route
+                            <div class="more_icon">
+                                <svg viewBox="0 0 13 10" class="icon first icon-arrow-right">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                                </svg>
+                                <svg viewBox="0 0 13 10" class="icon second icon-arrow-right">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="venue_transport mb-xl">
+                <p class="h3">Train & Bus</p>
+                <div class="wysiwyg m-xs">There are High-Speed Trains from Paris, Brussels, Cologne and Amsterdam many times per day. There is a direct connexion between the station in the airport by bus (line #53 & #57). Regional and intercity trains are also available from most Belgian cities.
+                    A dedicated shuttle will be available during WeCargo on 13th & 14th of November. More information coming soon.</div>
+                <ul>
+                    <li class="mb-xxs">
+                        <a href="" class="more" data-sound-hover>
+                            Get the schedule
+                            <div class="more_icon">
+                                <svg viewBox="0 0 13 10" class="icon first icon-arrow-right">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                                </svg>
+                                <svg viewBox="0 0 13 10" class="icon second icon-arrow-right">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-xxl mb-onlyxl"></div>
+
+    <div class="cta mt-xxl">
+        <div class="wrapper">
+            <div class="cta_title" data-component="trackable" data-type="magic_line_image" data-parallax=".07">
+                <img class="cta_title_image" src="{% static 'images/home/title.png' %}" srcset="
+                  {% static 'images/home/title_160.png' %} 160w,
+                  {% static 'images/home/title_240.png' %} 240w,
+                  {% static 'images/home/title_320.png' %} 320w,
+                  {% static 'images/home/title_480.png' %} 480w,
+                  {% static 'images/home/title_640.png' %} 640w,
+                  {% static 'images/home/title_960.png' %} 960w,
+                  {% static 'images/home/title_1280.png' %} 1280w,
+                  {% static 'images/home/title_1440.png' %} 1440w,
+                  {% static 'images/home/title_1600.png' %} 1600w,
+                  {% static 'images/home/title_1920.png' %} 1920w,
+                  {% static 'images/home/title_2240.png' %} 2240w,
+                  {% static 'images/home/title_2560.png' %} 2560w,
+                  {% static 'images/home/title_2880.png' %} 2880w" sizes="(max-width: 1100px) 100vw, 1100px" alt="" crossorigin="" />
+            </div>
+            <div class="m-m">
+                <p class="cta_text lead text-appear" data-component="showtext">
+                    <span class="line"><span>Здесь пригласительный текст для желающих,</span></span>
+                    <span class="line"><span>с описанием возможных способов взаимодействия</span></span>
+                </p>
+            </div>
+
+            <a href="" class="button button--big" data-sound-hover data-component="trackable" data-type="button">
+                <span>
+                    Принять участие
+                    <svg viewBox="0 0 13 10" class="icon button--big icon-arrow-right">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-glitch-container">
+      <div class="glitch-bg" data-component="trackable" data-type="glitch" data-parallax="-2" data-parallaxmid="true" data-nofadebottom="true">
+        <img src="/static/images/bg_footer.jpg" alt="Glitch noise" width="2048" height="1024">
+      </div>
+    </div>
+    <footer class="footer pb-m pt-xxl" data-component="trackable" data-type="footer">
+        <div class="wrapper">
+            <div class="footer_similar mb-xl" data-component="showtext">
+                <div class="mb-s">
+                    <p class="label text-appear"><span class="line"><span>You may be interested in</span></span></p>
+                </div>
+                <a class="footer_similar_link h2 text-appear" href="">
+                    <span class="line">
+                      <span>Conferences
+                      <svg viewBox="0 0 13 10" class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
+                    </span>
+                </a>
+                <a class="footer_similar_link h2 text-appear" href="">
+                    <span class="line">
+                      <span>Ideation camp
+                      <svg viewBox="0 0 13 10" class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></span>
+                    </span>
+                </a>
+            </div>
+            {% include 'footer.html' %}
+        </div>
+    </footer>
+</div>
+
+{% endblock %}
