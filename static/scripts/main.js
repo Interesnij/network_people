@@ -1363,7 +1363,7 @@
                 super.onRaf(), this.material.uniforms.uTime.value += .1 * e
             }
         },
-        date: class extends l {
+        magic_line_image: class extends l {
             init() {
                 super.init(), this.geometry = T, this.material = P.clone();
                 const e = this.element.querySelector("img");
@@ -1402,7 +1402,7 @@
                 super.init(), this.visible = !1
             }
         },
-        magic_line: class extends l { 
+        magic_line: class extends l {
             init() {
                 super.init(), this.visible = !1, this.track = !1, this.geometry = S, this.material = O.clone(), this.material.uniforms = {
                     uTime: {
