@@ -1464,7 +1464,7 @@
                 super.onRaf(), this.material.uniforms.uTime.value += .1 * e
             }
         },
-        magic_hover: class extends l { 
+        listhover: class extends l {
             init() {
                 super.init(), this.visible = !1, this.track = !1, this.geometry = _, this.material = E.clone(), this.textures = {}, this.material.uniforms = {
                     uTime: {
@@ -1497,7 +1497,7 @@
             }
             bind() {
                 this.onEnter.bind(this), [...this.element.querySelectorAll("li")].forEach(e => {
-                    const t = e.querySelector('[data-type="magic_image"]');
+                    const t = e.querySelector('[data-type="placeholder"]');
                     if (!t) return;
                     const n = U.getInstanceFromEl(t),
                         i = t.dataset.glid,
