@@ -532,7 +532,7 @@
                 const n = document.querySelector(".home__intro");
                 if (r.c.width >= 768 && n) {
                     const t = n.querySelectorAll(".line span"),
-                        i = document.querySelectorAll(".nav__logo, .nav__list__first li, .nav__toggler, .nav__button span"),
+                        i = document.querySelectorAll(".nav_logo, .nav_list_first li, .nav_toggler, .nav_button span"),
                         s = document.querySelectorAll(".home__event text-appear span"),
                         r = document.querySelectorAll(".home__event__line.linet"),
                         a = document.querySelectorAll(".home__event__line.liner"),
@@ -645,7 +645,7 @@
                         }, 2)
                     }, "fadeout+=0.1")
                 } else if (r.c.width >= 768) {
-                    const t = document.querySelectorAll(".nav__logo, .nav__list__first li, .nav__toggler, .nav__button span");
+                    const t = document.querySelectorAll(".nav_logo, .nav_list_first li, .nav_toggler, .nav_button span");
                     o.TweenMax.set(t, {
                         y: -50
                     }), e.add(() => {
@@ -1198,7 +1198,7 @@
                         value: 0,
                         ease: "Power4.easeOut"
                     }), h.a.resetSmallGlitch()
-                }), this.position.z += .01, this.element.classList.contains("nav__button") ? this.material.uniforms.uShow.value = 1 : (m.a.history.previous || this.onEnterAnim(), m.a.hooks.after(() => this.onEnterAnim()), m.a.hooks.before(() => this.onLeaveAnim()))
+                }), this.position.z += .01, this.element.classList.contains("nav_button") ? this.material.uniforms.uShow.value = 1 : (m.a.history.previous || this.onEnterAnim(), m.a.hooks.after(() => this.onEnterAnim()), m.a.hooks.before(() => this.onLeaveAnim()))
             }
             onEnterAnim() {
                 this.enter || (this.enter = !0, s.TweenMax.to(this.material.uniforms.uShow, .6, {
@@ -2754,14 +2754,14 @@
                     n.style.clipPath = e, n.style.webkitClipPath = e, n.style.transform = `translateZ(${o++}px)`
                 }
             }, 0);
-            const r = n.querySelectorAll(".menu__bigitem__jsscroll");
+            const r = n.querySelectorAll(".menu_bigitem_jsscroll");
             t.staggerFromTo(r, 1, {
                 yPercent: 100
             }, {
                 yPercent: 0,
                 ease: "Power4.easeOut"
             }, .1, .3);
-            const a = n.querySelectorAll(".menu__right li");
+            const a = n.querySelectorAll(".menu_right li");
             t.staggerFromTo(a, 1.7, {
                 y: 50
             }, {
