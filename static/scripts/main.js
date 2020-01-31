@@ -1254,7 +1254,7 @@
                         value: 0
                     }
                 }, this.mesh = new i.Mesh(this.geometry, this.material), this.add(this.mesh), u.a.add(this);
-                const t = this.element.parentNode.querySelector(".person__link");
+                const t = this.element.parentNode.querySelector(".read_more"); 
                 t.addEventListener("mouseenter", () => {
                     s.TweenMax.to(this.material.uniforms.uProgress, .5, {
                         value: 1,
