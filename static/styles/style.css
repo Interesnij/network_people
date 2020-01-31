@@ -4499,7 +4499,7 @@ html.static .panel__item:hover .panel__image {
 }
 
 .person__link,
-.person__lin {
+.read_more {
     position: absolute;
     top: 0;
     right: 0;
@@ -4767,7 +4767,7 @@ html.static .person:hover {
 }
 
 .popup__left .person__link,
-.popup__left .person__lin {
+.popup__left .read_more {
     display: none
 }
 
