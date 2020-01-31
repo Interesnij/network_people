@@ -223,7 +223,7 @@ th {
 .footer__menu,
 .home__quicklinks__list,
 .list__ul,
-.events__item ul,
+.events_item ul,
 .menu ul,
 .nav_list_first,
 .panel__list,
@@ -3845,7 +3845,7 @@ html.static .home__quicklinks__list a:hover {
     transform: translateX(150%)
 }
 
-.events__item li+li {
+.events_item li+li {
     margin-top: 1rem
 }
 
