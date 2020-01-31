@@ -1402,7 +1402,7 @@
                 super.init(), this.visible = !1
             }
         },
-        line: class extends l {
+        magic_line: class extends l { 
             init() {
                 super.init(), this.visible = !1, this.track = !1, this.geometry = S, this.material = O.clone(), this.material.uniforms = {
                     uTime: {
