@@ -1397,7 +1397,7 @@
                 super.onRaf(), this.material.uniforms.uTime.value += .1 * e
             }
         },
-        visibility: class extends l {
+        is_visible: class extends l {
             init() {
                 super.init(), this.visible = !1
             }
@@ -1415,7 +1415,7 @@
             }
             bind() {
                 this.onEnter.bind(this), [...this.element.querySelectorAll("li")].forEach(e => {
-                    const t = e.querySelector('[data-type="visibility"]');
+                    const t = e.querySelector('[data-type="is_visible"]');
                     if (!t) return;
                     const n = U.getInstanceFromEl(t);
                     e.addEventListener("mouseenter", () => {
@@ -1497,7 +1497,7 @@
             }
             bind() {
                 this.onEnter.bind(this), [...this.element.querySelectorAll("li")].forEach(e => {
-                    const t = e.querySelector('[data-type="visibility"]');
+                    const t = e.querySelector('[data-type="is_visible"]');
                     if (!t) return;
                     const n = U.getInstanceFromEl(t),
                         i = t.dataset.glid,
