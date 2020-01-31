@@ -1218,7 +1218,7 @@
                 super.onRaf(), this.material.uniforms.uTime.value += .1 * e
             }
         },
-        person: class extends l {
+        image_wave: class extends l {
             init() {
                 super.init(), this.geometry = f, this.material = g.clone();
                 const e = this.element.querySelector("img");
