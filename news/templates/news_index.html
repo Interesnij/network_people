@@ -65,7 +65,6 @@
             <ul class="list_ul" data-component="trackable" data-type="magic_hover">
               {% if object_list %}
               {% for object in object_list %}
-
                 <li class="list_li p-s ">
                     <a class="list_link" href="{% url 'news_detail' new_slug=object.new_slug %}" data-sound-hover></a>
                     <div class="list_image" data-component="trackable" data-type="is_visible">
@@ -79,9 +78,10 @@
                         </dd>
                     </dl>
                 </li>
+              {% endfor %}
               {% else %}
               <p class="name">Новостей пока нет...</p>
-              {% endfor %}
+              {% endif %}
             </ul>
         </div>
     </div>
