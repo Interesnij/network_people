@@ -132,7 +132,26 @@ SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 
 THUMBNAIL_ALIASES = {
     "":{
-        "avatar": {"size":(100,100)},
-        "small_avatar": {"size":(60,60)},
+        "hor_160": {"size":(160,120)},
+        "hor_240": {"size":(240,180)},
+        "hor_320": {"size":(320,240)},
+        "hor_480": {"size":(480,360)},
+        "hor_640": {"size":(640,480)},
+        "hor_960": {"size":(960,720)},
+        "hor_1280": {"size":(1280,960)},
+        "hor_1440": {"size":(1440,1080)},
+        "hor_1600": {"size":(1600,1200)},
+        "hor_1920": {"size":(1920,1350)},
+        "hor_2240": {"size":(2240,1350)},
+        "hor_2560": {"size":(2560,1200)},
+        "hor_2880": {"size":(2880,1350)},
+
+        "vert_160": {"size":(160,213)},
+        "vert_240": {"size":(240,320)},
+        "vert_320": {"size":(320,427)},
+        "vert_480": {"size":(480,640)},
+        "vert_640": {"size":(640,853)},
+        "vert_960": {"size":(960,1280)},
+        "vert_1280": {"size":(1280,1600)},
     },
 }

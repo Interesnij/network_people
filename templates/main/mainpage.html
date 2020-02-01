@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load staticfiles %}
+{% load staticfiles thumbnail %}
 {% block title %}Главная страница{% endblock %}
 {% block meta %}
 <meta property="og:url" content="" />
@@ -11,20 +11,19 @@
 <div data-barba="container" data-barba-namespace="home" data-menu-current="">
 <div class="cover">
     <div class="cover_image">
-        <img src="{% static 'images/home/home_wrapper.jpg' %}" srcset="
-          {% static 'images/home/home_wrapper_160.jpg' %} 160w,
-          {% static 'images/home/home_wrapper_240.jpg' %} 240w,
-          {% static 'images/home/home_wrapper_320.jpg' %} 320w,
-          {% static 'images/home/home_wrapper_480.jpg' %} 480w,
-          {% static 'images/home/home_wrapper_640.jpg' %} 640w,
-          {% static 'images/home/home_wrapper_960.jpg' %} 960w,
-          {% static 'images/home/home_wrapper_1280.jpg' %} 1280w,
-          {% static 'images/home/home_wrapper_1440.jpg' %} 1440w,
-          {% static 'images/home/home_wrapper_1600.jpg' %} 1600w,
-          {% static 'images/home/home_wrapper_1920.jpg' %} 1920w,
-          {% static 'images/home/home_wrapper_2240.jpg' %} 2240w,
-          {% static 'images/home/home_wrapper_2560.jpg' %} 2560w,
-          {% static 'images/home/home_wrapper_2880.jpg' %} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw" data-component="trackable" data-type="cover" data-parallax="-1.2" crossorigin="" />
+        <img src="{{ banner.image.url }}" srcset="
+          {{ banner.image.url|thumbnail_url:'hor_160' }} }} 160w,
+          {{ banner.image.url|thumbnail_url:'hor_240' }} }} 240w,
+          {{ banner.image.url|thumbnail_url:'hor_320' }} }} 320w,
+          {{ banner.image.url|thumbnail_url:'hor_480' }} }} 480w,
+          {{ banner.image.url|thumbnail_url:'hor_640' }} }} 640w,
+          {{ banner.image.url|thumbnail_url:'hor_960' }} }} 960w,
+          {{ banner.image.url|thumbnail_url:'hor_1440' }} }} 1440w,
+          {{ banner.image.url|thumbnail_url:'hor_1600' }} }} 1600w,
+          {{ banner.image.url|thumbnail_url:'hor_1920' }} }} 1920w,
+          {{ banner.image.url|thumbnail_url:'hor_2240' }} }} 2240w,
+          {{ banner.image.url|thumbnail_url:'hor_2560' }} }} 2560w,
+          {{ banner.image.url|thumbnail_url:'hor_2880' }} }} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw" data-component="trackable" data-type="cover" data-parallax="-1.2" crossorigin="" />
     </div>
 </div>
 
