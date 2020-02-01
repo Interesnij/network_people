@@ -7,8 +7,7 @@ class Category(models.Model):
 	image = models.ImageField(null=True, blank=True, upload_to="categories/list")
 	order = models.PositiveSmallIntegerField(default=0, db_index=True, verbose_name="Порядковый номер")
 	description = models.TextField(null=True, blank=True, verbose_name="Краткое содержание")
-	def __str__(self):
-		return self.name
+
 	class Meta:
 		ordering = ["order","name"]
 		verbose_name = "категория людей"

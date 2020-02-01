@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'django.contrib.humanize',
+    'easy_thumbnails',
     'main',
     'ckeditor',
     'ckeditor_uploader',
@@ -128,3 +129,10 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+
+THUMBNAIL_ALIASES = {
+    "":{
+        "avatar": {"size":(100,100)},
+        "small_avatar": {"size":(60,60)},
+    },
+}
