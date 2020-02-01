@@ -246,7 +246,17 @@ th {
     outline: none;
     background: transparent
 }
-
+.nav_toggler{
+  display:none;
+}
+@media only screen and (max-width: 64em) {
+    .nav_toggler {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
 .lock-scroll,
 .lock-scroll body {
     overflow-x: hidden
