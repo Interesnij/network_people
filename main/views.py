@@ -1,6 +1,6 @@
 from django.views.generic.base import TemplateView
 from generic.mixins import CategoryListMixin
-from main.models import MediumMagicImage, BottomMagicImage
+from main.models import MediumMagicImage, MainBanner
 
 
 class MainPageView(TemplateView, CategoryListMixin):
