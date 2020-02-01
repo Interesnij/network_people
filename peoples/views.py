@@ -1,4 +1,4 @@
-from peoples.models import People
+from peoples.models import People, PeopleBanner
 from django.views.generic.list import ListView
 from django.http import HttpResponse
 from categories.models import Category
@@ -18,6 +18,7 @@ class PeopleListView(ListView, CategoryListMixin):
 	def get_context_data(self,**kwargs):
 		context = super(PeopleListView,self).get_context_data(**kwargs)
 		context["category"] = self.cat
+		context["banner"] = PeopleBanner.objects.last()
 		return context
 
 	def get_queryset(self):

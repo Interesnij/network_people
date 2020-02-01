@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic.base import ContextMixin
-from news.models import New
+from news.models import New, NewsBanner
 from django.views.generic.list import ListView
 from django.utils import timezone
 from django.http import HttpResponse
@@ -18,6 +18,7 @@ class NewsListView(ListView, CategoryListMixin):
 
 	def get_context_data(self,**kwargs):
 		context = super(NewsListView,self).get_context_data(**kwargs)
+		context["banner"] = NewsBanner.objects.last()
 		return context
 
 	def get_queryset(self):
