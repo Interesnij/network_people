@@ -10,4 +10,5 @@ class CategoryListMixin(ContextMixin):
 		context = super(CategoryListMixin,self).get_context_data(**kwargs)
 		context["current_url"] = self.request.path
 		context["bottom_magic"] = BottomMagicImage.objects.only("pk").last()
+		context["categories"] = Category.objects.only("pk")
 		return context
