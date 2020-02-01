@@ -1,3 +1,4 @@
-from django.contrib import admin
+from about.models import AboutBanner
 
-# Register your models here.
+
+admin.site.register(AboutBanner)
