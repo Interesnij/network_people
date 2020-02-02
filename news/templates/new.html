@@ -13,18 +13,18 @@
     <div class="cover">
       <div class="cover_image">
           <img src="{{ banner.image.url }}" srcset="
-            {{ object.image|thumbnail_url:'vert_160' }} 160w,
-            {{ object.image|thumbnail_url:'vert_240' }} 240w,
-            {{ object.image|thumbnail_url:'vert_320' }} 320w,
-            {{ object.image|thumbnail_url:'hor_480' }} 480w,
-            {{ object.image|thumbnail_url:'hor_640' }} 640w,
-            {{ object.image|thumbnail_url:'hor_960' }} 960w,
-            {{ object.image|thumbnail_url:'hor_1440' }} 1440w,
-            {{ object.image|thumbnail_url:'hor_1600' }} 1600w,
-            {{ object.image|thumbnail_url:'hor_1920' }} 1920w,
-            {{ object.image|thumbnail_url:'hor_2240' }} 2240w,
-            {{ object.image|thumbnail_url:'hor_2560' }} 2560w,
-            {{ object.image|thumbnail_url:'hor_2880' }} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw" data-component="trackable" data-type="cover" data-parallax="-1.2" crossorigin="" />
+            {{ object.image2|thumbnail_url:'vert_160' }} 160w,
+            {{ object.image2|thumbnail_url:'vert_240' }} 240w,
+            {{ object.image2|thumbnail_url:'vert_320' }} 320w,
+            {{ object.image2|thumbnail_url:'hor_480' }} 480w,
+            {{ object.image2|thumbnail_url:'hor_640' }} 640w,
+            {{ object.image2|thumbnail_url:'hor_960' }} 960w,
+            {{ object.image2|thumbnail_url:'hor_1440' }} 1440w,
+            {{ object.image2|thumbnail_url:'hor_1600' }} 1600w,
+            {{ object.image2|thumbnail_url:'hor_1920' }} 1920w,
+            {{ object.image2|thumbnail_url:'hor_2240' }} 2240w,
+            {{ object.image2|thumbnail_url:'hor_2560' }} 2560w,
+            {{ object.image2|thumbnail_url:'hor_2880' }} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw" data-component="trackable" data-type="cover" data-parallax="-1.2" crossorigin="" />
       </div>
     </div>
 
@@ -38,7 +38,7 @@
 
     <div class="wrapper content content--reverse content--small">
         <div class="content_container">
-          {{ object.content }}
+          {{ object.content|save }}
         </div>
     </div>
     <div class="m-xxl mb-onlyxl"></div>
