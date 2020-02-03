@@ -512,7 +512,7 @@ function(e, t, n) {
                         families: ["Gilroy:300,400,600,700,800"]
                     },
                     google: {
-                        families: ["Heebo:300,400,700"]
+                        families: ["Gilroy:300,400,600,700,800"]
                     },
                     active: () => {
                         window.setTimeout(e.resolve, 100)
