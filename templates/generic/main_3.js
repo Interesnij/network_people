@@ -198,7 +198,7 @@ function(e, t, n) {
                     opacity: 1,
                     ease: "Power4.easeInOut"
                 }, "fadeout");
-                const n = document.querySelector(".home_intro");
+                
                 if (r.c.width >= 768) {
                     const t = document.querySelectorAll(".nav_logo, .nav_list_ul li, .nav_toggler, .nav_button span");
                     o.TweenMax.set(t, {
