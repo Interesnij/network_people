@@ -201,7 +201,7 @@ function(e, t, n) {
                 const n = document.querySelector(".home_intro");
                 if (r.c.width >= 768 && n) {
                     const t = n.querySelectorAll(".line span"),
-                        i = document.querySelectorAll(".nav_logo, .nav_list_first li, .nav_toggler, .nav_button span"),
+                        i = document.querySelectorAll(".nav_logo, .nav_list_ul li, .nav_toggler, .nav_button span"),
                         s = document.querySelectorAll(".home_event text-appear span"),
                         r = document.querySelectorAll(".home_event_line.linet"),
                         a = document.querySelectorAll(".home_event_line.liner"),
@@ -314,7 +314,7 @@ function(e, t, n) {
                         }, 2)
                     }, "fadeout+=0.1")
                 } else if (r.c.width >= 768) {
-                    const t = document.querySelectorAll(".nav_logo, .nav_list_first li, .nav_toggler, .nav_button span");
+                    const t = document.querySelectorAll(".nav_logo, .nav_list_ul li, .nav_toggler, .nav_button span");
                     o.TweenMax.set(t, {
                         y: -50
                     }), e.add(() => {
