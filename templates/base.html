@@ -22,16 +22,16 @@
 <body>
   {% include "svg.html" %}
   <div class="canvas" data-component="gl"></div>
-  <div class="site" style="">
+  <div class="load_block" style="">
     <div class="glitch-bg" data-component="trackable" data-type="glitch" data-parallax="-1" data-nofadetop="true">
       <img src="/static/images/bg_header.jpg" width="1680" height="1507" alt="Glitch noise">
     </div>
     {% include "navbar.html" %}
-    <main class="site-main" data-barba="wrapper">
+    <main data-barba="wrapper">
       {% block content %}
       {% endblock %}
     </main>
-    <div class="mobile-panel-transition"></div>
+    <div class="mobile_block_reload"></div>
   </div>
   {% include 'footer_2.html' %}
 

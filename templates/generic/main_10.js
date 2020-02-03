@@ -275,7 +275,7 @@ function(e, t, n) {
             }, 100)
         }
     };
-    const P = document.querySelector(".mobile-panel-transition");
+    const P = document.querySelector(".mobile_block_reload");
     var S = {
             sync: !0,
             from: {

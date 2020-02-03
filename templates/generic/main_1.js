@@ -25,7 +25,7 @@
     var r = n(11);
     const a = new class extends(Object(i.a)()) {
         init() {
-            this.readAndUpdatePage = this.readAndUpdatePage.bind(this), this.whenScroll = this.whenScroll.bind(this), this.whenScroll(), this.speed = 0, this.speed2 = 0, this.oldY = this.y, this.scheduledAnimationFrame = !0, this.vs = s.a.dom, this.vslocked = !0, this.height = 0, this.easeY = this.y, this.parallaxEasedY = this.y, this.wrapper = document.querySelector(".site"), this.vs && this.enablevs(), window.addEventListener("scroll", this.whenScroll)
+            this.readAndUpdatePage = this.readAndUpdatePage.bind(this), this.whenScroll = this.whenScroll.bind(this), this.whenScroll(), this.speed = 0, this.speed2 = 0, this.oldY = this.y, this.scheduledAnimationFrame = !0, this.vs = s.a.dom, this.vslocked = !0, this.height = 0, this.easeY = this.y, this.parallaxEasedY = this.y, this.wrapper = document.querySelector(".load_block"), this.vs && this.enablevs(), window.addEventListener("scroll", this.whenScroll)
         }
         lock() {
             this.locked = !0

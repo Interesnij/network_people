@@ -391,7 +391,7 @@ a:visited {
     text-decoration: none
 }
 
-.site.vs {
+.load_block.vs {
     position: fixed;
     top: 0;
     left: 0;
@@ -403,7 +403,7 @@ a:visited {
     display: none
 }
 
-.mobile-panel-transition {
+.mobile_block_reload {
     position: absolute;
     top: 0;
     right: 0;
