@@ -210,7 +210,8 @@ function(e, t, n) {
                         h = document.querySelectorAll(".home_event_line.linem"),
                         d = document.querySelector(".home_quicklinks"),
                         m = document.querySelector(".home_intro .button"),
-                        
+                        p = m.querySelector("span"),
+                        v = m.querySelector("svg"),
                         f = c.a.getInstanceFromEl(m),
                         g = document.querySelector(".cookiebar"),
                         x = g.querySelectorAll(".line span");
