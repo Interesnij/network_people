@@ -2332,84 +2332,84 @@ h4,
     }
 }
 
-.button--big {
+.button_big {
     font-size: 24px
 }
 
 @media (min-width: 320px) {
-    .button--big {
+    .button_big {
         font-size: calc(.89286vw + 21.14286px)
     }
 }
 
 @media (min-width: 768px) {
-    .button--big {
+    .button_big {
         font-size: calc(1.5625vw + 16px)
     }
 }
 
 @media (min-width: 1280px) {
-    .button--big {
+    .button_big {
         font-size: 36px
     }
 }
 
-.button--big svg {
+.button_big svg {
     width: 18px;
     height: 18px;
     margin-left: 10px
 }
 
 @media (min-width: 320px) {
-    .button--big svg {
+    .button_big svg {
         width: calc(.89286vw + 15.14286px)
     }
 }
 
 @media (min-width: 768px) {
-    .button--big svg {
+    .button_big svg {
         width: calc(1.17188vw + 13px)
     }
 }
 
 @media (min-width: 1280px) {
-    .button--big svg {
+    .button_big svg {
         width: 28px
     }
 }
 
 @media (min-width: 320px) {
-    .button--big svg {
+    .button_big svg {
         height: calc(.89286vw + 15.14286px)
     }
 }
 
 @media (min-width: 768px) {
-    .button--big svg {
+    .button_big svg {
         height: calc(1.17188vw + 13px)
     }
 }
 
 @media (min-width: 1280px) {
-    .button--big svg {
+    .button_big svg {
         height: 28px
     }
 }
 
 @media (min-width: 320px) {
-    .button--big svg {
+    .button_big svg {
         margin-left: calc(1.11607vw + 6.42857px)
     }
 }
 
 @media (min-width: 768px) {
-    .button--big svg {
+    .button_big svg {
         margin-left: calc(.97656vw + 7.5px)
     }
 }
 
 @media (min-width: 1280px) {
-    .button--big svg {
+    .button_big svg {
         margin-left: 20px
     }
 }
@@ -2422,7 +2422,7 @@ html.static .button:hover {
     position: relative
 }
 
-.content--small .content_text .lead {
+.content_small .content_text .lead {
     line-height: 1.2
 }
 
@@ -2472,11 +2472,11 @@ html.static .button:hover {
         z-index: -1
     }
 
-    .content--reverse .content_image {
+    .content_reverse .content_image {
         left: 0
     }
 
-    .content--reverse .content_container {
+    .content_reverse .content_container {
         padding-left: calc(50% + 30px)
     }
 }
