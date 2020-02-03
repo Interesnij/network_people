@@ -522,7 +522,7 @@ function(e, t, n) {
                     }
                 })
             } catch (t) {
-                window.setTimeout(e.resolve, 100)
+                window.setTimeout(e.resolve, 1)
             }
             return e
         }
