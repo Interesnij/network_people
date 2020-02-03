@@ -23,7 +23,8 @@
           {{ banner.image|thumbnail_url:'hor_1920' }} 1920w,
           {{ banner.image|thumbnail_url:'hor_2240' }} 2240w,
           {{ banner.image|thumbnail_url:'hor_2560' }} 2560w,
-          {{ banner.image|thumbnail_url:'hor_2880' }} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw" data-component="trackable" data-type="cover" data-parallax="-1.2" crossorigin="" />
+          {{ banner.image|thumbnail_url:'hor_2880' }} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw"
+          data-component="trackable" data-type="cover" data-parallax="-1.2" crossorigin="" />
     </div>
 </div>
 
@@ -52,7 +53,7 @@
                 </div>
             </div
 -->
-            <a href="{% url 'main' %}" class="button" data-sound-hover data-component="trackable" data-type="button">
+            <a href="{% url 'main' %}" class="button" data-sound-hover data-component="trackable">
                 <span>
                     Принять участие
                     <svg viewBox="0 0 13 10" class="icon button_big icon-arrow-right">
