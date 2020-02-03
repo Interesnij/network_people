@@ -60,7 +60,7 @@ function(e, t, n) {
         u = n(10),
         c = n(17),
         h = n(19);
-    const d = document.querySelector(".site");
+    const d = document.querySelector(".load_block");
     var m = class extends(Object(s.a)(i.Object3D)) {
             init() {
                 this.geometry = new i.PlaneBufferGeometry(1, 1, 1, 1), this.material = new i.RawShaderMaterial({
