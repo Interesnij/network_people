@@ -211,7 +211,6 @@ function(e, t, n) {
                         d = document.querySelector(".home_quicklinks"),
                         m = document.querySelector(".home_intro .button"),
                         
-                        v = m.querySelector("svg"),
                         f = c.a.getInstanceFromEl(m),
                         g = document.querySelector(".cookiebar"),
                         x = g.querySelectorAll(".line span");
