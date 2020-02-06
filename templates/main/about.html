@@ -10,17 +10,17 @@
                     <sup class="label">{{ forloop.counter }}</sup>
                     <span data-component="trackable" data-type="is_visible">{{ object.name|cut:"ы" }}</span>
                 </a>
-                <div class="expand_content" data-ref="expand.content">
-                    <ul>
-                      <li>
-                          <span>{{ object.description|linebreaks }}</span>
-                          <a href="http://свои.рус/people/{{ object.slug }}" class="more">
-                              подробнее
-                          </a>
-                      </li>
-                    </ul>
-                </div>
             </li>
+            <div class="expand_content" data-ref="expand.content">
+                <ul>
+                  <li>
+                      <span>{{ object.description|linebreaks }}</span>
+                      <a href="http://свои.рус/people/{{ object.slug }}" class="more">
+                          подробнее
+                      </a>
+                  </li>
+                </ul>
+            </div>
           {% endfor %}
         </ul>
     </div>
