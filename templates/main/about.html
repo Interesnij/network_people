@@ -1,17 +1,17 @@
 {% load staticfiles %}
 
-<div class="home_quicklinks m-xs mb-onlyxl" data-component="expand">
+<div class="home_quicklinks m-xs mb-onlyxl">
     <div class="wrapper">
         <h3 class="baseline">Ваша организация / персона очень нужна нам в статусе:</h3>
         <ul class="home_quicklinks_list m-m" data-component="trackable" data-type="magic_line">
           {% for object in categories %}
-            <li class="mb-s expand_toggle_container" id="market-lab">
-                <a href="#" class="h4 link expand_toggle" data-ref="expand.toggle">
+            <li class="mb-s" id="market-lab" data-component="expand">
+                <a href="#" class="h4 link" data-ref="expand.toggle">
                     <sup class="label">{{ forloop.counter }}</sup>
                     <span data-component="trackable" data-type="is_visible">{{ object.name|cut:"ы" }}</span>
                 </a>
             </li>
-            <div class="expand_content" data-ref="expand.content">
+            <div class="" data-ref="expand.content">
                 <ul>
                   <li>
                       <span>{{ object.description|linebreaks }}</span>
