@@ -93,8 +93,8 @@ CKEDITOR_UPLOAD_PATH = 'media/'
 CKEDITOR_CONFIGS = {
        'default': {
            'toolbar': 'full',
-           'height': 400,
-           'width': 900,
+           'height': 500,
+           'width': '100%',
            'removePlugins': 'stylesheetparser',
            'extraPlugins': ','.join(['youtube']),
        },
