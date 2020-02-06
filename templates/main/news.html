@@ -1,10 +1,10 @@
 {% load staticfiles thumbnail %}
 
-<div class="speakers_list">
+<div class="news_list">
 {% for object in news %}
-    <div class="person mb-xl">
-        <div class="person_container">
-            <div class="person_image" data-component="trackable" data-type="image_wave" data-parallax="-0.3">
+    <div class="new mb-xl">
+        <div class="new_container">
+            <div class="new_image" data-component="trackable" data-type="image_wave" data-parallax="-0.3">
                 <img src="{{ object.image1.url }}" srcset="
                     {{ object.image1|thumbnail_url:'vert_160' }} 160w,
                     {{ object.image1|thumbnail_url:'vert_240' }} 240w,
@@ -21,10 +21,10 @@
                     {{ object.image1|thumbnail_url:'hor_2880' }} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
             </div>
 
-            <div class="person_inner" data-component="parallax" data-parallax="-0.3">
-                <div class="person_text mt-xs">
-                    <p class="person_name name">{{ object.title }}</p>
-                    <p class="person_role mt-xxs">{{ object.description }}</p>
+            <div class="new_inner" data-component="parallax" data-parallax="-0.3">
+                <div class="new_text mt-xs">
+                    <p class="new_name name">{{ object.title }}</p>
+                    <p class="new_role mt-xxs">{{ object.description }}</p>
                 </div>
                 <a class="read_more" href="{% url 'news_detail' new_slug=object.new_slug %}"></a>
             </div>
