@@ -566,14 +566,14 @@ function(e, t, n) {
             e.dataset.glid = t;
             const n = e.dataset.type || "button",
                 i = new k[n](e);
-            this.instances[t] = i, e.classList.add("gl")
+            this.instances[t] = i, e.classList.add("magic")
         }
         getInstanceFromEl(e) {
             return this.instances[e.dataset.glid]
         }
         unregister(e) {
             const t = this.getInstanceFromEl(e);
-            e.classList.remove("gl"), t.destroy()
+            e.classList.remove("magic"), t.destroy()
         }
     }
 }, function(e, t, n) {
