@@ -96,7 +96,7 @@ CKEDITOR_CONFIGS = {
            'height': 400,
            'width': 900,
            'removePlugins': 'stylesheetparser',
-           'extraPlugins': 'codesnippet',
+           'extraPlugins': ','.join(['youtube']),
        },
     }
 
