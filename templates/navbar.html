@@ -16,11 +16,11 @@
                             <div class="events">
                                 <div class="events_item m-m">
                                     <div class="mb-xs"><p class="label">Документы</p></div>
-                                    <ul><li><a href="" class="event-link" data-sound-hover>Документ 1<svg viewBox="0 0 13 10" class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></a></li></ul>
+                                    <ul><li><a href="" class="event-link" data-sound-hover>Документ 1</a></li></ul>
                                 </div>
                                 <div class="events_item m-m">
                                     <div class="mb-xs"><p class="label">Подменю</p></div>
-                                    <ul><li><a href="" class="event-link" data-sound-hover>Пункт 1<svg viewBox="0 0 13 10" class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></a></li></ul>
+                                    <ul><li><a href="" class="event-link" data-sound-hover>Пункт 1</a></li></ul>
                                 </div>
                                 <div class="events_item m-m">
                                     <div class="mb-xs"><p class="label">Команда</p></div>
@@ -28,8 +28,7 @@
                                       {% for object in categories %}
                                         <li>
                                           <a href="http://свои.рус/people/{{ object.slug }}" class="event-link" data-sound-hover>
-                                            {{ object.name }}
-                                            <svg viewBox="0 0 13 10" class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg>
+                                            {{ object.name }}                                      
                                           </a>
                                         </li>
                                       {% endfor %}
