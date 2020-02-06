@@ -1,33 +1,32 @@
 <header class="nav" data-component="nav menu">
     <div class="nav_wrapper wrapper">
-        <a class="nav_logo" href="http://свои.рус" data-sound-hover>
+        <a class="nav_logo" href="http://свои.рус">
             свои.рус
         </a>
-
         <nav class="nav_list" data-component="trackable" data-type="magic_line">
             <ul class="nav_list_ul">
                 <li>
                     <a class="nav_list_magic" data-sound-hover href="http://свои.рус/about"><span data-component="trackable" data-type="is_visible">О проекте<span></a>
                 </li>
                 <li data-ref="nav.program">
-                    <a class="nav_list_magic" data-sound-hover href=""><span data-component="trackable" data-type="is_visible">Команда</span></a>
+                    <a class="nav_list_magic" href=""><span data-component="trackable" data-type="is_visible">Команда</span></a>
                     <div class="nav_sublist" data-ref="nav.sublist">
                         <div class="nav_sublist_container p-l" data-ref="nav.sublistcontainer">
                             <div class="events">
                                 <div class="events_item m-m">
                                     <div class="mb-xs"><p class="label">Документы</p></div>
-                                    <ul><li><a href="" class="event-link" data-sound-hover>Документ 1</a></li></ul>
+                                    <ul><li><a href="" class="event-link">Документ 1</a></li></ul>
                                 </div>
                                 <div class="events_item m-m">
                                     <div class="mb-xs"><p class="label">Подменю</p></div>
-                                    <ul><li><a href="" class="event-link" data-sound-hover>Пункт 1</a></li></ul>
+                                    <ul><li><a href="" class="event-link">Пункт 1</a></li></ul>
                                 </div>
                                 <div class="events_item m-m">
                                     <div class="mb-xs"><p class="label">Команда</p></div>
                                     <ul>
                                       {% for object in categories %}
                                         <li>
-                                          <a href="http://свои.рус/people/{{ object.slug }}" class="event-link" data-sound-hover>
+                                          <a href="http://свои.рус/people/{{ object.slug }}" class="event-link">
                                             {{ object.name }}
                                           </a>
                                         </li>
@@ -39,16 +38,16 @@
                     </div>
                 </li>
                 <li>
-                    <a class="nav_list_magic" data-sound-hover href="http://свои.рус/news/">
+                    <a class="nav_list_magic" href="http://свои.рус/news/">
                         <span data-component="trackable" data-type="is_visible">Новости</span>
                     </a>
                 </li>
             </ul>
-            <button class="nav_toggler" data-ref="menu.toggler" data-sound-hover>
+            <button class="nav_toggler" data-ref="menu.toggler">
                 <div><span class="first"></span></div>
                 <div><span class="second"></span></div>
             </button>
-            <a href="https://vk.com/public187332697" target="_blank" class="button nav_button" data-sound-hover data-component="trackable" data-type="button">
+            <a href="https://vk.com/public187332697" target="_blank" class="button nav_button" data-component="trackable" data-type="button">
                 <span>Группа в VK</span>
             </a>
         </nav>
@@ -67,14 +66,14 @@
                                 <ul>
                                     <li>
                                         <div class="menu_bigitem">
-                                          <div data-sound-hover>
+                                          <div>
                                               <a class="h1" href="http://свои.рус/about">О проекте</a>
                                           </div>
                                         </div>
                                     </li>
                                     <li data-ref="menu.program">
                                         <div class="menu_bigitem" data-ref="menu.programbigitem">
-                                            <div data-sound-hover>
+                                            <div>
                                                 <a href="" class="h1">Команда</a>
                                             </div>
                                         </div>
@@ -96,7 +95,7 @@
                                     </li>
                                     <li>
                                         <div class="menu_bigitem">
-                                            <div data-sound-hover>
+                                            <div>
                                                 <a href="http://свои.рус/news" class="h1">Новости</a>
                                             </div>
                                         </div>
