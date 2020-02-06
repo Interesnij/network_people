@@ -6,10 +6,12 @@
         <ul class="home_quicklinks_list m-m" data-component="trackable" data-type="magic_line">
           {% for object in categories %}
             <li class="mb-s" id="market-lab" data-component="expand">
-                <a href="#" class="h4 link" data-ref="expand.toggle">
+              <div class="mt-l expand_toggle_container">
+                <a href="#" class="h4 link lead expand_toggle" data-ref="expand.toggle">
                     <sup class="label">{{ forloop.counter }}</sup>
                     <span data-component="trackable" data-type="is_visible">{{ object.name|cut:"ы" }}</span>
                 </a>
+              </div>
             </li>
             <div class="expand_content" data-ref="expand.content">
                 <ul>
