@@ -8,7 +8,7 @@ class New(models.Model):
     title = models.CharField(max_length=100,verbose_name="Заголовок")
     new_slug = models.CharField(max_length=100,verbose_name="Для ссылки")
     description = models.TextField(verbose_name="Краткое содержание")
-    content = RichTextUploadingField(blank=True, default='')
+    content = RichTextUploadingField(blank=True, default='', external_plugin_resources=[('youtube','/static/ckeditor_plugins/youtube/youtube/','plugin.js',)])
     posted = models.DateField(default=timezone.now,verbose_name="Опубликовано")
     views = models.IntegerField(default=0,verbose_name="Просмотры")
     image1 = models.ImageField(upload_to="blog/list",verbose_name="Картинка в индес")
