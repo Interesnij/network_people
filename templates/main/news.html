@@ -3,11 +3,11 @@
 <div class="home_more mb-onlyxl">
 <div class="wrapper">
   <h3 class="baseline">Последние новости (<a href="http://свои.рус/about">смотреть все</a>)</h3>
-    <div class="home_more_list mt-xxl person">
+    <div class="home_more_list mt-xxl">
       {% for object in news %}
-        <div class="desc mb-xl person_container">
+        <div class="desc mb-xl">
           <div class="person_image" data-component="trackable" data-type="image_wave" data-parallax="-0.3">
-              <img src="{{ object.image1.url }}" sizes="(max-width: 1024px) 55vw, 500px" />
+              <img src="{{ object.image1.url }}" sizes="(max-width: 1024px) 55vw, 500px" crossorigin="" />
           </div>
             <div class="mb-xxs">
                 <p class="desc_date label">{{ object.created|naturaltime }}</p>
