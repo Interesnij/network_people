@@ -6,7 +6,7 @@
         <ul class="home_quicklinks_list m-m" data-component="trackable" data-type="magic_line">
           {% for object in categories %}
             <li class="mb-s">
-                <a href="http://свои.рус/people/{{ object.slug }}" class="h4 link" data-sound-hover>
+                <a href="http://свои.рус/people/{{ object.slug }}" class="h4 link" >
                     <sup class="label">{{ forloop.counter }}</sup>
                     <span data-component="trackable" data-type="is_visible">{{ object.name|cut:"ы" }}</span>
                 </a>
@@ -35,12 +35,7 @@
         </div>
         <div class="m-m">
             <a href="" class="button" data-sound-hover data-component="trackable" data-type="button">
-                <span>
-                    Смотреть
-                    <svg viewBox="0 0 7 12" class="icon icon-caret-right">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
-                    </svg>
-                </span>
+                <span>Смотреть</span>
             </a>
         </div>
 <!--
