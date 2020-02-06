@@ -1,36 +1,35 @@
-{% load staticfiles %}
+{% load staticfiles thumbnail %}
 
 <div class="speakers_list">
-
+{% for object in news %}
     <div class="person mb-xl">
         <div class="person_container">
             <div class="person_image" data-component="trackable" data-type="image_wave" data-parallax="-0.3">
-                <img src="{% static 'images/home/user1.jpg' %}" srcset="
-                    {% static 'images/home/user1_160.jpg' %} 160w,
-                    {% static 'images/home/user1_240.jpg' %} 240w,
-                    {% static 'images/home/user1_320.jpg' %} 320w,
-                    {% static 'images/home/user1_480.jpg' %} 480w,
-                    {% static 'images/home/user1_640.jpg' %} 640w,
-                    {% static 'images/home/user1_960.jpg' %} 960w,
-                    {% static 'images/home/user1_1280.jpg' %} 1280w,
-                    {% static 'images/home/user1_1280.jpg' %} 1440w,
-                    {% static 'images/home/user1_1280.jpg' %} 1600w,
-                    {% static 'images/home/user1_1280.jpg' %} 1920w,
-                    {% static 'images/home/user1_1280.jpg' %} 2240w,
-                    {% static 'images/home/user1_1280.jpg' %} 2560w,
-                    {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+                <img src="{{ object.image1.url }}" srcset="
+                    {{ object.image1|thumbnail_url:'vert_160' }} 160w,
+                    {{ object.image1|thumbnail_url:'vert_240' }} 240w,
+                    {{ object.image1|thumbnail_url:'vert_320' }} 320w,
+                    {{ object.image1|thumbnail_url:'hor_480' }} 480w,
+                    {{ object.image1|thumbnail_url:'hor_640' }} 640w,
+                    {{ object.image1|thumbnail_url:'hor_960' }} 960w,
+                    {{ object.image1|thumbnail_url:'hor_1280' }} 1280w,
+                    {{ object.image1|thumbnail_url:'hor_1440' }} 1440w,
+                    {{ object.image1|thumbnail_url:'hor_16000' }} 1600w,
+                    {{ object.image1|thumbnail_url:'hor_1920' }} 1920w,
+                    {{ object.image1|thumbnail_url:'hor_2240' }} 2240w,
+                    {{ object.image1|thumbnail_url:'hor_2560' }} 2560w,
+                    {{ object.image1.|thumbnail_url:'hor_2880' }} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
             </div>
 
             <div class="person_inner" data-component="parallax" data-parallax="-0.3">
                 <div class="person_text mt-xs">
-                    <p class="person_name name">User 1</p>
-
-                    <p class="person_role mt-xxs">Minister<br>Pyther Penn</p>
+                    <p class="person_name name">{{ object.title }}</p>
+                    <p class="person_role mt-xxs">{{ object.description }}</p>
                 </div>
-
-                <a class="read_more" href="#" data-open-popup="1" data-sound-hover data-barba-prevent></a>
+                <a class="read_more" href="{% url 'news_detail' new_slug=object.new_slug %}"></a>
             </div>
 
         </div>
     </div>
+  {% endfor %}
 </div>
