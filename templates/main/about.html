@@ -7,7 +7,7 @@
           {% for object in categories %}
             <li class="mb-s">
               <div class="mt-l">
-                <a href="#" class="h4 link">
+                <a href="{% url 'news_detail' new_slug=object.new_slug %}" class="h4 link">
                     <sup class="label">{{ forloop.counter }}</sup>
                     <span data-component="trackable" data-type="is_visible">{{ object.name|cut:"ы" }}</span>
                 </a>
