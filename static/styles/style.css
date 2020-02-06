@@ -221,7 +221,7 @@ th {
 
 .expand_content ul,
 .footer_menu,
-.home_quicklinks_list,
+.peoples_list,
 .list_ul,
 .events_item ul,
 .menu ul,
@@ -449,43 +449,43 @@ button:focus {
     outline: none
 }
 
-.m-xxl {
+.margin_tb {
     margin-top: 80px;
     margin-bottom: 80px
 }
 
 @media (min-width: 320px) {
-    .m-xxl {
+    .margin_tb {
         margin-top: calc(8.92857vw + 51.42857px)
     }
 }
 
 @media (min-width: 768px) {
-    .m-xxl {
+    .margin_tb {
         margin-top: calc(7.8125vw + 60px)
     }
 }
 
 @media (min-width: 1280px) {
-    .m-xxl {
+    .margin_tb {
         margin-top: 160px
     }
 }
 
 @media (min-width: 320px) {
-    .m-xxl {
+    .margin_tb {
         margin-bottom: calc(8.92857vw + 51.42857px)
     }
 }
 
 @media (min-width: 768px) {
-    .m-xxl {
+    .margin_tb {
         margin-bottom: calc(7.8125vw + 60px)
     }
 }
 
 @media (min-width: 1280px) {
-    .m-xxl {
+    .margin_tb {
         margin-bottom: 160px
     }
 }
@@ -512,24 +512,24 @@ button:focus {
     }
 }
 
-.mb-xxl {
+.margin_b {
     margin-bottom: 80px
 }
 
 @media (min-width: 320px) {
-    .mb-xxl {
+    .margin_b {
         margin-bottom: calc(8.92857vw + 51.42857px)
     }
 }
 
 @media (min-width: 768px) {
-    .mb-xxl {
+    .margin_b {
         margin-bottom: calc(7.8125vw + 60px)
     }
 }
 
 @media (min-width: 1280px) {
-    .mb-xxl {
+    .margin_b {
         margin-bottom: 160px
     }
 }
@@ -1640,7 +1640,7 @@ button:focus {
 }
 
 @media only screen and (min-width: 80em) {
-    .mb-onlyxl {
+    .mb_32 {
         margin-bottom: 32rem
     }
 }
@@ -3399,40 +3399,40 @@ html.static .button:hover {
     }
 }
 
-.home_quicklinks .baseline {
+.peoples .baseline {
     max-width: 54rem
 }
 
-.home_quicklinks_list a {
+.peoples_list a {
     font-size: 18px
 }
 
 @media (min-width: 320px) {
-    .home_quicklinks_list a {
+    .peoples_list a {
         font-size: calc(.89286vw + 15.14286px)
     }
 }
 
 @media (min-width: 768px) {
-    .home_quicklinks_list a {
+    .peoples_list a {
         font-size: calc(.78125vw + 16px)
     }
 }
 
 @media (min-width: 1024px) {
-    .home_quicklinks_list a {
+    .peoples_list a {
         font-size: calc(2.34375vw + 0px)
     }
 }
 
 @media (min-width: 1280px) {
-    .home_quicklinks_list a {
+    .peoples_list a {
         font-size: 30px
     }
 }
 
 @media only screen and (min-width: 48em) {
-    .home_quicklinks_list {
+    .peoples_list {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 50% 50%;
@@ -3443,7 +3443,7 @@ html.static .button:hover {
 }
 
 @media only screen and (min-width: 64em) {
-    .home_quicklinks_list {
+    .peoples_list {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -3459,7 +3459,7 @@ html.static .button:hover {
         max-width: 100rem
     }
 
-    .home_quicklinks_list li {
+    .peoples_list li {
         -webkit-box-flex: 1;
         -webkit-flex: 1;
         -ms-flex: 1;
@@ -3467,19 +3467,19 @@ html.static .button:hover {
         white-space: nowrap
     }
 
-    .home_quicklinks_list a {
+    .peoples_list a {
         padding-right: 60px
     }
 }
 
 @media only screen and (min-width: 64em) and (min-width: 1024px) {
-    .home_quicklinks_list a {
+    .peoples_list a {
         padding-right: calc(7.8125vw - 20px)
     }
 }
 
 @media only screen and (min-width: 64em) and (min-width: 1280px) {
-    .home_quicklinks_list a {
+    .peoples_list a {
         padding-right: 80px
     }
 }
@@ -3505,7 +3505,7 @@ html.static .button:hover {
     }
 }
 
-html.static .home_quicklinks_list a:hover {
+html.static .peoples_list a:hover {
     opacity: .8
 }
 
