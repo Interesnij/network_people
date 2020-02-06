@@ -5,6 +5,22 @@
   <h3 class="baseline">Последние новости (<a href="http://свои.рус/about">смотреть все</a>)</h3>
     <div class="home_more_list mt-xxl">
       {% for object in news %}
+      <div class="person_image" data-component="trackable" data-type="image_wave" data-parallax="-0.3">
+          <img src="{% static 'images/home/user1.jpg' %}" srcset="
+              {% static 'images/home/user1_160.jpg' %} 160w,
+              {% static 'images/home/user1_240.jpg' %} 240w,
+              {% static 'images/home/user1_320.jpg' %} 320w,
+              {% static 'images/home/user1_480.jpg' %} 480w,
+              {% static 'images/home/user1_640.jpg' %} 640w,
+              {% static 'images/home/user1_960.jpg' %} 960w,
+              {% static 'images/home/user1_1280.jpg' %} 1280w,
+              {% static 'images/home/user1_1280.jpg' %} 1440w,
+              {% static 'images/home/user1_1280.jpg' %} 1600w,
+              {% static 'images/home/user1_1280.jpg' %} 1920w,
+              {% static 'images/home/user1_1280.jpg' %} 2240w,
+              {% static 'images/home/user1_1280.jpg' %} 2560w,
+              {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
+      </div>
         <div class="desc mb-xl">
             <div class="mb-xxs">
                 <p class="desc_date label">{{ object.created|naturaltime }}</p>
