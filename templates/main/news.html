@@ -1,12 +1,11 @@
 {% load staticfiles humanize %}
 
-<div class="home_more mb-onlyxl">
+<div class="home_more mb-onlyxl speakers">
 <div class="wrapper">
   <h3 class="baseline">Последние новости (<a href="http://свои.рус/about">смотреть все</a>)</h3>
     <div class="home_more_list mt-xxl speakers_list">
       {% for object in news %}
-        <div class="desc mb-xl">
-          <div class="person mb-xl">
+        <div class="desc person mb-xl">
               <div class="person_container">
           <div class="person_image" data-component="trackable" data-type="image_wave" data-parallax="-0.3">
               <img src="{% static 'images/home/user1.jpg' %}" srcset="
@@ -25,7 +24,6 @@
                   {% static 'images/home/user1_1280.jpg' %} 2880w" alt="" crossorigin="" sizes="(max-width: 1024px) 55vw, 500px" />
           </div>
             </div>
-              </div>
             <div class="mb-xxs">
                 <p class="desc_date label">{{ object.created|naturaltime }}</p>
             </div>
