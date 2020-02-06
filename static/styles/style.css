@@ -2048,13 +2048,6 @@ h4,
     }
 }
 
-.outline {
-    color: #000115;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #00e3ff
-}
-
 .wysiwyg p {
     margin-top: 2rem
 }
@@ -3960,12 +3953,6 @@ html.static .home_quicklinks_list a:hover {
 .menu_bigitem a {
     display: block;
     line-height: 1.12
-}
-
-.menu_bigitem .outline {
-    position: absolute;
-    top: 100%;
-    left: 0
 }
 
 .menu_bigitem .menu_bigitem_scroll {
