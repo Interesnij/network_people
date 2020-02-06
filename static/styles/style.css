@@ -2263,7 +2263,7 @@ h4,
     animation: 2s glitch-anim-text infinite
 }
 
-.button.gl {
+.button.magic {
     background: transparent
 }
 
@@ -2456,7 +2456,7 @@ html.static .button:hover {
     width: 100%
 }
 
-.content_image img.gl {
+.content_image img.magic {
     visibility: hidden
 }
 
@@ -2614,11 +2614,11 @@ html.static .button:hover {
     max-width: 1700px
 }
 
-.cover_image img.gl {
+.cover_image img.magic {
     visibility: hidden
 }
 
-.cover_image img:not(.gl) {
+.cover_image img:not(.magic) {
     -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, black 0%, transparent 100%);
     mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, black 0%, transparent 100%)
 }
@@ -2656,7 +2656,7 @@ html.static .button:hover {
     width: 100%
 }
 
-.cta_title.gl {
+.cta_title.magic {
     visibility: hidden
 }
 
@@ -2825,7 +2825,7 @@ html.static .button:hover {
     fill: #fff
 }
 
-.footer.gl {
+.footer.magic {
     background: transparent
 }
 
@@ -3544,7 +3544,7 @@ html.static .home_quicklinks_list a:hover {
     width: 70vw
 }
 
-.intro_date.gl {
+.intro_date.magic {
     visibility: hidden
 }
 
@@ -3719,7 +3719,7 @@ html.static .home_quicklinks_list a:hover {
     }
 }
 
-.list_image.gl {
+.list_image.magic {
     visibility: hidden
 }
 
@@ -4494,7 +4494,7 @@ html.static .panel_item:hover .panel_image {
     background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0) 50%)
 }
 
-.person_image.gl {
+.person_image.magic {
     visibility: hidden
 }
 
@@ -4622,8 +4622,8 @@ html.static .person:hover {
     }
 }
 
-.popup.gl .popup_panel,
-.popup.gl .popup_layer {
+.popup.magic .popup_panel,
+.popup.magic .popup_layer {
     background: transparent
 }
 
@@ -6722,11 +6722,11 @@ html.static .person:hover {
     z-index: -1
 }
 
-.glitch-bg.gl {
+.glitch-bg.magic {
     visibility: hidden
 }
 
-.glitch-bg:not(.gl) {
+.glitch-bg:not(.magic) {
     opacity: 0.5
 }
 
