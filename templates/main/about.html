@@ -2,42 +2,13 @@
 
 <div class="home_quicklinks m-xs mb-onlyxl">
     <div class="wrapper">
-        <h3 class="baseline">Рассказываем кто нужен для сотрудничества</h3>
+        <h3 class="baseline">Ваша организация / персона очень нужна нам в статусе:</h3>
         <ul class="home_quicklinks_list m-m" data-component="trackable" data-type="magic_line">
+          {% for object in categories %}
             <li class="mb-s">
-                <a href="" class="h4 link" data-sound-hover>
-                    <sup class="label">01</sup>
-                    <span data-component="trackable" data-type="is_visible">Духовные лидеры</span>
-                    <svg viewBox="0 0 7 12" class="icon icon-caret-right">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="mb-s">
-                <a href="" class="h4 link" data-sound-hover>
-                    <sup class="label">02</sup>
-                    <span data-component="trackable" data-type="is_visible">Инвесторы</span>
-                    <svg viewBox="0 0 7 12" class="icon icon-caret-right">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="mb-s">
-                <a href="" class="h4 link" data-sound-hover>
-                    <sup class="label">03</sup>
-                    <span data-component="trackable" data-type="is_visible">Продвигальщики</span>
-                    <svg viewBox="0 0 7 12" class="icon icon-caret-right">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="mb-s">
-                <a href="" class="h4 link" data-sound-hover>
-                    <sup class="label">04</sup>
-                    <span data-component="trackable" data-type="is_visible">Менеджеры</span>
-                    <svg viewBox="0 0 7 12" class="icon icon-caret-right">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#caret-right"></use>
-                    </svg>
+                <a href="http://свои.рус/people/{{ object.slug }}" class="h4 link" data-sound-hover>
+                    <sup class="label">{{ forloop.counter }}</sup>
+                    <span data-component="trackable" data-type="is_visible">{{ object.name }}</span>
                 </a>
             </li>
         </ul>
