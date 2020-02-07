@@ -498,8 +498,8 @@ button:focus {
     .mt-xxl {
       margin-bottom: calc(4.46429vw + 25.71429px);
     }
-    .cover_image{
-      bottom: 100px;
+    .cover{
+      height: 160vw;
     }
 }
 
