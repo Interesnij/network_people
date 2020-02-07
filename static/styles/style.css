@@ -497,7 +497,7 @@ button:focus {
 @media (min-width: 320px) {
     .mt-xxl {
       margin-bottom: calc(4.46429vw + 25.71429px);
-      margin-top: calc(4.46429vw + 25.71429px);
+      margin-top: 200px;
     }
 }
 
