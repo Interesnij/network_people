@@ -498,9 +498,11 @@ button:focus {
     .mt-xxl {
       margin-bottom: calc(4.46429vw + 25.71429px);
     }
+}
+@media (max-width: 320px) {
     .cover{
       z-index: 9999;
-      position: relative;
+
     }
 }
 
