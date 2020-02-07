@@ -474,7 +474,7 @@ button:focus {
 
 @media (min-width: 320px) {
     .margin_tb {
-        margin-bottom: calc(8.92857vw + 51.42857px)
+        margin-bottom: 100px
     }
 }
 
