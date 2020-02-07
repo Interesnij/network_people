@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'about',
     'categories',
     'peoples',
+    'frends',
     'news',
     'policy',
 ]

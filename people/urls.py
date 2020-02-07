@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'^$', include ('main.urls')),
     url(r'^categories/', include('categories.urls')),
     url(r'^people/', include('peoples.urls')),
+    url(r'^frends/', include('frends.urls')),
     url(r'^about/', include('about.urls')),
     url(r'^policy/', include('policy.urls')),
     url(r'^news/', include('news.urls')),
