@@ -474,7 +474,7 @@ button:focus {
 
 @media (min-width: 320px) {
     .margin_tb {
-        margin-bottom: 150px
+      margin-bottom: calc(4.46429vw + 25.71429px);
     }
 }
 
@@ -496,7 +496,7 @@ button:focus {
 
 @media (min-width: 320px) {
     .mt-xxl {
-        margin-bottom: 150px
+      margin-bottom: calc(4.46429vw + 25.71429px);
     }
 }
 
