@@ -1,4 +1,4 @@
-from frends.models import People, PeoplesBanner
+from frends.models import Frend, FrendsBanner
 from django.views.generic.list import ListView
 from django.http import HttpResponse
 from categories.models import FrendCategory
