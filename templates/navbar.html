@@ -19,7 +19,15 @@
                                 </div>
                                 <div class="events_item m-m">
                                     <div class="margin_b2"><p class="label">Подменю</p></div>
-                                    <ul><li><a href="" class="event-link">Пункт 1</a></li></ul>
+                                    <ul>
+                                      {% for object in frend_categories %}
+                                        <li>
+                                          <a href="http://свои.рус/frends/{{ object.slug }}" class="event-link">
+                                            {{ object.name }}
+                                          </a>
+                                        </li>
+                                      {% endfor %}
+                                    </ul>
                                 </div>
                                 <div class="events_item m-m">
                                     <div class="margin_b2"><p class="label">Команда</p></div>

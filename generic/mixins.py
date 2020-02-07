@@ -1,6 +1,6 @@
 from django.views.generic.base import ContextMixin
 from django.conf import settings
-from categories.models import Category
+from categories.models import Category, FrendCategory
 from main.models import BottomMagicImage
 
 
@@ -11,4 +11,5 @@ class CategoryListMixin(ContextMixin):
 		context["current_url"] = self.request.path
 		context["bottom_magic"] = BottomMagicImage.objects.only("pk").last()
 		context["categories"] = Category.objects.only("pk")
+		context["frend_categories"] = FrendCategory.objects.only("pk")
 		return context

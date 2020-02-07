@@ -30,13 +30,13 @@ class PeopleDetailView(TemplateView, CategoryListMixin):
 	template_name = "people.html"
 
 	def get(self,request,*args,**kwargs):
-		self.people = Blog.objects.get(people_slug=self.kwargs["people_slug"])
+		self.people = People.objects.get(people_slug=self.kwargs["people_slug"])
 		self.people.views += 1
 		self.people.save()
 		self.peoples = People.objects.filter(category=self.people.category)[0:6]
-		return super(BlogDetailView,self).get(request,*args,**kwargs)
+		return super(PeopleDetailView,self).get(request,*args,**kwargs)
 
 	def get_context_data(self,**kwargs):
-		context = super(BlogDetailView,self).get_context_data(**kwargs)
+		context = super(PeopleDetailView,self).get_context_data(**kwargs)
 		context["peoples"] = self.peoples
 		return context
