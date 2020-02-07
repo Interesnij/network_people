@@ -502,7 +502,7 @@ button:focus {
 @media (max-width: 320px) {
     .cover{
       z-index: 9999;
-
+      height: 160vw;
     }
 }
 
