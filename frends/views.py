@@ -7,7 +7,7 @@ from generic.mixins import CategoryListMixin
 
 
 class FrendListView(ListView, CategoryListMixin):
-	model = People
+	model = Frend
 	template_name = "frend_index.html"
 	paginate_by = 9
 
