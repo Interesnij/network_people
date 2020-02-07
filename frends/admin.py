@@ -1,5 +1,6 @@
 from django.contrib import admin
-from peoples.models import Frend, FrendsBanner
+from frends.models import Frend, FrendsBanner
+
 
 class FrendAdmin(admin.ModelAdmin):
 

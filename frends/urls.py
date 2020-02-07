@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from peoples.views import FrendListView, FrendDetailView
+from frends.views import FrendListView, FrendDetailView
 
 
 urlpatterns = [
