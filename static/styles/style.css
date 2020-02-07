@@ -499,7 +499,8 @@ button:focus {
       margin-bottom: calc(4.46429vw + 25.71429px);
     }
     .cover{
-      height: 160vw;
+      z-index: 9999;
+      position: relative;
     }
 }
 
