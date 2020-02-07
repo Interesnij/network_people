@@ -1,4 +1,4 @@
-from frends.models import Frend, FrendsBanner
+from frends.models import Frend
 from django.views.generic.list import ListView
 from django.http import HttpResponse
 from categories.models import FrendCategory
@@ -18,7 +18,6 @@ class FrendListView(ListView, CategoryListMixin):
 	def get_context_data(self,**kwargs):
 		context = super(FrendListView,self).get_context_data(**kwargs)
 		context["category"] = self.cat
-		context["banner"] = FrendsBanner.objects.last()
 		return context
 
 	def get_queryset(self):
@@ -39,4 +38,5 @@ class FrendDetailView(TemplateView, CategoryListMixin):
 	def get_context_data(self,**kwargs):
 		context = super(FrendDetailView,self).get_context_data(**kwargs)
 		context["frends"] = self.frends
+		context["object"] = self.frend
 		return context

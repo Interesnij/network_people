@@ -1,5 +1,5 @@
 from django.contrib import admin
-from frends.models import Frend, FrendsBanner
+from frends.models import Frend
 
 
 class FrendAdmin(admin.ModelAdmin):
@@ -11,4 +11,3 @@ class FrendAdmin(admin.ModelAdmin):
             model = Frend
 
 admin.site.register(Frend, FrendAdmin)
-admin.site.register(FrendsBanner)

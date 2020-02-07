@@ -13,18 +13,18 @@
     <div class="cover">
       <div class="cover_image">
           <img src="{{ banner.image.url }}" srcset="
-            {{ banner.image|thumbnail_url:'vert_160' }} 160w,
-            {{ banner.image|thumbnail_url:'vert_240' }} 240w,
-            {{ banner.image|thumbnail_url:'vert_320' }} 320w,
-            {{ banner.image|thumbnail_url:'hor_480' }} 480w,
-            {{ banner.image|thumbnail_url:'hor_640' }} 640w,
-            {{ banner.image|thumbnail_url:'hor_960' }} 960w,
-            {{ banner.image|thumbnail_url:'hor_1440' }} 1440w,
-            {{ banner.image|thumbnail_url:'hor_1600' }} 1600w,
-            {{ banner.image|thumbnail_url:'hor_1920' }} 1920w,
-            {{ banner.image|thumbnail_url:'hor_2240' }} 2240w,
-            {{ banner.image|thumbnail_url:'hor_2560' }} 2560w,
-            {{ banner.image|thumbnail_url:'hor_2880' }} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw" data-component="trackable" data-type="cover" data-parallax="-1.2" crossorigin="" />
+            {{ category.image|thumbnail_url:'vert_160' }} 160w,
+            {{ category.image|thumbnail_url:'vert_240' }} 240w,
+            {{ category.image|thumbnail_url:'vert_320' }} 320w,
+            {{ category.image|thumbnail_url:'hor_480' }} 480w,
+            {{ category.image|thumbnail_url:'hor_640' }} 640w,
+            {{ category.image|thumbnail_url:'hor_960' }} 960w,
+            {{ category.image|thumbnail_url:'hor_1440' }} 1440w,
+            {{ category.image|thumbnail_url:'hor_1600' }} 1600w,
+            {{ category.image|thumbnail_url:'hor_1920' }} 1920w,
+            {{ category.image|thumbnail_url:'hor_2240' }} 2240w,
+            {{ category.image|thumbnail_url:'hor_2560' }} 2560w,
+            {{ category.image|thumbnail_url:'hor_2880' }} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw" data-component="trackable" data-type="cover" data-parallax="-1.2" crossorigin="" />
       </div>
     </div>
 
@@ -32,7 +32,7 @@
         <div class="wrapper intro_wrapper" data-component="showtext">
             <h1 class="intro_title margin_b text-appear">{{ category.name }}</h1>
             <div class="intro_text about_w">
-                <p>{{ banner.description|linebreaks }}</p>
+                <p>{{ category.description|linebreaks }}</p>
             </div>
         </div>
     </div>
@@ -41,12 +41,6 @@
 
     {% if category.slug == "leader" %}
       {% include 'principles/leader.html' %}
-    {% endif %}
-    {% if category.slug == "investors" %}
-      {% include 'principles/investors.html' %}
-    {% endif %}
-    {% if category.slug == "partners" %}
-      {% include 'principles/partners.html' %}
     {% endif %}
     {% if category.slug == "promotions" %}
       {% include 'principles/promotions.html' %}
