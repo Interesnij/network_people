@@ -1696,7 +1696,7 @@ html {
 }
 
 body {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-size: 15px;
     color: #fff;
     font-weight: 400;
@@ -1860,7 +1860,7 @@ h4,
 }
 
 .abstract {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-size: 24px;
     margin: 0;
     font-weight: 300;
@@ -1886,7 +1886,7 @@ h4,
 }
 
 .baseline {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-size: 22px;
     margin: 0;
     font-weight: 300;
@@ -1912,7 +1912,7 @@ h4,
 }
 
 .lead {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-size: 18px;
     margin: 0;
     font-weight: 300;
@@ -1938,7 +1938,7 @@ h4,
 }
 
 .small {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-size: 11px;
     margin: 0;
     font-weight: 400;
@@ -2723,7 +2723,7 @@ html.static .button:hover {
 }
 
 .expand_content span {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     display: block;
     font-size: 18px;
     font-weight: 800
