@@ -501,7 +501,7 @@ button:focus {
 }
 @media (max-width: 320px) {
     .cover{
-      position: absolute;
+      position: relative;
     }
 }
 
