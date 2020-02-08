@@ -5724,7 +5724,7 @@ html.static .new:hover {
 }
 
 @media only screen and (min-width: 48em) {
-    .about {
+    .about_panel {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 1fr 1fr;
