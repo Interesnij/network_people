@@ -3696,7 +3696,7 @@ html.static .peoples_list a:hover {
 }
 @media (min-width: 320px) {
     .list_image {
-        width: calc(9.89583vw + 63.33333px)
+        width: calc(9.89583vw + 83.33333px)
     }
 }
 
