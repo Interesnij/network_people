@@ -1,4 +1,6 @@
-function(t, e, n) {
+(window.webpackJsonp = window.webpackJsonp || []).push([
+    [0],
+    [function(t, e, n) {
     ! function(t) {
         "use strict";
         void 0 === Number.EPSILON && (Number.EPSILON = Math.pow(2, -52)), void 0 === Number.isInteger && (Number.isInteger = function(t) {
