@@ -5,20 +5,14 @@
         </a>
         <nav class="nav_list" data-component="trackable" data-type="magic_line">
             <ul class="nav_list_ul">
-                <li>
-                    <a class="nav_list_magic" href="http://свои.рус/about"><span data-component="trackable" data-type="is_visible">О проекте<span></a>
-                </li>
                 <li data-ref="nav.program">
                     <a class="nav_list_magic" href=""><span data-component="trackable" data-type="is_visible">Команда</span></a>
                     <div class="nav_sublist" data-ref="nav.sublist">
                         <div class="nav_sublist_container p-l" data-ref="nav.sublistcontainer">
                             <div class="events">
+
                                 <div class="events_item m-m">
-                                    <div class="margin_b2"><p class="label">Документы</p></div>
-                                    <ul><li><a href="" class="event-link">Документ 1</a></li></ul>
-                                </div>
-                                <div class="events_item m-m">
-                                    <div class="margin_b2"><p class="label">Подменю</p></div>
+                                    <div class="margin_b2"><p class="label">Друзья</p></div>
                                     <ul>
                                       {% for object in frend_categories %}
                                         <li>
@@ -41,6 +35,10 @@
                                       {% endfor %}
                                     </ul>
                                 </div>
+                                <div class="events_item m-m">
+                                    <div class="margin_b2"><p class="label">Документы</p></div>
+                                    <ul><li><a class="event-link">(формируется)</a></li></ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -49,6 +47,9 @@
                     <a class="nav_list_magic" href="http://свои.рус/news/">
                         <span data-component="trackable" data-type="is_visible">Новости</span>
                     </a>
+                </li>
+                <li>
+                    <a class="nav_list_magic" href="http://свои.рус/about"><span data-component="trackable" data-type="is_visible">О проекте<span></a>
                 </li>
             </ul>
             <button class="nav_toggler" data-ref="menu.toggler">
@@ -72,13 +73,7 @@
                         <ul class="menu_left">
                             <nav>
                                 <ul>
-                                    <li>
-                                        <div class="menu_bigitem">
-                                          <div>
-                                              <a class="h1" href="http://свои.рус/about">О проекте</a>
-                                          </div>
-                                        </div>
-                                    </li>
+
                                     <li data-ref="menu.program">
                                         <div class="menu_bigitem" data-ref="menu.programbigitem">
                                             <div>
@@ -87,17 +82,34 @@
                                         </div>
                                         <div class="menu_events" data-ref="menu.events">
                                             <div class="events">
-                                                <div class="events_item m-m">
-                                                    <ul>
-                                                      {% for object in categories %}
-                                                        <li>
-                                                            <a href="http://свои.рус/people/{{ object.slug }}" class="event-link" data-sound-hover>
-                                                                {{ object.name }}
-                                                            </a>
-                                                        </li>
-                                                      {% endfor %}
-                                                    </ul>
-                                                </div>
+                                              <div class="events_item m-m">
+                                                  <div class="margin_b2"><p class="label">Друзья</p></div>
+                                                  <ul>
+                                                    {% for object in frend_categories %}
+                                                      <li>
+                                                        <a href="http://свои.рус/frends/{{ object.slug }}" class="event-link">
+                                                          {{ object.name }}
+                                                        </a>
+                                                      </li>
+                                                    {% endfor %}
+                                                  </ul>
+                                              </div>
+                                              <div class="events_item m-m">
+                                                  <div class="margin_b2"><p class="label">Команда</p></div>
+                                                  <ul>
+                                                    {% for object in categories %}
+                                                      <li>
+                                                        <a href="http://свои.рус/people/{{ object.slug }}" class="event-link">
+                                                          {{ object.name }}
+                                                        </a>
+                                                      </li>
+                                                    {% endfor %}
+                                                  </ul>
+                                              </div>
+                                              <div class="events_item m-m">
+                                                  <div class="margin_b2"><p class="label">Документы</p></div>
+                                                  <ul><li><a class="event-link">(формируется)</a></li></ul>
+                                              </div>
                                             </div>
                                         </div>
                                     </li>
@@ -106,6 +118,13 @@
                                             <div>
                                                 <a href="http://свои.рус/news" class="h1">Новости</a>
                                             </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu_bigitem">
+                                          <div>
+                                              <a class="h1" href="http://свои.рус/about">О проекте</a>
+                                          </div>
                                         </div>
                                     </li>
                                 </ul>
