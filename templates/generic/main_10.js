@@ -335,7 +335,7 @@ function(e, t, n) {
                 transitions: [T, S],
                 prevent: ({
                     el: e
-                }) => !!window.EPICINFO && u(e, "#wpadminbar")
+                }) => !!window.INFO && u(e, "#wpadminbar")
             }), x.a.prevent.tests.set("sameUrl", () => !1)
         },
         M = n(48),
