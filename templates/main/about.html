@@ -2,7 +2,7 @@
 
 <div class="peoples m-xs mb_32">
     <div class="wrapper">
-        <h3 class="margin_b mb_32">Наша команда</h3>
+        <h3 class="margin_b mb_32">Команда / Друзья</h3>
         <ul class="peoples_list" data-component="trackable" data-type="magic_line">
             <li class="mb-s">
               <div class="">
@@ -28,19 +28,22 @@
                 </a>
               </div>
             </li>
-        </ul>
-        <h3 class="margin_b m-m">Наши друзья</h3>
-        <ul class="peoples_list" data-component="trackable" data-type="magic_line">
-          {% for object in frend_categories %}
             <li class="mb-s">
               <div class="">
-                <a href="http://свои.рус/people/{{ object.slug }}" class="h4 link">
-                    <sup class="label">{{ forloop.counter }}</sup>
-                    <span data-component="trackable" data-type="is_visible">{{ object.name }}</span>
+                <a href="http://свои.рус/people/{{ frend_categories.0.slug }}" class="h4 link">
+                    <sup class="label">4</sup>
+                    <span data-component="trackable" data-type="is_visible">{{ frend_categories.0.name }}</span>
                 </a>
               </div>
             </li>
-          {% endfor %}
+            <li class="mb-s">
+              <div class="">
+                <a href="http://свои.рус/people/{{ frend_categories.1.slug }}" class="h4 link">
+                    <sup class="label">5</sup>
+                    <span data-component="trackable" data-type="is_visible">{{ frend_categories.1.name }}</span>
+                </a>
+              </div>
+            </li>
         </ul>
     </div>
 </div>
