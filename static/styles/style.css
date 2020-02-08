@@ -230,7 +230,7 @@ th {
 .popup_social,
 .reasons_list,
 .sponsor_list,
-.venue_transport ul{
+.about ul{
     margin: 0;
     padding: 0;
     list-style-type: none
@@ -5724,7 +5724,7 @@ html.static .new:hover {
 }
 
 @media only screen and (min-width: 48em) {
-    .venue_transports {
+    .about {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 1fr 1fr;
@@ -5734,7 +5734,7 @@ html.static .new:hover {
     }
 }
 
-.venue_transport {
+.about {
     max-width: 460px
 }
 
