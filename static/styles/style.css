@@ -228,7 +228,7 @@ th {
 .nav_list_ul,
 .panel_list,
 .popup_social,
-.reasons_list,
+.principles_list,
 .sponsor_list,
 .about ul{
     margin: 0;
@@ -4747,14 +4747,14 @@ html.static .new:hover {
     transform: rotate(-50deg)
 }
 
-.reasons_item {
+.principles_item {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex
 }
 
-.reasons_number {
+.principles_number {
     font-size: 70px;
     max-width: 60px;
     line-height: 0.8;
@@ -4762,70 +4762,70 @@ html.static .new:hover {
 }
 
 @media (min-width: 320px) {
-    .reasons_number {
+    .principles_number {
         font-size: calc(3.125vw + 60px)
     }
 }
 
 @media (min-width: 1280px) {
-    .reasons_number {
+    .principles_number {
         font-size: 100px
     }
 }
 
 @media (min-width: 320px) {
-    .reasons_number {
+    .principles_number {
         max-width: calc(2.60417vw + 51.66667px)
     }
 }
 
 @media (min-width: 1280px) {
-    .reasons_number {
+    .principles_number {
         max-width: 85px
     }
 }
 
-.reasons_title {
+.principles_title {
     font-size: 24px;
     margin-bottom: 10px
 }
 
 @media (min-width: 320px) {
-    .reasons_title {
+    .principles_title {
         font-size: calc(2.5vw + 16px)
     }
 }
 
 @media (min-width: 1280px) {
-    .reasons_title {
+    .principles_title {
         font-size: 48px
     }
 }
 
 @media (min-width: 320px) {
-    .reasons_title {
+    .principles_title {
         margin-bottom: calc(-.41667vw + 11.33333px)
     }
 }
 
 @media (min-width: 1280px) {
-    .reasons_title {
+    .principles_title {
         margin-bottom: 6px
     }
 }
 
-.reasons_body {
+.principles_body {
     font-size: 15px
 }
 
 @media (min-width: 320px) {
-    .reasons_body {
+    .principles_body {
         font-size: calc(.3125vw + 14px)
     }
 }
 
 @media (min-width: 1280px) {
-    .reasons_body {
+    .principles_body {
         font-size: 18px
     }
 }
