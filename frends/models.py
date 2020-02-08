@@ -22,7 +22,7 @@ class Frend(models.Model):
         verbose_name_plural = "друзья"
 
     def __str__(self):
-        return self.title
+        return self.name
 
     def get_absolute_url(self):
         return reverse('frend_detail',kwargs={"pk":self.pk})

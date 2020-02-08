@@ -21,7 +21,7 @@ class PeopleListView(ListView, CategoryListMixin):
 		return context
 
 	def get_queryset(self):
-		people_list = People.objects.filter(category=self.cat).order_by("-posted")
+		people_list = People.objects.filter(category=self.cat).order_by("order")
 		return people_list
 
 

@@ -22,7 +22,7 @@ class People(models.Model):
         verbose_name_plural = "люди"
 
     def __str__(self):
-        return self.title
+        return self.name
 
     def get_absolute_url(self):
         return reverse('people_detail',kwargs={"pk":self.pk})

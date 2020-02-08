@@ -21,7 +21,7 @@ class FrendListView(ListView, CategoryListMixin):
 		return context
 
 	def get_queryset(self):
-		frend_list = Frend.objects.filter(category=self.cat).order_by("-posted")
+		frend_list = Frend.objects.filter(category=self.cat).order_by("order")
 		return frend_list
 
 
