@@ -1,5 +1,4 @@
 from django.db import models
-from django.utils import timezone
 from categories.models import FrendCategory
 from django.urls import reverse
 from ckeditor_uploader.fields import RichTextUploadingField
@@ -11,13 +10,12 @@ class Frend(models.Model):
     category = models.ForeignKey(FrendCategory,on_delete=models.CASCADE, verbose_name="Категория")
     description = models.TextField(verbose_name="Краткое содержание")
     content = RichTextUploadingField(blank=True, default='')
-    posted = models.DateField(default=timezone.now,verbose_name="Опубликовано")
+    order = models.PositiveSmallIntegerField(default=0, db_index=True, verbose_name="Порядковый номер")
     views = models.IntegerField(default=0,verbose_name="Просмотры")
     index_image = models.ImageField(upload_to="frends/list",verbose_name="Картинка в индекс")
     image = models.ImageField(blank=True,upload_to="frends/list",verbose_name="Главная картинка")
 
     class Meta:
-        ordering = ["-posted"]
         verbose_name = "друг"
         verbose_name_plural = "друзья"
 

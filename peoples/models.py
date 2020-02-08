@@ -1,5 +1,4 @@
 from django.db import models
-from django.utils import timezone
 from categories.models import Category
 from django.urls import reverse
 from ckeditor_uploader.fields import RichTextUploadingField
@@ -11,13 +10,12 @@ class People(models.Model):
     category = models.ForeignKey(Category,on_delete=models.CASCADE, verbose_name="Категория")
     description = models.TextField(verbose_name="Краткое содержание")
     content = RichTextUploadingField(blank=True, default='')
-    posted = models.DateField(default=timezone.now,verbose_name="Опубликовано")
+    order = models.PositiveSmallIntegerField(default=0, db_index=True, verbose_name="Порядковый номер")
     views = models.IntegerField(default=0,verbose_name="Просмотры")
     index_image = models.ImageField(upload_to="peoples/list",verbose_name="Картинка в индекс")
     image = models.ImageField(blank=True,upload_to="peoples/list",verbose_name="Главная картинка")
 
     class Meta:
-        ordering = ["-posted"]
         verbose_name = "человек"
         verbose_name_plural = "люди"
 
