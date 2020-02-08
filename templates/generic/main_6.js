@@ -606,7 +606,7 @@ function(e, t, n) {
         url: `/static/images/grad/grad2.png`
     }, {
         name: "bgglitch",
-        url: `/static/images/bg_header.jpg`
+        url: `/static/images/splash.webp`
     }];
     t.a = new class {
         constructor() {
