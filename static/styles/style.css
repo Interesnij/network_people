@@ -3694,16 +3694,15 @@ html.static .peoples_list a:hover {
         right: calc(17.70833vw - 56.66667px)
     }
 }
-
-@media (min-width: 1280px) {
+@media (min-width: 320px) {
     .list_image {
-        right: 170px
+        width: calc(9.89583vw + 63.33333px)
     }
 }
 
 @media (min-width: 1280px) {
     .list_image {
-        width: calc(9.89583vw + 63.33333px);
+        right: 170px
     }
 }
 
