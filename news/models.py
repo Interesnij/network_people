@@ -15,7 +15,7 @@ class New(models.Model):
     image2 = models.ImageField(blank=True,upload_to="blog/list",verbose_name="главная картинка в деталях")
 
     def get_absolute_url(self):
-        return reverse('news_detail',kwargs={"pk":self.pk})
+        return reverse('news_detail',kwargs={"new_slug":self.new_slug})
 
     class Meta:
         ordering = ["-posted"]
