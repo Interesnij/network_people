@@ -5,7 +5,7 @@
 <meta property="og:url" content="http://свои.рус{{ object.get_absolute_url }}" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{{ object.name }} - {{ object.category|cut:'ы' }} | трезвый.рус" />
-<meta property="og:image" content="http://свои.рус{{ object.image.url }}" />
+<meta property="og:image" content="http://свои.рус{{ object.image|thumbnail_url:'og' }}" />
 {% endblock %}
 {% block content %}
 
