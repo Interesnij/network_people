@@ -9,7 +9,7 @@
 {% endblock %}
 {% block content %}
 
-<div data-barba="container" data-barba-namespace="" data-menu-current="">
+<div data-barba="container" data-barba-namespace="{{ category.name }}" data-menu-current="">
     <div class="cover">
       <div class="cover_image">
           <img src="{{ category.image.url }}" srcset="
