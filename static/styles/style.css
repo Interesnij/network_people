@@ -256,13 +256,8 @@ th {
         display: -ms-flexbox;
         display: flex
     }
-    .item_img{
-      visibility: visible;
-    }
 }
-.item_img{
-  visibility: hidden;
-}
+
 .lock-scroll,
 .lock-scroll body {
     overflow-x: hidden
@@ -469,6 +464,9 @@ button:focus {
 @media (min-width: 768px) {
     .margin_tb {
         margin-top: calc(7.8125vw + 60px)
+    }
+    .item_img{
+      visibility: hidden;
     }
 }
 
