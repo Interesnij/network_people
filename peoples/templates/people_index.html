@@ -59,7 +59,7 @@
             <ul class="list_ul mentor-content" data-component="trackable" data-type="magic_hover">
               {% for object in object_list %}
                 <li class="list_li p-s">
-                    <a class="list_link" href="#"></a>
+                    <a class="list_link" href="{% url 'people_detail' people_slug=object.people_slug %}"></a>
                     <div class="list_image" data-component="trackable" data-type="is_visible">
                         <img src="{{ object.index_image.url }}" srcset="
                           {{ object.index_image|thumbnail_url:'vert_160' }} 160w,
