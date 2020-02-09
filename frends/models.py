@@ -7,9 +7,11 @@ from ckeditor_uploader.fields import RichTextUploadingField
 class Frend(models.Model):
     PERSON = 'P'
     COMPANY = 'C'
+    ORG = 'O'
     TYPE = (
         (PERSON, 'Персона'),
         (COMPANY, 'Компания'),
+        (ORG, 'Организация'),
     )
 
     name = models.CharField(max_length=100,verbose_name="ФИО")
