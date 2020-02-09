@@ -12,6 +12,7 @@
 <div data-barba="container" data-barba-namespace="{{ object.name }}" data-menu-current="menu-item-63">
     <div class="cover">
       <div class="cover_image">
+
           <img src="{{ object.category.image.url }}" srcset="
             {{ object.category.image|thumbnail_url:'vert_160' }} 160w,
             {{ object.category.image|thumbnail_url:'vert_240' }} 240w,
@@ -43,6 +44,7 @@
             <div class="about margin_b3">
                 <p class="h3">Фотография</p>
                 <div class="about_w margin_t">
+                  {% if object.image %}
                   <img src="{{ object.image.url }}" srcset="
                     {{ object.image|thumbnail_url:'vert_160' }} 160w,
                     {{ object.image|thumbnail_url:'vert_240' }} 240w,
@@ -56,6 +58,7 @@
                     {{ object.image|thumbnail_url:'hor_2240' }} 2240w,
                     {{ object.image|thumbnail_url:'hor_2560' }} 2560w,
                     {{ object.image|thumbnail_url:'hor_2880' }} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw" data-component="trackable" data-type="cover" data-parallax="-1.2" crossorigin="" />
+                  {% endif %}
                 </div>
             </div>
             <div class="about margin_b3">
