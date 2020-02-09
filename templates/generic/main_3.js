@@ -200,7 +200,7 @@ function(e, t, n) {
                 }, "fadeout");
 
                 if (r.c.width >= 768) {
-                    const t = document.querySelectorAll(".nav_logo, .nav_list_ul li, .nav_toggler"); 
+                    const t = document.querySelectorAll(".nav_logo, .nav_list_ul li, .nav_toggler, .nav_link span"); 
                     o.TweenMax.set(t, {
                         y: -50
                     }), e.add(() => {
