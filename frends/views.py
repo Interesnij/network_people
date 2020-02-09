@@ -29,7 +29,7 @@ class FrendDetailView(TemplateView, CategoryListMixin):
 	template_name = "frend.html"
 
 	def get(self,request,*args,**kwargs):
-		self.frend = Frend.objects.get(people_slug=self.kwargs["frend_slug"])
+		self.frend = Frend.objects.get(frend_slug=self.kwargs["frend_slug"])
 		self.frend.views += 1
 		self.frend.save()
 		self.frends = Frend.objects.filter(category=self.frends.category)[0:6]
