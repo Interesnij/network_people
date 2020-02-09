@@ -8,10 +8,12 @@ class Frend(models.Model):
     PERSON = 'P'
     COMPANY = 'C'
     ORG = 'O'
+    COMMUNITY = 'CY'
     TYPE = (
         (PERSON, 'Персона'),
         (COMPANY, 'Компания'),
         (ORG, 'Организация'),
+        (COMMUNITY, 'Сообщество'),
     )
 
     name = models.CharField(max_length=100,verbose_name="ФИО")
