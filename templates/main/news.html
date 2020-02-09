@@ -1,4 +1,4 @@
-{% load staticfiles thumbnail %}
+{% load staticfiles humanize thumbnail %}
 
 <div class="news_list">
 {% for object in news %}
@@ -24,7 +24,7 @@
             <div class="new_inner" data-component="parallax" data-parallax="-0.3">
                 <div class="new_text mt-xs">
                     <p class="new_name name">{{ object.title }}</p>
-                    <p class="new_role mt-xxs">{{ object.description }}</p>
+                    <p class="new_role mt-xxs">{{ object.posted|naturaltime }}</p>
                 </div>
                 <a class="read_more" href="{% url 'news_detail' new_slug=object.new_slug %}"></a>
             </div>
