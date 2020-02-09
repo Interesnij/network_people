@@ -9,7 +9,7 @@ class People(models.Model):
     people_slug = models.CharField(max_length=100,verbose_name="Для ссылки")
     category = models.ForeignKey(Category,on_delete=models.CASCADE, verbose_name="Категория")
     description = models.TextField(verbose_name="Краткое содержание")
-    content = RichTextUploadingField(blank=True, default='')
+    content = RichTextUploadingField(blank=True, default='', external_plugin_resources=[('youtube','/static/ckeditor_plugins/youtube/youtube/','plugin.js',)])
     order = models.PositiveSmallIntegerField(default=0, db_index=True, verbose_name="Порядковый номер")
     views = models.IntegerField(default=0,verbose_name="Просмотры")
     index_image = models.ImageField(upload_to="peoples/list",verbose_name="Картинка в индекс")
