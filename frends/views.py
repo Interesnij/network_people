@@ -32,7 +32,7 @@ class FrendDetailView(TemplateView, CategoryListMixin):
 		self.frend = Frend.objects.get(frend_slug=self.kwargs["frend_slug"])
 		self.frend.views += 1
 		self.frend.save()
-		self.frends = Frend.objects.filter(category=self.frends.category)[0:6]
+		self.frends = Frend.objects.filter(category=self.frend.category)[0:6]
 		return super(FrendDetailView,self).get(request,*args,**kwargs)
 
 	def get_context_data(self,**kwargs):
