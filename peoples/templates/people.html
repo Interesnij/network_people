@@ -41,6 +41,12 @@
 
     <div class="wrapper">
         <div class="about_panel margin_tb">
+          <div class="about margin_b3">
+              <p class="h3">О личности</p>
+              <div class="about_w margin_t">
+                  {{ object.content|safe }}
+              </div>
+          </div>
             <div class="about margin_b3">
                 <p class="h3">Фотография</p>
                 <div class="about_w margin_t">
@@ -59,12 +65,6 @@
                     {{ object.image|thumbnail_url:'hor_2560' }} 2560w,
                     {{ object.image|thumbnail_url:'hor_2880' }} 2880w" alt="" sizes="(max-width: 768px) 150vw, 100vw" data-component="trackable" data-type="image" data-parallax="-1.2" crossorigin="" />
                   {% endif %}
-                </div>
-            </div>
-            <div class="about margin_b3">
-                <p class="h3">О личности</p>
-                <div class="about_w margin_t">
-                    {{ object.content }}
                 </div>
             </div>
         </div>
