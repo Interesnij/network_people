@@ -23,4 +23,4 @@ class People(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('people_detail',kwargs={"pk":self.pk})
+        return reverse('people_detail',kwargs={"people_slug":self.people_slug})

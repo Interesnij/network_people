@@ -23,4 +23,4 @@ class Frend(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('frend_detail',kwargs={"pk":self.pk})
+        return reverse('frend_detail',kwargs={"frend_slug":self.frend_slug})
