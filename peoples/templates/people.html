@@ -9,7 +9,7 @@
 {% endblock %}
 {% block content %}
 
-<div data-barba="container" data-barba-namespace="{{ object.name }}" data-menu-current="menu-item-63">
+<div data-barba="container" data-barba-namespace="{{ object.name }}" data-menu-current="">
     <div class="cover">
       <div class="cover_image">
           <img src="{{ object.category.image.url }}" srcset="
@@ -47,7 +47,7 @@
               </div>
           </div>
           <div class="about margin_b3">
-              
+
               <div class="about_w margin_t">
                 {% if object.image %}
                 <img src="{{ object.image.url }}" class="item_img" srcset="
