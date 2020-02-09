@@ -51,7 +51,7 @@
                 <p class="h3">Фотография</p>
                 <div class="about_w margin_t">
                   {% if object.image %}
-                  <img src="{{ object.image.url }}" style="visibility: hidden;" srcset="
+                  <img src="{{ object.image.url }}" class="item_img" srcset="
                     {{ object.image|thumbnail_url:'vert_160' }} 160w,
                     {{ object.image|thumbnail_url:'vert_240' }} 240w,
                     {{ object.image|thumbnail_url:'vert_320' }} 320w,

@@ -256,6 +256,12 @@ th {
         display: -ms-flexbox;
         display: flex
     }
+    .item_img{
+      visibility: visible;
+    }
+}
+.item_img{
+  visibility: hidden;
 }
 .lock-scroll,
 .lock-scroll body {
