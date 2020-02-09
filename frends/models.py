@@ -5,6 +5,13 @@ from ckeditor_uploader.fields import RichTextUploadingField
 
 
 class Frend(models.Model):
+    PERSON = 'P'
+    COMPANY = 'C'
+    TYPE = (
+        (PERSON, 'Персона'),
+        (COMPANY, 'Компания'),
+    )
+
     name = models.CharField(max_length=100,verbose_name="ФИО")
     frend_slug = models.CharField(max_length=100,verbose_name="Для ссылки")
     category = models.ForeignKey(FrendCategory,on_delete=models.CASCADE, verbose_name="Категория")
@@ -14,6 +21,7 @@ class Frend(models.Model):
     views = models.IntegerField(default=0,verbose_name="Просмотры")
     index_image = models.ImageField(upload_to="frends/list",verbose_name="Картинка в индекс")
     image = models.ImageField(blank=True,upload_to="frends/list",verbose_name="Главная картинка")
+    type = models.CharField(blank=False, null=False, choices=TYPE, default=COMPANY, max_length=2, verbose_name="Тип друга")
 
     class Meta:
         verbose_name = "друг"
