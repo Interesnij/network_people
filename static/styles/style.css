@@ -2816,7 +2816,7 @@ html.static .button:hover {
 }
 
 .footer {
-    background: #00056c;
+    background: black;
 }
 
 .footer svg {
@@ -2824,7 +2824,7 @@ html.static .button:hover {
 }
 
 .footer.magic {
-    background: #00056c;
+    background: black;
 }
 
 .footer-glitch-container {

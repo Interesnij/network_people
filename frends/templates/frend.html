@@ -12,7 +12,6 @@
 <div data-barba="container" data-barba-namespace="{{ object.name }}" data-menu-current="">
     <div class="cover">
       <div class="cover_image">
-
           <img src="{{ object.category.image.url }}" srcset="
             {{ object.category.image|thumbnail_url:'vert_160' }} 160w,
             {{ object.category.image|thumbnail_url:'vert_240' }} 240w,
@@ -67,7 +66,6 @@
                 {% endif %}
               </div>
           </div>
-
         </div>
     </div>
 
@@ -77,8 +75,7 @@
         <div class="wrapper">
           <div class="footer_similar margin_b3" data-component="showtext">
               <a class="footer_similar_link h2 text-appear" href="http://свои.рус/frends/{{ object.category.slug }}">
-                  <span class="line">
-                    <span>Все {{ object.category.name }}</span>
+                <span>Все {{ object.category.name }}</span>
               </a>
           </div>
             {% include 'footer.html' %}

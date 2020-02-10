@@ -40,13 +40,11 @@
     <div class="wrapper" style="margin-top: 150px;">
         <div class="about_panel margin_tb">
           <div class="about margin_b3">
-
               <div class="about_w margin_t">
                   {{ object.content|safe }}
               </div>
           </div>
           <div class="about margin_b3">
-
               <div class="about_w margin_t">
                 {% if object.image %}
                 <img src="{{ object.image.url }}" class="item_img" srcset="
@@ -74,8 +72,7 @@
         <div class="wrapper">
           <div class="footer_similar margin_b3" data-component="showtext">
               <a class="footer_similar_link h2 text-appear" href="http://свои.рус/people/{{ object.category.slug }}">
-                  <span class="line">
-                    <span>Все {{ object.category.name }}</span>
+                  <span>Все {{ object.category.name }}</span>
               </a>
           </div>
             {% include 'footer.html' %}
