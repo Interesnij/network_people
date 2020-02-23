@@ -50,7 +50,7 @@
     {% endif %}
     <div class="mt-xxl margin_b">
         <div class="wrapper">
-            <p class="label mentor-content">{{ category.name }}</p>
+            <p class="label mentor-content">{% if object_list %}{{ category.name }}{% else %}{{ category.name|cut:"ы" }}ов пока нет{% endif %}</p>
         </div>
     </div>
 
