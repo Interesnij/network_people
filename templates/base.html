@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html class="no-js">
+<html class="js">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128677100-3"></script>
@@ -20,14 +20,9 @@
   <title>{% block title %}{% endblock %}</title>
   {% block meta %}{% endblock %}
   <link rel="stylesheet" id='main-css' href="{% static 'styles/style.css' %}" media="all" />
-  <script>
-      document.documentElement.classList.remove('no-js');
-      document.documentElement.classList.add('js');
-    </script>
 </head>
 
 <body>
-
   <div class="canvas" data-component="gl"></div>
   <div class="load_block" style="">
     <div class="glitch-bg" data-component="trackable" data-type="glitch" data-parallax="-1" data-nofadetop="true">
